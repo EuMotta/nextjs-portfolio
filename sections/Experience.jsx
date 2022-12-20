@@ -21,7 +21,10 @@ const Experience = () => (
         />
         <div className="grid grid-cols-2 ">
           <div className="col-span-1 text-white flex justify-center">
-            <div className="grid grid-cols-2   gap-x-10">
+            <motion.div
+              variants={fadeIn('right', 'tween', 0, 1)}
+              className="grid grid-cols-2   gap-x-10"
+            >
               <div className="col-span-1  flex flex-col gap-y-10">
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Birthday:</strong>5 Nov 1999
@@ -50,7 +53,7 @@ const Experience = () => (
                   <strong>Freelancer:</strong>Avaliable!
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="col-span-1 text-white flex justify-center">
             <div className="grid grid-cols-2   gap-x-10">
