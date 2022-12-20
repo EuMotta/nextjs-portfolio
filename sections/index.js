@@ -10,6 +10,7 @@ import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
+import Experience2 from './Experience2';
 
 export {
   Hero,
@@ -18,6 +19,7 @@ export {
   About3,
   Me,
   Experience,
+  Experience2,
   Explore,
   GetStarted,
   WhatsNew,

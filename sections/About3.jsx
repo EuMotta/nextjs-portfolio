@@ -25,7 +25,7 @@ const About2 = () => (
           </span>
           Programar é minha paixão e meu hobby. Desde cedo, a informática sempre
           esteve presente em minha vida e, quando descobri a programação, me
-          apaixonei ainda mais por essa área. <br />
+          apaixonei ainda mais por essa área. <br /><br />
           Cada linguagem trás um desafio diferente que tenho o prazer de
           enfrentar. Programar é muito mais do que um simples trabalho para mim
           e estou sempre pronto para enfrentar novos desafios e me desenvolver

@@ -31,7 +31,7 @@ const About = () => (
           </span>
           Já passei por momentos difíceis que me deixaram no chão, mas consegui
           superá-los com determinação e força de vontade. Isso me deu muita
-          confiança e me inspirou a lutar pelos meus objetivos. Acredito que
+          confiança e me inspirou a lutar pelos meus objetivos.<br /><br />Acredito que
           essas dificuldades superadas me tornam mais forte e experiente para
           qualquer oportunidade de trabalho. Estou pronto para enfrentar novos
           desafios e continuar crescendo como pessoa e profissional.
