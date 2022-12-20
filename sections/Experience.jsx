@@ -44,10 +44,10 @@ const Experience = () => (
                   <strong>Age:</strong>23
                 </span>
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Email:</strong>hyperxmotta@hotmail.com
+                  <strong>Email:</strong>mottaemail@example.com
                 </span>
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Phone:</strong>+55&nbsp;(12)&nbsp;92000-8749
+                  <strong>Phone:</strong>+55&nbsp;(99)&nbsp;99999-9999
                 </span>
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Freelancer:</strong>Avaliable!

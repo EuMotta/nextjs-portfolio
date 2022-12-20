@@ -11,6 +11,7 @@ import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
 import Experience2 from './Experience2';
+import ApiCNPJ from './ApiCNPJ';
 
 export {
   Hero,
@@ -20,6 +21,7 @@ export {
   Me,
   Experience,
   Experience2,
+  ApiCNPJ,
   Explore,
   GetStarted,
   WhatsNew,
