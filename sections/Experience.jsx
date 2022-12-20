@@ -7,13 +7,13 @@ import { staggerContainer, fadeIn } from '../utils/motion';
 
 const Experience = () => (
   <section className={`${styles.paddings} z-10`}>
-    <div>
+    <div className="">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=""
+        className=" "
       >
         <TypingText
           title="Contato e linguagens"
@@ -25,7 +25,7 @@ const Experience = () => (
               variants={fadeIn('right', 'tween', 0, 1)}
               className="grid grid-cols-2   gap-x-10"
             >
-              <div className="col-span-1  flex flex-col gap-y-10">
+              <div className="col-span-1 text-sm  flex flex-col gap-y-10">
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Birthday:</strong>5 Nov 1999
                 </span>
@@ -39,7 +39,7 @@ const Experience = () => (
                   <strong>City:</strong>Guaratinguetá
                 </span>
               </div>
-              <div className="col-span-1 flex flex-col gap-y-10">
+              <div className="col-span-1 text-sm flex flex-col gap-y-10">
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Age:</strong>23
                 </span>
@@ -57,7 +57,7 @@ const Experience = () => (
           </div>
           <div className="col-span-1 text-white flex justify-center">
             <div className="grid grid-cols-2   gap-x-10">
-              <div className="col-span-1 flex flex-col gap-y-10">
+              <div className="col-span-1 text-sm flex flex-col gap-y-10">
                 <motion.div
                   variants={fadeIn('right', 'tween', 0, 1.5)}
                   className=" flex-col gap-2 border-b-2 border-slate-500"
@@ -98,7 +98,7 @@ const Experience = () => (
                   </div>
                 </motion.div>
               </div>
-              <div className="col-span-1 flex flex-col gap-y-10">
+              <div className="col-span-1 text-sm flex flex-col gap-y-10">
                 <motion.div
                   variants={fadeIn('left', 'tween', 0, 1.5)}
                   className=" flex-col gap-2 border-b-2 border-slate-500"
