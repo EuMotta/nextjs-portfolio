@@ -35,7 +35,7 @@ const Hero = () => (
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <a href className={`${styles.flexCenter} gap-x-4 mb-48 text-white text-4xl`}>

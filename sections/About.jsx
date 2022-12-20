@@ -15,7 +15,7 @@ const About = () => (
     >
       <TypingText
         title="Quem Sou eu?"
-        textStyles="text-center text-white font-bold p-3 text-3xl"
+        textStyles="text-center text-secondary-white font-bold p-10 mb-24 text-7xl"
       />
 
       <motion.p
