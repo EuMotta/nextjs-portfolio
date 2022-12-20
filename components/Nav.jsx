@@ -41,7 +41,7 @@ const Nav = () => (
   </motion.div>
 );
 
-const Icons = document.querySelector('.navigation .icon');
+/* const Icons = document.querySelector('.navigation .icon');
 function changeactive() {
   Icons.forEach((icon) => {
     icon.classList.remove('active-nav');
@@ -56,6 +56,6 @@ function navLinks() {
     });
   });
 }
-console.log(navLinks);
+console.log(navLinks); */
 
 export default Nav;
