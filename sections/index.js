@@ -3,6 +3,7 @@ import About from './About';
 import About2 from './About2';
 import About3 from './About3';
 import Me from './Me';
+import Experience from './Experience';
 import Explore from './Explore';
 import GetStarted from './GetStarted';
 import WhatsNew from './WhatsNew';
@@ -16,6 +17,7 @@ export {
   About2,
   About3,
   Me,
+  Experience,
   Explore,
   GetStarted,
   WhatsNew,
