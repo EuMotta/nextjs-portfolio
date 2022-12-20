@@ -22,32 +22,32 @@ const Experience = () => (
         <div className="grid grid-cols-2 ">
           <div className="col-span-1 text-white flex justify-center">
             <div className="grid grid-cols-2   gap-x-10">
-              <div className="col-span-1 flex flex-col gap-y-10">
-                <span className="flex gap-2 border-b-2 border-slate-500">
+              <div className="col-span-1  flex flex-col gap-y-10">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Birthday:</strong>5 Nov 1999
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Website:</strong>5 Nov 1999
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Country/State:</strong>Brazil/São Paulo
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>City:</strong>Guaratinguetá
                 </span>
               </div>
               <div className="col-span-1 flex flex-col gap-y-10">
-                <span className="flex gap-2 border-b-2 border-slate-500">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Age:</strong>23
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Email:</strong>hyperxmotta@hotmail.com
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
-                  <strong>Phone:</strong>+55&nbsp; (12)&nbsp; 92000-8749
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
+                  <strong>Phone:</strong>+55&nbsp;(12)&nbsp;92000-8749
                 </span>
-                <span className="flex gap-2 border-b-2 border-slate-500">
-                  <strong>City:</strong>Guaratinguetá
+                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
+                  <strong>Freelancer:</strong>Avaliable!
                 </span>
               </div>
             </div>
