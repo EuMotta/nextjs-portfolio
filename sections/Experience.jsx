@@ -27,7 +27,7 @@ const Experience = () => (
                   <strong>Birthday:</strong>5 Nov 1999
                 </span>
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Website:</strong>5 Nov 1999
+                  <strong>Website:</strong>unknown
                 </span>
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Country/State:</strong>Brazil/São Paulo
