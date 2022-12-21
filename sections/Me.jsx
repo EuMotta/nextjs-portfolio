@@ -13,7 +13,7 @@ import { TypingText } from '../components';
 import { staggerContainer, fadeIn } from '../utils/motion';
 
 const Me = () => (
-  <section className={`${styles.yPaddings} sm:16 sm:pl-6 min-h-screen`}>
+  <section className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
     <div>
       <div className="grid grid-cols-7">
         <motion.div

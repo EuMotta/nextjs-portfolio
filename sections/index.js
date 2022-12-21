@@ -11,6 +11,8 @@ import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
 import Experience2 from './Experience2';
+import Services from './Services';
+import Objectives from './Objectives';
 
 export {
   Hero,
@@ -20,6 +22,8 @@ export {
   Me,
   Experience,
   Experience2,
+  Objectives,
+  Services,
   Explore,
   GetStarted,
   WhatsNew,

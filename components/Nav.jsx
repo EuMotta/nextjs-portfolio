@@ -25,6 +25,7 @@ const Nav = () => (
           className="bg-primary-black hover:bg-slate-600 hover:shadow-sm hover:shadow-slate-700 transition-all hover:scale-105 p-2 rounded-xl"
         >
           <Link href="#Hero">
+            <span className="animate-ping absolute inline-flex h-3 w-3 left-10 top-3 rounded-full bg-sky-400 opacity-75" />
             <AiOutlineHome className="active-icon" />
           </Link>
         </motion.li>
