@@ -1,3 +1,8 @@
+import {
+  IoCheckmarkCircleSharp,
+  IoCheckmarkCircleOutline,
+} from 'react-icons/io5';
+
 export const exploreWorlds = [
   {
     id: 'world-1',
@@ -84,5 +89,51 @@ export const socials = [
   {
     name: 'facebook',
     url: '/facebook.svg',
+  },
+];
+
+export const personalInformation = [
+  { label: 'Birthday', value: '5 Nov 1999' },
+  { label: 'Website', value: 'https://www.example.com' },
+  { label: 'Country/State', value: 'Brazil / São Paulo' },
+  { label: 'City', value: 'Guaratinguetá' },
+];
+export const contactInformation = [
+  { label: 'Age', value: '23' },
+  { label: 'Email', value: 'motta@example.com' },
+  { label: 'Phone', value: '+55 (99)99999 9999' },
+  { label: 'Freelancer', value: 'Yes!' },
+];
+
+export const links = [
+  {
+    label: 'Aperfeiçoamento',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Focar em aprender novas tecnologias e aperfeiçoar suas habilidades atuais.',
+  },
+  {
+    label: 'Impacto',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Encontrar projetos que tenham um significado pessoal para você e que possam ter um impacto positivo na comunidade.',
+  },
+  {
+    label: 'Carreira',
+    icon: IoCheckmarkCircleOutline,
+    description:
+      'Desenvolver uma base sólida de conhecimentos e habilidades e estabelecer uma carreira bem-sucedida como programador.',
+  },
+  {
+    label: 'Colaboração',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Trabalhar em equipe com outros programadores pode ser uma ótima maneira de aprender e crescer em sua carreira.',
+  },
+  {
+    label: 'Ensino',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Compartilhar meus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
   },
 ];

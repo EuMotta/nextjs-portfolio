@@ -1,45 +1,11 @@
 'use client';
 
-import {
-  IoCheckmarkCircleSharp,
-  IoCheckmarkCircleOutline,
-} from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import { IoCheckmarkCircleSharp } from 'react-icons/io5';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
+import { links } from '../constants';
 
-const links = [
-  {
-    label: 'Aperfeiçoamento',
-    icon: IoCheckmarkCircleSharp,
-    description:
-      'Focar em aprender novas tecnologias e aperfeiçoar suas habilidades atuais.',
-  },
-  {
-    label: 'Impacto',
-    icon: IoCheckmarkCircleSharp,
-    description:
-      'Encontrar projetos que tenham um significado pessoal para você e que possam ter um impacto positivo na comunidade.',
-  },
-  {
-    label: 'Carreira',
-    icon: IoCheckmarkCircleOutline,
-    description:
-      'Desenvolver uma base sólida de conhecimentos e habilidades e estabelecer uma carreira bem-sucedida como programador.',
-  },
-  {
-    label: 'Colaboração',
-    icon: IoCheckmarkCircleSharp,
-    description:
-      'Trabalhar em equipe com outros programadores pode ser uma ótima maneira de aprender e crescer em sua carreira.',
-  },
-  {
-    label: 'Ensino',
-    icon: IoCheckmarkCircleSharp,
-    description:
-      'Compartilhar meus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
-  },
-];
 const Objectives = () => (
   <section className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
     <motion.div

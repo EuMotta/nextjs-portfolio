@@ -4,20 +4,7 @@ import { motion } from 'framer-motion';
 import { TypingText } from '../components';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
-
-const personalInformation = [
-  { label: 'Birthday', value: '5 Nov 1999' },
-  { label: 'Website', value: 'https://www.example.com' },
-  { label: 'Country/State', value: 'Brazil / São Paulo' },
-  { label: 'City', value: 'Guaratinguetá' },
-];
-
-const contactInformation = [
-  { label: 'Age', value: '23' },
-  { label: 'Email', value: 'motta@example.com' },
-  { label: 'Phone', value: '+55 (99)99999 9999' },
-  { label: 'Freelancer', value: 'Yes!' },
-];
+import { personalInformation, contactInformation } from '../constants';
 
 /* const languages = [
   { label: 'HTML', value: 45 },
