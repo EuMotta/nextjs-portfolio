@@ -2,42 +2,28 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { slideIn } from '../utils/motion';
+import { navbarItems } from '../constants';
 
 const Nav = () => (
   <motion.div
     variants={slideIn('left', 'tween', 0.5, 1)}
     initial="hidden"
     whileInView="show"
-    className="p-2 z-30 fixed shadow-sm shadow-slate-500 bg-slate-800 left-[20px] rounded-xl"
+    className="p-2 z-30 fixed shadow-sm shadow-slate-900 bg-slate-900 rounded-lg left-[10px] "
   >
-    <div>
-      <motion.ul
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className="flex flex-col text-3xl text-[rgb(233, 243, 252)] text-secondary-white justify-between gap-y-4"
-      >
-        <motion.li
-          variants={textVariant(0.75)}
-          className="bg-primary-black hover:bg-slate-600 hover:shadow-sm hover:shadow-slate-700 transition-all hover:scale-105 p-2 rounded-xl"
-        >
-          <Link href="#Hero">
-            <span className="animate-ping absolute inline-flex h-3 w-3 left-10 top-3 rounded-full bg-sky-400 opacity-75" />
-            <AiOutlineHome className="active-icon" />
+    <div className="flex flex-col gap-6">
+      {navbarItems.map((item) => (
+        <div>
+          <Link href={item.href}>
+            <div className=" bg-slate-800 rounded-full hover:bg-slate-900 text-secondary-white hover:text-white hover:shadow-md hover:shadow-black transition-all p-2 shadow-sm shadow-slate-900">
+              <div className={`text-${item.icon}-500 text-3xl `} title={`${item.title}`}>
+                <item.icon />
+              </div>
+            </div>
           </Link>
-        </motion.li>
-        <motion.li
-          variants={textVariant(0.25)}
-          className="bg-primary-black hover:bg-slate-600 hover:shadow-sm hover:shadow-slate-700 transition-all hover:scale-105 p-2 rounded-xl"
-        >
-          <Link href="/">
-            <AiOutlineUser className="icon" />
-          </Link>
-        </motion.li>
-      </motion.ul>
+        </div>
+      ))}
     </div>
   </motion.div>
 );

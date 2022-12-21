@@ -2,6 +2,7 @@ import {
   IoCheckmarkCircleSharp,
   IoCheckmarkCircleOutline,
 } from 'react-icons/io5';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 
 export const exploreWorlds = [
   {
@@ -135,5 +136,18 @@ export const links = [
     icon: IoCheckmarkCircleSharp,
     description:
       'Compartilhar meus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
+  },
+];
+
+export const navbarItems = [
+  {
+    icon: AiOutlineHome,
+    href: '/',
+    title: 'Inicio',
+  },
+  {
+    icon: AiOutlineUser,
+    href: '/',
+    title: 'Sobre Mim',
   },
 ];
