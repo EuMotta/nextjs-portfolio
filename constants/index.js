@@ -188,21 +188,25 @@ export const feedbacks = {
       name: 'Caio Abreu',
       image: Me,
       message: 'Excelente trabalho no novo recurso! A implementação ficou muito clara e fácil de entender.',
+      fadeIn: 'up',
     },
     {
       name: 'Gabriel Augusto',
       image: Me,
       message: 'Obrigado por sua dedicação em corrigir o bug na função de login. Agora o sistema está rodando sem problemas.',
+      fadeIn: 'down',
     },
     {
       name: 'Pedro Paulo',
       image: Me,
       message: 'Gostaria de expressar minha gratidão pelo seu trabalho na melhoria da performance do aplicativo.',
+      fadeIn: 'up',
     },
     {
       name: 'José Antonio',
       image: Me,
       message: 'Gostaria de expressar minha gratidão pelo seu trabalho na melhoria da performance.',
+      fadeIn: 'down',
     },
   ],
 };

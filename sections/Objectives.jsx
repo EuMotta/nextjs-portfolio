@@ -13,7 +13,7 @@ const Objectives = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="grid grid-cols-5"
+      className="grid grid-cols-5 "
     >
       <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2">
         <div className="flex flex-col items-center text-white">

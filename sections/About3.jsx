@@ -14,13 +14,13 @@ const About2 = () => (
     >
       <motion.p
         variants={fadeIn('right', 'tween', 0, 1)}
-        className={`${styles.xPaddings} mt-2 flex font-normal sm:text-2xl text-xl text-center text-secoundary-white`}
+        className={`${styles.xPaddings} mt-2 flex font-normal text-center text-secoundary-white`}
       >
-        <span className="w-2/4 font-extrabold text-white">
+        <span className="w-2/4 md:text-xl sm:text-md font-extrabold text-white">
           Apaixonado por criar soluções
         </span>
-        <span className="w-3/4 text-gray-400 text-justify">
-          <span className="flex text-white mb-2">
+        <span className="w-3/4 md:text-md text-gray-400 text-justify">
+          <span className="flex md:!text-xl sm:!text-md text-white mb-2">
             Pronto para evoluir e encarar novos desafios
           </span>
           Programar é minha paixão e meu hobby. Desde cedo, a informática sempre
