@@ -35,7 +35,7 @@ const links = [
     label: 'Ensino',
     icon: IoCheckmarkCircleSharp,
     description:
-      'Compartilhar seus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
+      'Compartilhar meus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
   },
 ];
 const Objectives = () => (
@@ -43,7 +43,7 @@ const Objectives = () => (
     <div className="grid grid-cols-5">
       <div className="col-span-2">
         <div className="flex flex-col items-center text-white">
-          <div className="bg-slate-800 rounded-xl  w-96">
+          <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900 w-96">
             <div className=" p-5">
               <h1>Meus Objetivos</h1>
             </div>
@@ -75,7 +75,7 @@ const Objectives = () => (
       </div>
       <div className="col-span-3">
         <div className="flex flex-col items-center text-white">
-          <div className="bg-slate-800 rounded-xl  w-[90%] mr-4">
+          <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900  w-[90%] mr-4">
             <div className=" p-5">
               <h1>Descrição</h1>
             </div>
