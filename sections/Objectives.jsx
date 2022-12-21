@@ -23,8 +23,8 @@ const Objectives = () => (
             </div>
             <nav>
               {links.map((link, index) => (
-                <div className="flex flex-col my-5">
-                  <div key={link.label} href={link.href}>
+                <div className="flex flex-col my-5" key={link.id}>
+                  <div href={link.href}>
                     <div className="border-b-2 border-slate-900">
                       <div className="mx-5 flex items-center justify-between">
                         <div className="">{`${index + 1}`}.</div>
@@ -58,8 +58,8 @@ const Objectives = () => (
             </div>
             <nav>
               {links.map((link, index) => (
-                <div className="flex flex-col my-5">
-                  <div key={link.label} href={link.href}>
+                <div className="flex flex-col my-5" key={link.id}>
+                  <div href={link.href}>
                     <div className="border-b-2 border-slate-900">
                       <div className="mx-5 flex items-center gap-x-5">
                         <div className="">{`${index + 1}`}.</div>

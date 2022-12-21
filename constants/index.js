@@ -113,30 +113,35 @@ export const contactInformation = [
 export const links = [
   {
     label: 'Aperfeiçoamento',
+    id: 'item-1',
     icon: IoCheckmarkCircleSharp,
     description:
-      'Focar em aprender novas tecnologias e aperfeiçoar suas habilidades atuais.',
+      'Focar em aprender novas tecnologias e aperfeiçoar minhas habilidades atuais.',
   },
   {
     label: 'Impacto',
+    id: 'item-2',
     icon: IoCheckmarkCircleSharp,
     description:
       'Encontrar projetos que tenham um significado pessoal para você e que possam ter um impacto positivo na comunidade.',
   },
   {
     label: 'Carreira',
+    id: 'item-3',
     icon: IoCheckmarkCircleOutline,
     description:
       'Desenvolver uma base sólida de conhecimentos e habilidades e estabelecer uma carreira bem-sucedida como programador.',
   },
   {
     label: 'Colaboração',
+    id: 'item-4',
     icon: IoCheckmarkCircleSharp,
     description:
       'Trabalhar em equipe com outros programadores pode ser uma ótima maneira de aprender e crescer em sua carreira.',
   },
   {
     label: 'Ensino',
+    id: 'item-5',
     icon: IoCheckmarkCircleSharp,
     description:
       'Compartilhar meus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
@@ -157,21 +162,21 @@ export const navbarItems = [
   {
     icon: AiOutlineUser,
     href: '#Me',
-    title: 'Sobre Mim',
+    title: 'Sobre Mim2',
   },
   {
     icon: HiInformationCircle,
     href: '#AboutMe',
-    title: 'Sobre Mim',
+    title: 'Sobre Mim3',
   },
   {
     icon: MdWork,
     href: '#CursesExp',
-    title: 'Sobre Mim',
+    title: 'Sobre Mim4',
   },
   {
     icon: VscChecklist,
     href: '#Objectives',
-    title: 'Sobre Mim',
+    title: 'Sobre Mim5',
   },
 ];

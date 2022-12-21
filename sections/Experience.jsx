@@ -37,16 +37,22 @@ const Experience = () => (
               className="grid grid-cols-2   gap-x-10"
             >
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
-                {personalInformation.map((info) => (
-                  <li className="flex font-mono gap-2 border-b-2 border-slate-500">
+                {personalInformation.map((info, index) => (
+                  <li
+                    className="flex font-mono gap-2 border-b-2 border-slate-500"
+                    key={index}
+                  >
                     <strong>{info.label}:</strong> {info.value}
                     <p>{info.description}</p>
                   </li>
                 ))}
               </div>
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
-                {contactInformation.map((info) => (
-                  <li className="flex font-mono gap-2 border-b-2 border-slate-500">
+                {contactInformation.map((info, index) => (
+                  <li
+                    className="flex font-mono gap-2 border-b-2 border-slate-500"
+                    key={index}
+                  >
                     <strong>{info.label}:</strong> {info.value}
                     <p>{info.description}</p>
                   </li>

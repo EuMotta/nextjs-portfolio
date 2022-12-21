@@ -14,7 +14,7 @@ const Nav = () => (
   >
     <div className="flex flex-col gap-6">
       {navbarItems.map((item) => (
-        <div>
+        <nav key={item.title}>
           <Link
             href={item.href}
             onClick={(e) => {
@@ -32,7 +32,7 @@ const Nav = () => (
               </div>
             </div>
           </Link>
-        </div>
+        </nav>
       ))}
     </div>
   </motion.div>

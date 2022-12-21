@@ -38,7 +38,7 @@ const Hero = () => (
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <a href className={`${styles.flexCenter} gap-x-4 mb-48 text-white text-4xl`}>
+        <div className={`${styles.flexCenter} gap-x-4 mb-48 text-white text-4xl`}>
           <motion.li variants={textVariant(2.0)}>
             <AiFillGithub title="GitHub" />
           </motion.li>
@@ -48,7 +48,7 @@ const Hero = () => (
           <motion.li variants={textVariant(2.4)}>
             <AiFillHtml5 title="Portfólio Html_5" />
           </motion.li>
-        </a>
+        </div>
       </motion.ul>
     </motion.div>
   </section>
