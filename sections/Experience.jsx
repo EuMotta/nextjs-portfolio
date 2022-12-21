@@ -18,6 +18,17 @@ const contactInformation = [
   { label: 'Phone', value: '+55 (99)99999 9999' },
   { label: 'Freelancer', value: 'Yes!' },
 ];
+
+/* const languages = [
+  { label: 'HTML', value: 45 },
+  { label: 'CSS', value: 51 },
+  { label: 'Javascript', value: 44 },
+  { label: 'Java', value: 35 },
+  { label: 'React', value: 55 },
+  { label: 'Nextjs', value: 30 },
+];
+console.log(languages); */
+
 const Experience = () => (
   <section className={`${styles.paddings} z-10`}>
     <div className="">
@@ -54,36 +65,32 @@ const Experience = () => (
                   </li>
                 ))}
               </div>
-              {/* <div className="col-span-1 text-sm  flex flex-col gap-y-10">
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Birthday:</strong>5 Nov 1999
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Website:</strong>unknown
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Country/State:</strong>Brazil/São Paulo
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>City:</strong>Guaratinguetá
-                </span>
-              </div>
-              <div className="col-span-1 text-sm flex flex-col gap-y-10">
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Age:</strong>23
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Email:</strong>mottaemail@example.com
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Phone:</strong>+55&nbsp;(99)&nbsp;99999-9999
-                </span>
-                <span className="flex font-mono gap-2 border-b-2 border-slate-500">
-                  <strong>Freelancer:</strong>Avaliable!
-                </span>
-              </div> */}
             </motion.div>
           </div>
+          {/* <div className="col-span-1 text-white flex justify-center">
+            <div className="grid grid-cols-2   gap-x-10">
+              <div className="col-span-1 text-sm flex flex-col gap-y-10">
+                {languages.map((language, index) => (
+                  <div className="flex-col gap-2 border-b-2 border-slate-500">
+                    <div>
+                      <strong>{language.label}:</strong>
+                    </div>
+                    <div className="w-72 bg-gray-200 rounded-full dark:bg-gray-700">
+                      <div
+                        className={`bg-${index % 2 === 0 ? 'orange' : 'blue'}-${
+                          index + 1
+                        }00 text-xs font-medium text-blue-100 text-center p-0.5 leading-none w-${
+                          language.value
+                        } rounded-full`}
+                      >
+                        {language.value}%
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div> */}
           <div className="col-span-1 text-white flex justify-center">
             <div className="grid grid-cols-2   gap-x-10">
               <div className="col-span-1 text-sm flex flex-col gap-y-10">
