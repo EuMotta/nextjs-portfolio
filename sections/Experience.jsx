@@ -5,6 +5,19 @@ import { TypingText } from '../components';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
 
+const personalInformation = [
+  { label: 'Birthday', value: '5 Nov 1999' },
+  { label: 'Website', value: 'https://www.example.com' },
+  { label: 'Country/State', value: 'Brazil / São Paulo' },
+  { label: 'City', value: 'Guaratinguetá' },
+];
+
+const contactInformation = [
+  { label: 'Age', value: '23' },
+  { label: 'Email', value: 'motta@example.com' },
+  { label: 'Phone', value: '+55 (99)99999 9999' },
+  { label: 'Freelancer', value: 'Yes!' },
+];
 const Experience = () => (
   <section className={`${styles.paddings} z-10`}>
     <div className="">
@@ -26,6 +39,22 @@ const Experience = () => (
               className="grid grid-cols-2   gap-x-10"
             >
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
+                {personalInformation.map((info) => (
+                  <li className="flex font-mono gap-2 border-b-2 border-slate-500">
+                    <strong>{info.label}:</strong> {info.value}
+                    <p>{info.description}</p>
+                  </li>
+                ))}
+              </div>
+              <div className="col-span-1 text-sm  flex flex-col gap-y-10">
+                {contactInformation.map((info) => (
+                  <li className="flex font-mono gap-2 border-b-2 border-slate-500">
+                    <strong>{info.label}:</strong> {info.value}
+                    <p>{info.description}</p>
+                  </li>
+                ))}
+              </div>
+              {/* <div className="col-span-1 text-sm  flex flex-col gap-y-10">
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Birthday:</strong>5 Nov 1999
                 </span>
@@ -52,7 +81,7 @@ const Experience = () => (
                 <span className="flex font-mono gap-2 border-b-2 border-slate-500">
                   <strong>Freelancer:</strong>Avaliable!
                 </span>
-              </div>
+              </div> */}
             </motion.div>
           </div>
           <div className="col-span-1 text-white flex justify-center">
