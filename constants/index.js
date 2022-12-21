@@ -7,6 +7,7 @@ import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
 import { MdWork } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
+import Me from '../public/Me.jpg';
 
 export const exploreWorlds = [
   {
@@ -180,3 +181,29 @@ export const navbarItems = [
     title: 'Sobre Mim5',
   },
 ];
+
+export const feedbacks = {
+  messages: [
+    {
+      name: 'Caio Abreu',
+      image: Me,
+      message: 'Excelente trabalho no novo recurso! A implementação ficou muito clara e fácil de entender.',
+    },
+    {
+      name: 'Gabriel Augusto',
+      image: Me,
+      message: 'Obrigado por sua dedicação em corrigir o bug na função de login. Agora o sistema está rodando sem problemas.',
+    },
+    {
+      name: 'Pedro Paulo',
+      image: Me,
+      message: 'Gostaria de expressar minha gratidão pelo seu trabalho na melhoria da performance do aplicativo.',
+    },
+    {
+      name: 'José Antonio',
+      image: Me,
+      message: 'Gostaria de expressar minha gratidão pelo seu trabalho na melhoria da performance.',
+    },
+  ],
+};
+

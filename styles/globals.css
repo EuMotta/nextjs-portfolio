@@ -116,3 +116,13 @@
 .navbar-closed{
   width: auto;
 }
+.lines-container::before,
+.lines-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+}

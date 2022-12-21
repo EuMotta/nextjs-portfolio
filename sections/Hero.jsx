@@ -29,7 +29,7 @@ const Hero = () => (
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="w-full bg-white h-2 mb-20" />
+        <div className="w[90%] mx-10 bg-white h-2 mb-20" />
       </motion.div>
       <motion.ul
         variants={staggerContainer}

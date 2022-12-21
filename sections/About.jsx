@@ -26,7 +26,7 @@ const About = () => (
         <span className="w-2/4 font-extrabold text-white">
           Experiência de vida:
         </span>
-        <span className="w-3/4 !text-gray-400 text-justify">
+        <span className="w-3/4 text-sm !text-gray-400 text-justify">
           <span className="flex text-white mb-2">
             Enfrentando desafios e me tornando mais forte
           </span>

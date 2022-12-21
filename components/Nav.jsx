@@ -7,7 +7,7 @@ import { navbarItems } from '../constants';
 
 const Nav = () => (
   <motion.div
-    variants={slideIn('left', 'tween', 0.5, 1)}
+    variants={slideIn('left', 'tween', 0.5, 2)}
     initial="hidden"
     whileInView="show"
     className="p-2 z-30 fixed shadow-sm shadow-slate-900 bg-slate-900 rounded-lg left-[10px] "
