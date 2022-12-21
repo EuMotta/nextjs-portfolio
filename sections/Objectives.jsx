@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import {
   IoCheckmarkCircleSharp,
   IoCheckmarkCircleOutline,
@@ -8,16 +7,41 @@ import {
 import styles from '../styles';
 
 const links = [
-  { label: 'Aperfeiçoamento', href: '/', icon: IoCheckmarkCircleSharp },
-  { label: 'Impacto', href: '/about', icon: IoCheckmarkCircleSharp },
-  { label: 'Carreira', href: '/contact', icon: IoCheckmarkCircleOutline },
-  { label: 'Colaboração', href: '/contact', icon: IoCheckmarkCircleSharp },
-  { label: 'Ensino', href: '/contact', icon: IoCheckmarkCircleSharp },
+  {
+    label: 'Aperfeiçoamento',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Focar em aprender novas tecnologias e aperfeiçoar suas habilidades atuais.',
+  },
+  {
+    label: 'Impacto',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Encontrar projetos que tenham um significado pessoal para você e que possam ter um impacto positivo na comunidade.',
+  },
+  {
+    label: 'Carreira',
+    icon: IoCheckmarkCircleOutline,
+    description:
+      'Desenvolver uma base sólida de conhecimentos e habilidades e estabelecer uma carreira bem-sucedida como programador.',
+  },
+  {
+    label: 'Colaboração',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Trabalhar em equipe com outros programadores pode ser uma ótima maneira de aprender e crescer em sua carreira.',
+  },
+  {
+    label: 'Ensino',
+    icon: IoCheckmarkCircleSharp,
+    description:
+      'Compartilhar seus conhecimentos e experiências com outras pessoas que estão interessadas em aprender a programar.',
+  },
 ];
 const Objectives = () => (
   <section className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
-    <div className="grid grid-cols-2">
-      <div className="col-span-1">
+    <div className="grid grid-cols-5">
+      <div className="col-span-2">
         <div className="flex flex-col items-center text-white">
           <div className="bg-slate-800 rounded-xl  w-96">
             <div className=" p-5">
@@ -26,17 +50,46 @@ const Objectives = () => (
             <nav>
               {links.map((link, index) => (
                 <div className="flex flex-col my-5">
-                  <Link key={link.label} href={link.href}>
+                  <div key={link.label} href={link.href}>
                     <div className="border-b-2 border-slate-900">
                       <div className="mx-5 flex items-center justify-between">
                         <div className="">{`${index + 1}`}.</div>
                         {` ${link.label}`}
-                        <div className={`${link.icon === IoCheckmarkCircleSharp ? 'text-green-600' : 'text-red-600'} text-3xl`}>
+                        <div
+                          className={`${
+                            link.icon === IoCheckmarkCircleSharp
+                              ? 'text-green-600'
+                              : 'text-red-600'
+                          } text-3xl`}
+                        >
                           <link.icon />
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
+                </div>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div className="col-span-3">
+        <div className="flex flex-col items-center text-white">
+          <div className="bg-slate-800 rounded-xl  w-[90%] mr-4">
+            <div className=" p-5">
+              <h1>Descrição</h1>
+            </div>
+            <nav>
+              {links.map((link, index) => (
+                <div className="flex flex-col my-5">
+                  <div key={link.label} href={link.href}>
+                    <div className="border-b-2 border-slate-900">
+                      <div className="mx-5 flex items-center gap-x-5">
+                        <div className="">{`${index + 1}`}.</div>
+                        <div className="font-mono">{` ${link.description}`}</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ))}
             </nav>
