@@ -7,7 +7,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { links } from '../constants';
 
 const Objectives = () => (
-  <section className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
+  <section id="Objectives" className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

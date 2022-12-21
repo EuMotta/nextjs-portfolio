@@ -8,6 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 const About = () => (
   <section className={`${styles.paddings} z-10`}>
     <motion.div
+      id="About"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -31,10 +32,13 @@ const About = () => (
           </span>
           Já passei por momentos difíceis que me deixaram no chão, mas consegui
           superá-los com determinação e força de vontade. Isso me deu muita
-          confiança e me inspirou a lutar pelos meus objetivos.<br /><br />Acredito que
-          essas dificuldades superadas me tornam mais forte e experiente para
-          qualquer oportunidade de trabalho. Estou pronto para enfrentar novos
-          desafios e continuar crescendo como pessoa e profissional.
+          confiança e me inspirou a lutar pelos meus objetivos.
+          <br />
+          <br />
+          Acredito que essas dificuldades superadas me tornam mais forte e
+          experiente para qualquer oportunidade de trabalho. Estou pronto para
+          enfrentar novos desafios e continuar crescendo como pessoa e
+          profissional.
         </span>
       </motion.p>
     </motion.div>
