@@ -6,7 +6,7 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant, navVariants } from '../utils/motion';
 
 const Hero = () => (
-  <section id="Hero" className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
+  <section id="Hero" className={`${styles.paddings} sm:16 sm:pl-6 `}>
     <motion.nav
       variants={navVariants}
       initial="hidden"
