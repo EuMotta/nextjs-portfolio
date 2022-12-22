@@ -334,16 +334,17 @@ export const projects = [
   },
 ];
 export const skills = [
-  { name: 'HTML_5', percentage: 82, icon: AiFillHtml5, color: '#FF0000' },
-  { name: 'CSS_3', percentage: 85, icon: IoLogoCss3, color: '#007ACC' },
+  { name: 'HTML_5', percentage: 82, icon: AiFillHtml5, color: '#FF0000', fadeIn: 'right' },
+  { name: 'CSS_3', percentage: 85, icon: IoLogoCss3, color: '#007ACC', fadeIn: 'down' },
   {
     name: 'JAVASCRIPT',
     percentage: 66,
     icon: IoLogoJavascript,
     color: '#FFFF00',
+    fadeIn: 'down',
   },
-  { name: 'C#', percentage: 35, icon: SiCsharp, color: '#00FF00' },
-  { name: 'JAVA', percentage: 45, icon: SiJava, color: '#A52A2A' },
-  { name: 'REACT_JS', percentage: 60, icon: SiReact, color: '#6E24FF' },
-  { name: 'NEXT_JS', percentage: 62, icon: SiNextdotjs, color: '#512121' },
+  { name: 'C#', percentage: 35, icon: SiCsharp, color: '#00FF00', fadeIn: 'left' },
+  { name: 'JAVA', percentage: 45, icon: SiJava, color: '#A52A2A', fadeIn: 'up' },
+  { name: 'REACT_JS', percentage: 60, icon: SiReact, color: '#6E24FF', fadeIn: 'up' },
+  { name: 'NEXT_JS', percentage: 62, icon: SiNextdotjs, color: '#512121', fadeIn: 'up' },
 ];

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { TypingText } from '../components';
 import { skills } from '../constants';
 import styles from '../styles';
-import { staggerContainer } from '../utils/motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
 const Languages = () => (
   <section id="AboutMe" className={`${styles.paddings} relative z-10`}>
@@ -21,8 +21,9 @@ const Languages = () => (
       />
       <div className="flex flex-wrap justify-center">
         {skills.map((skill) => (
-          <div
+          <motion.div
             key={skill.name}
+            variants={fadeIn(`${skill.fadeIn}`, 'tween', 0, 2)}
             className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 bg-slate-900 rounded-lg shadow-lg"
           >
             <skill.icon
@@ -48,7 +49,7 @@ const Languages = () => (
                 {skill.percentage}%
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>
