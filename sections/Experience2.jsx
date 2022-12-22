@@ -18,7 +18,7 @@ const Experience = () => (
       >
         <TypingText
           title="Cursos e Experiências"
-          textStyles="text-center text-secondary-white font-bold p-10 mb-24 text-3xl"
+          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
         />
         <div className="grid grid-cols-2 ">
           <motion.div
@@ -27,7 +27,7 @@ const Experience = () => (
           >
             <TypingText
               title="Cursos e formações"
-              textStyles="text-center text-secondary-white font-bold mb-5 text-3xl"
+              textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
             />
             <div className="bg-slate-800 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full   border-l-2 flex flex-col border-orange-600 z-10">
@@ -82,7 +82,7 @@ const Experience = () => (
           >
             <TypingText
               title="Experiências"
-              textStyles="text-center text-secondary-white font-bold mb-5 text-3xl"
+              textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
             />
             <div className="bg-slate-800 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full   border-l-2 flex flex-col border-orange-600 z-10">

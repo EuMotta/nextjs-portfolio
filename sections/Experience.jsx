@@ -28,7 +28,7 @@ const Experience = () => (
       >
         <TypingText
           title="Contato e linguagens"
-          textStyles="text-center text-secondary-white font-bold p-10 mb-24 text-3xl"
+          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
         />
         <div className="grid grid-cols-2  ">
           <div className="col-span-1  text-white flex justify-center">

@@ -12,7 +12,7 @@ const Feedback = () => (
     <motion.div variants={staggerContainer} initial="hidden" whileInView="show">
       <TypingText
         title="Feedbacks"
-        textStyles="text-center text-secondary-white font-bold p-10 mb-5 text-3xl"
+        textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-5 text-3xl"
       />
       <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 md:gap-y-5 gap-x-5 ">
         {feedbacks.messages.map((messages, index) => (

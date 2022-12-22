@@ -29,7 +29,7 @@ const Hero = () => (
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="w[90%] mx-10 bg-white h-2 mb-20" />
+        <div className="w[90%] mx-10 bg-slate-700 dark:bg-white h-2 mb-20" />
       </motion.div>
       <motion.ul
         variants={staggerContainer}
@@ -38,7 +38,7 @@ const Hero = () => (
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <div className={`${styles.flexCenter} gap-x-4 mb-48 text-white text-4xl`}>
+        <div className={`${styles.flexCenter} gap-x-4 mb-48 text-slate-900 dark:text-white text-4xl`}>
           <motion.li variants={textVariant(2.0)}>
             <AiFillGithub title="GitHub" />
           </motion.li>

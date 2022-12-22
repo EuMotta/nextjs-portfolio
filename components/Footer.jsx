@@ -8,8 +8,8 @@ const Footer = () => (
   <footer className="bg-white dark:bg-gray-900">
     <div className="grid grid-cols-5 gap-8 py-5 px-5 md:grid-cols-5 ml-10">
       <div className="col-span-3">
-        <div className="bg-slate-800 rounded-xl p-5 text-white text-sm font-mono">
-          <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+        <div className="shadow-secondary-white shadow-md dark:bg-slate-800 rounded-xl p-5 text-slate-900 dark:text-white text-sm font-mono">
+          <h2 className="mb-6 text-sm font-semibold text-slate-900 uppercase dark:text-white">
             About Me
           </h2>
           Sou um programador dedicado e focado em meus objetivos, sempre

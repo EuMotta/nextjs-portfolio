@@ -1,11 +1,10 @@
 'use client';
 
 import { ImSearch } from 'react-icons/im';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import Menu from '../public/menu.svg';
 
 const Navbar = () => (
   <motion.nav
@@ -19,15 +18,13 @@ const Navbar = () => (
     <div
       className={`${styles.innerWidth} mx-auto flex items-center justify-between gap-8`}
     >
-      <ImSearch className="text-white object-contain text-xl" />
-      <h2 className="font-extrabold text-white text-[24px] leading-[30px]">
+      <ImSearch className="text-slate-900 dark:text-white object-contain text-xl" />
+      <h2 className="font-extrabold text-slate-900 dark:text-white text-[24px] leading-[30px]">
         Seja bem-vindo!
       </h2>
-      <Image
-        src={Menu}
-        alt="menu"
-        className="w-[24px] h-[24px] object-contain"
-      />
+      <div className="text-3xl text-slate-900 dark:text-white">
+        <AiOutlineMenuUnfold />
+      </div>
     </div>
   </motion.nav>
 );

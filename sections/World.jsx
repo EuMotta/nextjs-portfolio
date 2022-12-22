@@ -21,12 +21,12 @@ const World = () => (
     >
       <TypingText
         title="Desenvolvimento de aplicativos para uso global"
-        textStyles="text-center w-full text-secondary-white font-bold  text-3xl"
+        textStyles="text-center w-full text-slate-700 dark:text-secondary-white font-bold  text-3xl"
       />
       <TitleText title={<span>Destaque-se</span>} textStyles="text-center " />
       <motion.div
         variants={fadeIn('up', 'tween', 0, 1)}
-        className="relative flex w-full h-[550px]"
+        className="relative flex w-full bg-slate-900 rounded-xl shadow-md shadow-slate-900 p-5 h-[550px]"
       >
         <Image
           src={map}

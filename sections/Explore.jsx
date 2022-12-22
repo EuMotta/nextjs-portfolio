@@ -20,12 +20,12 @@ const Explore = () => {
       >
         <TypingText
           title="O universo da programação"
-          textStyles="text-center text-3xl"
+          textStyles="text-center text-slate-700 dark:text-secondary-white text-3xl"
         />
         <TitleText
           title={(
             <>
-              Escolha o mundo que você quer <br className="md:block hidden" />
+              Escolha o mundo que você quer <br className="md:block  hidden" />
               Explorar
             </>
           )}
