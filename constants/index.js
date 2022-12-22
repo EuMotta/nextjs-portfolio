@@ -7,6 +7,7 @@ import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
 import { MdWork } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
+import { RiCodeSSlashFill } from 'react-icons/ri';
 import Me from '../public/Me.jpg';
 
 export const exploreWorlds = [
@@ -34,6 +35,29 @@ export const exploreWorlds = [
     id: 'world-5',
     imgUrl: '/planet-05.png',
     title: 'Hawkins Labs',
+  },
+];
+export const AboutSection = [
+  {
+    id: 'about-1',
+    title: 'Experiência de vida:',
+    subtitle: ' Enfrentando desafios e me tornando mais forte',
+    description: ' Já passei por momentos difíceis que me deixaram no chão, mas consegui superáloscom determinação e força de vontade. Isso me deu muita confiança e me inspirou a lutar pelos meus objetivos. Acredito que essas dificuldades superadas me tornam mais forte e experiente para qualquer oportunidade de trabalho.Estou pronto para enfrentar novos desafios e continuar crescendo como pessoa e profissional.',
+    fadeIn: 'left',
+  },
+  {
+    id: 'about-1',
+    title: 'Procurando novos desafios:',
+    subtitle: 'Determinado e comprometido com a excelência',
+    description: 'Sempre dei o meu melhor para alcançar meus objetivos e acredito que, com determinação e esforço, é possível superar qualquer obstáculo. Na programação, trabalho com afinco para atingir esses objetivos e me sinto realizado quando consigo atingir os resultados esperados. Além disso, busco me atualizar constantemente e estou sempre pronto para enfrentar novos desafios. Sou um profissional comprometido e dedicado, que busca sempre se superar e atingir seus objetivos.',
+    fadeIn: 'right',
+  },
+  {
+    id: 'about-1',
+    title: ' Apaixonado por criar soluções',
+    subtitle: 'Pronto para evoluir e encarar novos desafios',
+    description: 'Programar é minha paixão e meu hobby. Desde cedo, a informática sempre esteve presente em minha vida e, quando descobri a programação, me apaixonei ainda mais por essa área. <br /> Cada linguagem trás um desafio diferente que tenho o prazer de enfrentar. Programar é muito mais do que um simples trabalho para mim e estou sempre pronto para enfrentar novos desafios e me desenvolver na minha carreira.',
+    fadeIn: 'left',
   },
 ];
 
@@ -98,19 +122,20 @@ export const socials = [
   },
 ];
 
-export const personalInformation = [
-  { label: 'Birthday', value: '5 Nov 1999' },
-  { label: 'Website', value: 'https://www.example.com' },
-  { label: 'Country/State', value: 'Brazil / São Paulo' },
-  { label: 'City', value: 'Guaratinguetá' },
-];
-export const contactInformation = [
-  { label: 'Age', value: '23' },
-  { label: 'Email', value: 'motta@example.com' },
-  { label: 'Phone', value: '+55 (99)99999 9999' },
-  { label: 'Freelancer', value: 'Yes!' },
-];
-
+export const personalInformation = {
+  personalInformation: [
+    { label: 'Birthday', value: '5 Nov 1999' },
+    { label: 'Website', value: 'https://www.example.com' },
+    { label: 'Country/State', value: 'Brazil / São Paulo' },
+    { label: 'City', value: 'Guaratinguetá' },
+  ],
+  contactInformation: [
+    { label: 'Age', value: '23' },
+    { label: 'Email', value: 'motta@example.com' },
+    { label: 'Phone', value: '+55 (99)99999 9999' },
+    { label: 'Freelancer', value: 'Yes!' },
+  ],
+};
 export const links = [
   {
     label: 'Aperfeiçoamento',
@@ -211,3 +236,33 @@ export const feedbacks = {
   ],
 };
 
+export const services = [
+  {
+    id: 'service-1',
+    icon: RiCodeSSlashFill,
+    name: 'Desenvolvedor Web',
+    description: 'Desenvolvedor Web',
+    fadeIn: 'down',
+  },
+  {
+    id: 'service-2',
+    icon: RiCodeSSlashFill,
+    name: 'Desenvolvedor Web',
+    description: 'Desenvolvedor Web',
+    fadeIn: 'up',
+  },
+  {
+    id: 'service-3',
+    icon: RiCodeSSlashFill,
+    name: 'Desenvolvedor Web',
+    description: 'Desenvolvedor Web',
+    fadeIn: 'down',
+  },
+  {
+    id: 'service-4',
+    icon: RiCodeSSlashFill,
+    name: 'Desenvolvedor Web',
+    description: 'Desenvolvedor Web',
+    fadeIn: 'up',
+  },
+];

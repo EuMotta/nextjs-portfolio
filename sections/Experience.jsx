@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { TypingText } from '../components';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
-import { personalInformation, contactInformation } from '../constants';
+import { personalInformation } from '../constants';
 
 /* const languages = [
   { label: 'HTML', value: 45 },
@@ -37,7 +37,7 @@ const Experience = () => (
               className="grid grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-3  gap-x-5"
             >
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
-                {personalInformation.map((info, index) => (
+                {personalInformation.personalInformation.map((info, index) => (
                   <li
                     className="flex font-mono gap-2 border-b-2 border-slate-500"
                     key={index}
@@ -48,7 +48,7 @@ const Experience = () => (
                 ))}
               </div>
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
-                {contactInformation.map((info, index) => (
+                {personalInformation.contactInformation.map((info, index) => (
                   <li
                     className="flex font-mono gap-2 border-b-2 border-slate-500"
                     key={index}

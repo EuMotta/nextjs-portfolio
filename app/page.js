@@ -1,14 +1,12 @@
 import { Footer, Nav, Navbar } from '../components';
-import { About, About2, About3, Experience, Experience2, Explore, Feedback, GetStarted, Hero, Insights, Me, Objectives, Services, WhatsNew, World } from '../sections';
+import { About, Experience, Experience2, Explore, Feedback, GetStarted, Hero, Insights, Me, Objectives, Services, WhatsNew, World } from '../sections';
 
 const Page = () => (
-  <div className="bg-gradient-to-b from-slate-900 to-[#1a1f25] overflow-hidden">
+  <div className="bg-gradient-to-b from-slate-900 to-[#0d0f13] overflow-hidden">
     <Navbar />
     <Nav />
     <Hero />
     <About />
-    <About2 />
-    <About3 />
     <Me />
     <Experience />
     <Experience2 />

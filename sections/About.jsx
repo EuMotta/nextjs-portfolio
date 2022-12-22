@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { TypingText } from '../components/CustomTexts';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
+import { AboutSection } from '../constants';
 
 const About = () => (
   <section className={`${styles.paddings} z-10`}>
@@ -13,34 +14,37 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
+      className="flex flex-col gap-y-28"
     >
       <TypingText
         title="Quem Sou eu?"
         textStyles="text-center text-secondary-white font-bold p-10 mb-24 text-5xl"
       />
-
-      <motion.p
-        variants={fadeIn('up', 'tween', 0, 1)}
-        className={`${styles.xPaddings} mt-2 flex font-normal text-center text-secoundary-white`}
-      >
-        <span className="w-2/4 md:text-xl sm:text-md font-extrabold text-white">
-          Experiência de vida:
-        </span>
-        <span className="w-3/4 md:text-md !text-gray-400 text-justify">
-          <span className="flex md:!text-xl sm:!text-md text-white mb-2">
-            Enfrentando desafios e me tornando mais forte
-          </span>
-          Já passei por momentos difíceis que me deixaram no chão, mas consegui
-          superá-los com determinação e força de vontade. Isso me deu muita
-          confiança e me inspirou a lutar pelos meus objetivos.
-          <br />
-          <br />
-          Acredito que essas dificuldades superadas me tornam mais forte e
-          experiente para qualquer oportunidade de trabalho. Estou pronto para
-          enfrentar novos desafios e continuar crescendo como pessoa e
-          profissional.
-        </span>
-      </motion.p>
+      {AboutSection.map((about) => (
+        <motion.div
+          id="About"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+        >
+          <motion.p
+            variants={fadeIn(`${about.fadeIn}`, 'tween', 0, 1)}
+            className={`${styles.xPaddings} mt-2 flex font-normal text-center text-secoundary-white`}
+            key={about.id}
+          >
+            <span className="w-2/4 md:text-xl sm:text-md font-extrabold text-white">
+              {about.title}
+            </span>
+            <span className="w-3/4 md:text-md !text-gray-400 text-justify">
+              <span className="flex md:!text-xl sm:!text-md text-white mb-2">
+                {about.subtitle}
+              </span>
+              {about.description}
+            </span>
+          </motion.p>
+        </motion.div>
+      ))}
     </motion.div>
   </section>
 );
