@@ -8,7 +8,7 @@ import styles from '../styles';
 import { projects } from '../constants';
 
 const Projects = () => (
-  <section className={`${styles.paddings} z-10`}>
+  <section id="Projects" className={`${styles.paddings} z-10`}>
     <div>
       <TypingText
         title="Projetos Desenvolvidos"

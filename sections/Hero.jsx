@@ -3,10 +3,26 @@
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from 'react-icons/ai';
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { slideIn, staggerContainer, textVariant, navVariants } from '../utils/motion';
 
 const Hero = () => (
   <section id="Hero" className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={`${styles.xPaddings} py-8  z-10 `}
+    >
+      <div className=" w-[50%] inset-0 gradient-01" />
+      <div
+        className={`${styles.innerWidth}  flex items-center justify-center gap-8 text-center`}
+      >
+        <h2 className="font-extrabold mx-auto text-slate-900 dark:text-white text-[24px] leading-[30px]">
+          Seja bem-vindo!
+        </h2>
+      </div>
+    </motion.nav>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -38,7 +54,9 @@ const Hero = () => (
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <div className={`${styles.flexCenter} gap-x-4 mb-48 text-slate-900 dark:text-white text-4xl`}>
+        <div
+          className={`${styles.flexCenter} gap-x-4 mb-48 text-slate-900 dark:text-white text-4xl`}
+        >
           <motion.li variants={textVariant(2.0)}>
             <AiFillGithub title="GitHub" />
           </motion.li>

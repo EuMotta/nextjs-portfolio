@@ -5,7 +5,7 @@ import {
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
-import { MdWork } from 'react-icons/md';
+import { MdDashboardCustomize, MdMiscellaneousServices, MdWork } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
 import { RiCodeSSlashFill } from 'react-icons/ri';
 import Me from '../public/Me.jpg';
@@ -210,6 +210,16 @@ export const navbarItems = [
     icon: VscChecklist,
     href: '#Objectives',
     title: 'Sobre Mim5',
+  },
+  {
+    icon: MdMiscellaneousServices,
+    href: '#Services',
+    title: 'Sobre Mim6',
+  },
+  {
+    icon: MdDashboardCustomize,
+    href: '#Projects',
+    title: 'Sobre Mim7',
   },
 ];
 

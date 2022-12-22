@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { services } from '../constants';
 
 const Services = () => (
-  <section className={`${styles.yPaddings} mx-24 sm:16 sm:pl-6`}>
+  <section id="Services" className={`${styles.yPaddings} mx-24 sm:16 sm:pl-6`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
