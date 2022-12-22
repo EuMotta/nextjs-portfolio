@@ -17,7 +17,7 @@ const Languages = () => (
     >
       <TypingText
         title="Informações complementares"
-        textStyles="text-center text-secondary-white font-bold p-10 mb-5 text-3xl"
+        textStyles="text-center text-slate-900 dark:text-secondary-white font-bold p-10 mb-5 text-3xl"
       />
       <div className="flex flex-wrap justify-center">
         {skills.map((skill) => (
