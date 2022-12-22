@@ -2,12 +2,19 @@ import {
   IoCheckmarkCircleSharp,
   IoCheckmarkCircleOutline,
 } from 'react-icons/io5';
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser, AiFillHtml5 } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
 import { MdDashboardCustomize, MdMiscellaneousServices, MdWork } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
 import { RiCodeSSlashFill } from 'react-icons/ri';
+import {
+  SiCsharp,
+  SiJava,
+  SiReact,
+  SiNextdotjs,
+} from 'react-icons/si';
+import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
 import Me from '../public/Me.jpg';
 import project01 from '../public/project01.jpg';
 import project02 from '../public/project02.jpg';
@@ -325,4 +332,18 @@ export const projects = [
     description: 'Criei um site de agendamento de serviços de beleza usando o Rails e o Ruby. O site permite que os usuários agendem serviços de beleza de sua escolha e gerenciem suas próprias reservas.',
     fadeIn: 'left',
   },
+];
+export const skills = [
+  { name: 'HTML_5', percentage: 82, icon: AiFillHtml5, color: '#FF0000' },
+  { name: 'CSS_3', percentage: 85, icon: IoLogoCss3, color: '#007ACC' },
+  {
+    name: 'JAVASCRIPT',
+    percentage: 66,
+    icon: IoLogoJavascript,
+    color: '#FFFF00',
+  },
+  { name: 'C#', percentage: 35, icon: SiCsharp, color: '#00FF00' },
+  { name: 'JAVA', percentage: 45, icon: SiJava, color: '#A52A2A' },
+  { name: 'REACT_JS', percentage: 60, icon: SiReact, color: '#6E24FF' },
+  { name: 'NEXT_JS', percentage: 62, icon: SiNextdotjs, color: '#512121' },
 ];

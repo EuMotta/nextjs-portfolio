@@ -24,17 +24,17 @@ const Experience = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=" "
+        className=" grid gap-y-5"
       >
         <TypingText
-          title="Contato e linguagens"
-          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
+          title="Informações pessoais"
+          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-6 text-3xl"
         />
-        <div className="grid grid-cols-2  ">
+        <div className="">
           <div className="col-span-1  text-white flex justify-center">
             <motion.div
               variants={fadeIn('right', 'tween', 0, 1)}
-              className="grid grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-3  gap-x-5"
+              className="grid grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-5  gap-x-5"
             >
               <div className="col-span-1 text-sm  flex flex-col gap-y-10">
                 {personalInformation.personalInformation.map((info, index) => (
@@ -60,32 +60,8 @@ const Experience = () => (
               </div>
             </motion.div>
           </div>
-          {/* <div className="col-span-1 text-white flex justify-center">
-            <div className="grid grid-cols-2   gap-x-10">
-              <div className="col-span-1 text-sm flex flex-col gap-y-10">
-                {languages.map((language, index) => (
-                  <div className="flex-col gap-2 border-b-2 border-slate-500">
-                    <div>
-                      <strong>{language.label}:</strong>
-                    </div>
-                    <div className="w-64 bg-gray-200 rounded-full dark:bg-gray-700">
-                      <div
-                        className={`bg-${index % 2 === 0 ? 'orange' : 'blue'}-${
-                          index + 1
-                        }00 text-xs font-medium text-blue-100 text-center p-0.5 leading-none w-${
-                          language.value
-                        } rounded-full`}
-                      >
-                        {language.value}%
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div> */}
           <div className="col-span-1 text-white flex justify-center">
-            <motion.div
+            {/* <motion.div
               variants={fadeIn('right', 'tween', 0, 2.5)}
               className="grid grid-cols-2  bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-2 gap-x-5"
             >
@@ -153,7 +129,7 @@ const Experience = () => (
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.div>

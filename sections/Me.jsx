@@ -63,7 +63,7 @@ const Me = () => (
             <div className="flex gap-3 items-center">
               <FaGlobeAsia className="text-indigo-600 text-3xl" />
               <p className="text-slate-900 dark:text-white font-mono text-lg">
-                Brasil, São Paulo, Guaratinguetá-SP
+                Brasil, São Paulo, Guaratinguetá
               </p>
             </div>
             <div className="flex gap-3 items-center">

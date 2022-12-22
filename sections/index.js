@@ -14,6 +14,7 @@ import Experience2 from './Experience2';
 import Services from './Services';
 import Objectives from './Objectives';
 import Projects from './Projects';
+import Languages from './Languages';
 
 export {
   Hero,
@@ -22,6 +23,7 @@ export {
   About3,
   Me,
   Experience,
+  Languages,
   Experience2,
   Objectives,
   Services,
