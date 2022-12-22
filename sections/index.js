@@ -13,6 +13,7 @@ import Feedback from './Feedback';
 import Experience2 from './Experience2';
 import Services from './Services';
 import Objectives from './Objectives';
+import Projects from './Projects';
 
 export {
   Hero,
@@ -24,6 +25,7 @@ export {
   Experience2,
   Objectives,
   Services,
+  Projects,
   Explore,
   GetStarted,
   WhatsNew,

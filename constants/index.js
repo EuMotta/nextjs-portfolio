@@ -9,6 +9,12 @@ import { MdWork } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
 import { RiCodeSSlashFill } from 'react-icons/ri';
 import Me from '../public/Me.jpg';
+import project01 from '../public/project01.jpg';
+import project02 from '../public/project02.jpg';
+import project03 from '../public/project03.jpg';
+import project04 from '../public/project04.jpg';
+import project05 from '../public/project05.jpg';
+import project06 from '../public/project06.jpg';
 
 export const exploreWorlds = [
   {
@@ -264,5 +270,43 @@ export const services = [
     name: 'Desenvolvedor Web',
     description: 'Desenvolvedor Web',
     fadeIn: 'up',
+  },
+];
+export const projects = [
+  {
+    id: 'project-01',
+    imgUrl: project01,
+    title: 'Site de empresa responsivo',
+    description: 'Desenvolvi um site de apresentação de empresa responsivo usando React e Next.js. O site apresenta os produtos e serviços da empresa de maneira atraente e é otimizado para dispositivos móveis.',
+  },
+  {
+    id: 'project-02',
+    imgUrl: project02,
+    title: 'Blog pessoal',
+    description: 'Criei um blog pessoal usando o Next.js e HTML. O blog possui uma interface de usuário amigável e é fácil de atualizar com novos conteúdos.',
+  },
+  {
+    id: 'project-03',
+    imgUrl: project03,
+    title: 'Site de notícias',
+    description: 'Desenvolvi um site de notícias usando o React e o Next.js. O site apresenta as últimas notícias de diversas fontes e permite que os usuários pesquisem por assuntos específicos.',
+  },
+  {
+    id: 'project-04',
+    imgUrl: project04,
+    title: 'Site de reservas de hotéis',
+    description: 'Criei um site de reservas de hotéis usando o React e o Next.js. O site permite que os usuários pesquisem e reservem quartos em hotéis de todo o mundo, além de gerenciar suas próprias reservas.',
+  },
+  {
+    id: 'project-05',
+    imgUrl: project05,
+    title: 'Site de comparação de preços',
+    description: 'Desenvolvi um site de comparação de preços usando Next.js. O site permite que os usuários pesquisem e comparem preços de produtos de diversas lojas online.',
+  },
+  {
+    id: 'project-06',
+    imgUrl: project06,
+    title: 'Site de agendamento de serviços de beleza',
+    description: 'Criei um site de agendamento de serviços de beleza usando o Rails e o Ruby. O site permite que os usuários agendem serviços de beleza de sua escolha e gerenciem suas próprias reservas.',
   },
 ];
