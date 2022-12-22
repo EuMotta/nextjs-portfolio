@@ -52,14 +52,14 @@ export const AboutSection = [
     fadeIn: 'left',
   },
   {
-    id: 'about-1',
+    id: 'about-2',
     title: 'Procurando novos desafios:',
     subtitle: 'Determinado e comprometido com a excelência',
     description: 'Sempre dei o meu melhor para alcançar meus objetivos e acredito que, com determinação e esforço, é possível superar qualquer obstáculo. Na programação, trabalho com afinco para atingir esses objetivos e me sinto realizado quando consigo atingir os resultados esperados. Além disso, busco me atualizar constantemente e estou sempre pronto para enfrentar novos desafios. Sou um profissional comprometido e dedicado, que busca sempre se superar e atingir seus objetivos.',
     fadeIn: 'right',
   },
   {
-    id: 'about-1',
+    id: 'about-3',
     title: ' Apaixonado por criar soluções',
     subtitle: 'Pronto para evoluir e encarar novos desafios',
     description: 'Programar é minha paixão e meu hobby. Desde cedo, a informática sempre esteve presente em minha vida e, quando descobri a programação, me apaixonei ainda mais por essa área. <br /> Cada linguagem trás um desafio diferente que tenho o prazer de enfrentar. Programar é muito mais do que um simples trabalho para mim e estou sempre pronto para enfrentar novos desafios e me desenvolver na minha carreira.',

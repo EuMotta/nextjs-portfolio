@@ -27,11 +27,11 @@ const About = () => (
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
+          key={about.id}
         >
           <motion.p
             variants={fadeIn(`${about.fadeIn}`, 'tween', 0, 1)}
             className={`${styles.xPaddings} mt-2 flex font-normal text-center text-secoundary-white`}
-            key={about.id}
           >
             <span className="w-2/4 md:text-xl sm:text-md font-extrabold text-white">
               {about.title}

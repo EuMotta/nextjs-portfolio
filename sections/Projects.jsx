@@ -12,8 +12,8 @@ const Projects = () => (
         title="Projetos Desenvolvidos"
         textStyles="text-center text-secondary-white font-bold p-10 mb-24 text-3xl"
       />
-      <div className="grid gap-5 grid-cols-3">
-        {projects.map((project) => (
+      <div className="grid gap-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        {projects.map(project => (
           <div key={project.id} className="col-span-1">
             <div className="bg-slate-800 hover:-translate-y-3 transition-all flex flex-col justify-center rounded-xl shadow-lg shadow-slate-900 p-5">
               <div className="rounded-xl shadow-md  shadow-black overflow-hidden">
@@ -26,8 +26,8 @@ const Projects = () => (
                 />
               </div>
               <div className="text-center ">
-                <div className="text-xl py-2 text-secondary-white">
-                  {project.title}
+                <div className="text-xl h-14 grid items-center text-secondary-white">
+                  <div>{project.title}</div>
                 </div>
                 <div className="text-white font-mono h-28 overflow-scroll">
                   {project.description}
