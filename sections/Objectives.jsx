@@ -7,15 +7,15 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { links } from '../constants';
 
 const Objectives = () => (
-  <section id="Objectives" className={`${styles.yPaddings} sm:16 sm:pl-6 `}>
+  <section id="Objectives" className={`${styles.paddings} sm:16 sm:pl-6 `}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="grid grid-cols-5 "
+      className="lg:grid lg:grid-cols-5 "
     >
-      <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2">
+      <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2 mb-10 lg:mb-0">
         <div className="flex flex-col items-center text-white">
           <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900 w-96">
             <div className=" p-5">

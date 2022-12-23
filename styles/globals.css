@@ -32,6 +32,9 @@
       #243635 53.65%,
       #03031e 100%);
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 .gradient-02 {
   position: absolute;

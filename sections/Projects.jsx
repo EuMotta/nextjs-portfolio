@@ -19,7 +19,7 @@ const Projects = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="grid gap-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1"
+        className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1"
       >
         {projects.map((project) => (
           <motion.div
@@ -28,20 +28,21 @@ const Projects = () => (
             className="col-span-1"
           >
             <div className="bg-slate-800 hover:-translate-y-3 transition-all flex flex-col justify-center rounded-xl shadow-lg shadow-slate-900 p-5">
-              <div className="rounded-xl shadow-md  shadow-black overflow-hidden">
+              <a href={project.link} target="blank" className="rounded-xl shadow-md  shadow-black overflow-hidden">
                 <Image
                   src={project.imgUrl}
                   width={800}
                   height={600}
                   alt="Projetos desenvolvidos"
                   className=" rounded-xl hover:scale-105 transition-all"
+                  unoptimized
                 />
-              </div>
+              </a>
               <div className="text-center ">
                 <div className="text-xl h-14 grid items-center text-secondary-white">
                   <div>{project.title}</div>
                 </div>
-                <div className="text-white font-mono h-28 overflow-scroll">
+                <div className="text-white shadow-sm shadow-slate-900 font-mono h-28 overflow-scroll">
                   {project.description}
                 </div>
               </div>

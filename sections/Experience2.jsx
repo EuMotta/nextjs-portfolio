@@ -20,17 +20,17 @@ const Experience = () => (
           title="Cursos e Experiências"
           textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
         />
-        <div className="grid grid-cols-2 ">
+        <div className="grid lg:grid-cols-2 ">
           <motion.div
             variants={fadeIn('right', 'tween', 0, 1.5)}
-            className="col-span-1 ml-20   text-white flex flex-col justify-center"
+            className="col-span-1 lg:ml-20   text-white flex flex-col justify-center"
           >
             <TypingText
               title="Cursos e formações"
               textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
             />
             <div className="bg-slate-800 p-5 rounded-xl shadow-lg shadow-slate-900">
-              <div className="w-full   border-l-2 flex flex-col border-orange-600 z-10">
+              <div className="w-full border-l-2 flex flex-col border-orange-600 z-10">
                 <div>
                   <span>
                     <AiTwotoneRightCircle className="relative right-[9px] top-5 text-orange-600 z-30" />
@@ -78,7 +78,7 @@ const Experience = () => (
           </motion.div>
           <motion.div
             variants={fadeIn('left', 'tween', 0, 1.5)}
-            className="col-span-1 ml-20   text-white flex flex-col justify-center"
+            className="col-span-1 lg:ml-20   text-white flex flex-col justify-center"
           >
             <TypingText
               title="Experiências"

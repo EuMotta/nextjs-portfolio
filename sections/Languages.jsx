@@ -24,7 +24,7 @@ const Languages = () => (
           <motion.div
             key={skill.name}
             variants={fadeIn(`${skill.fadeIn}`, 'tween', 0, 2)}
-            className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 bg-slate-900 rounded-lg shadow-lg"
+            className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 bg-slate-800 rounded-lg shadow-lg"
           >
             <skill.icon
               className="text-5xl text-center w-full"

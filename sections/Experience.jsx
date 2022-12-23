@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { FaCrown } from 'react-icons/fa';
 import { TypingText } from '../components';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
 import { personalInformation } from '../constants';
-
 /* const languages = [
   { label: 'HTML', value: 45 },
   { label: 'CSS', value: 51 },
@@ -31,12 +31,17 @@ const Experience = () => (
           textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-6 text-3xl"
         />
         <div className="">
+          <motion.div variants={fadeIn('right', 'tween', 0, 1)} className="flex justify-center">
+            <div className="p-3 mb-2 bg-slate-200 rounded-full shadow-sm dark:shadow-slate-500 shadow-slate-800">
+              <FaCrown className="text-6xl text-yellow-400" />
+            </div>
+          </motion.div>
           <div className="col-span-1  text-white flex justify-center">
             <motion.div
               variants={fadeIn('right', 'tween', 0, 1)}
-              className="grid grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-5  gap-x-5"
+              className="grid sm:gap-y-6 md:grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-10  gap-x-5"
             >
-              <div className="col-span-1 text-sm  flex flex-col gap-y-10">
+              <div className="col-span-1 text-lg  flex flex-col gap-y-10">
                 {personalInformation.personalInformation.map((info, index) => (
                   <li
                     className="flex font-mono gap-2 border-b-2 border-slate-500"
@@ -47,7 +52,7 @@ const Experience = () => (
                   </li>
                 ))}
               </div>
-              <div className="col-span-1 text-sm  flex flex-col gap-y-10">
+              <div className="col-span-1 text-lg  flex flex-col gap-y-10">
                 {personalInformation.contactInformation.map((info, index) => (
                   <li
                     className="flex font-mono gap-2 border-b-2 border-slate-500"

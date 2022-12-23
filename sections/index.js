@@ -15,10 +15,12 @@ import Services from './Services';
 import Objectives from './Objectives';
 import Projects from './Projects';
 import Languages from './Languages';
+import AboutTest from './AboutTest';
 
 export {
   Hero,
   About,
+  AboutTest,
   About2,
   About3,
   Me,

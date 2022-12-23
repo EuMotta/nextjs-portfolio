@@ -16,7 +16,7 @@ import {
 } from 'react-icons/si';
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
 import Me from '../public/Me.jpg';
-import project01 from '../public/project01.jpg';
+import project01 from '../public/nfTrade.png';
 import project02 from '../public/project02.jpg';
 import project03 from '../public/project03.jpg';
 import project04 from '../public/project04.jpg';
@@ -300,8 +300,9 @@ export const projects = [
   {
     id: 'project-01',
     imgUrl: project01,
-    title: 'Site de empresa responsivo',
-    description: 'Desenvolvi um site de apresentação de empresa responsivo usando React e Next.js. O site apresenta os produtos e serviços da empresa de maneira atraente e é otimizado para dispositivos móveis.',
+    link: 'https://e-commerce-next-js-fullstack.vercel.app/',
+    title: 'nfTrade',
+    description: '"nfTrade" é um e-commerce de NFT, uma plataforma para comprar e vender tokens NFT únicos e valiosos. Os usuários podem adquirir tokens com moedas virtuais ou dinheiro real e armazená-los em carteiras virtuais.',
     fadeIn: 'right',
   },
   {

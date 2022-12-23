@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FiSearch } from 'react-icons/fi';
+import { FiLogIn, FiSearch } from 'react-icons/fi';
 import { slideIn } from '../utils/motion';
 import { navbarItems } from '../constants';
 
@@ -19,6 +19,12 @@ const Nav = () => (
         className=" cursor-pointer rounded-md text-xl flex justify-center text-secondary-white hover:text-white hover:shadow-md transition-all p-2"
       >
         <FiSearch />
+      </div>
+      <div
+        title="Pesquisar"
+        className=" cursor-pointer rounded-md text-xl flex justify-center text-secondary-white hover:text-white hover:shadow-md transition-all p-2"
+      >
+        <FiLogIn />
       </div>
       {navbarItems.map((item) => (
         <nav key={item.title}>
