@@ -73,7 +73,7 @@ export const AboutSection = [
     fadeIn: 'left',
   },
   {
-    id: 'about-3',
+    id: 'about-4',
     title: 'Transformando ideias em código:',
     subtitle: 'Desenvolvendo soluções inovadoras com paixão',
     description: 'Transformo ideias em código com paixão. Acredito que, com determinação e esforço, é possível superar qualquer obstáculo. Desde cedo, a informática sempre esteve presente em minha vida e, quando descobri a programação, me apaixonei ainda mais por essa área. Cada linguagem trás um desafio diferente que tenho o prazer de enfrentar. Programar é muito mais do que um simples trabalho para mim e estou sempre pronto para me desenvolver e enfrentar novos desafios na minha carreira.',
