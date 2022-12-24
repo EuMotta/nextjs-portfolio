@@ -101,10 +101,10 @@ const Me = () => (
                 textStyles="text-slate-700 dark:text-secondary-white font-bold my-2 text-xl"
               />
               <div className="flex gap-x-5 justify-center lg:justify-start text-5xl">
-                <Link href="/">
+                <Link target="blank" href="https://github.com/EuMotta">
                   <AiFillGithub className="text-slate-900 dark:text-white hover:text-slate-400 transition-all hover:scale-110" />
                 </Link>
-                <Link href="/">
+                <Link target="blank" href="https://www.instagram.com/callmotta/">
                   <AiFillInstagram className="text-slate-900 dark:text-white hover:text-orange-600 transition-all hover:scale-110" />
                 </Link>
                 <Link href="/">
