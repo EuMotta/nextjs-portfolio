@@ -57,7 +57,7 @@ const Me = () => (
               </motion.div>
             </motion.div>
           </motion.div>
-          <div className="text-white mt-5 text-center font-mono">
+          <div className="dark:text-white mt-5 text-center font-mono">
             Opa! clica na foto e veja o efeito!
           </div>
         </motion.div>

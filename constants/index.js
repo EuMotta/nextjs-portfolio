@@ -208,27 +208,27 @@ export const navbarItems = [
   {
     icon: AiOutlineUser,
     href: '#Me',
-    title: 'Sobre Mim2',
+    title: 'Eu',
   },
   {
     icon: MdMiscellaneousServices,
     href: '#Services',
-    title: 'Sobre Mim6',
+    title: 'Serviços',
   },
   {
     icon: HiInformationCircle,
     href: '#Projects',
-    title: 'Sobre Mim3',
-  },
-  {
-    icon: VscChecklist,
-    href: '#cnpj',
-    title: 'Sobre Mim5',
+    title: 'Projetos',
   },
   {
     icon: MdDashboardCustomize,
     href: '#Projects',
     title: 'Sobre Mim7',
+  },
+  {
+    icon: VscChecklist,
+    href: '#cnpj',
+    title: 'APIS',
   },
 ];
 

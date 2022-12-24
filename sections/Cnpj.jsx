@@ -69,9 +69,9 @@ const CnpjSearch = () => {
                   type="text"
                   id="cnpj"
                   onChange={(e) => setCampo(e.target.value.replace(/\D/g, ''))}
-                  className="rounded-xl px-2"
+                  className="rounded-xl shadow-sm shadow-slate-700 px-2"
                 />
-                <button className="text-white px-1" type="button" onClick={checkCNPJ}>
+                <button className="dark:text-white  px-1" type="button" onClick={checkCNPJ}>
                   <FiSearch className="text-3xl " />
                 </button>
               </div>
@@ -79,9 +79,6 @@ const CnpjSearch = () => {
             <div>
               <form onSubmit={handleSubmit((data) => console.log(data))}>
                 <div className="mt-4 pb-5 grid gap-y-3  rounded-xl  p-2">
-                  <div className="text-center text-md mb-2 text-white ">
-                    Nome/CNPJ
-                  </div>
                   <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
                     {Cnpj.cnpj01.map((cnpj) => (
                       <motion.div

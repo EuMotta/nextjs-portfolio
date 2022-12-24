@@ -42,7 +42,7 @@ const Insights = () => {
           <div className=" rounded-lg p-10">
             <span className="text-center my-2">
               <TypingText
-                title="Pesquisar cep"
+                title="Pesquisar CEP"
                 textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 dark:text-secondary-white font-bold my-10 "
               />
             </span>
@@ -54,7 +54,7 @@ const Insights = () => {
                   onChange={(e) => setCampo(e.target.value.replace(/\D/g, ''))}
                   className="rounded-xl px-2"
                 />
-                <button className="text-white px-1" type="button" onClick={checkCEP}>
+                <button className="dark:text-white px-1" type="button" onClick={checkCEP}>
                   <FiSearch className="text-3xl " />
                 </button>
               </div>
@@ -62,7 +62,7 @@ const Insights = () => {
             <div>
               <form onSubmit={handleSubmit((data) => console.log(data))}>
                 <div className="mt-4 pb-5 grid gap-y-3  rounded-xl  p-2">
-                  <div className="text-center text-md mb-2 text-white ">
+                  <div className="text-center text-md mb-2 dark:text-white ">
                     Informações abaixo
                   </div>
                   <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
