@@ -13,7 +13,7 @@ const Nav = () => (
     whileInView="show"
     className="p-2 py-5 z-30 fixed shadow-sm shadow-slate-900 bg-slate-900 rounded-r-lg h-full "
   >
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-2">
       <div
         title="Pesquisar"
         className=" cursor-pointer rounded-md text-xl flex justify-center text-secondary-white hover:text-white hover:shadow-md transition-all p-2"

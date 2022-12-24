@@ -24,6 +24,13 @@ const Languages = () => (
           <motion.div
             key={skill.name}
             variants={fadeIn(`${skill.fadeIn}`, 'tween', 0, 2)}
+            drag
+            dragConstraints={{
+              top: -100,
+              left: -200,
+              right: 200,
+              bottom: 100,
+            }}
             className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 bg-slate-800 rounded-lg shadow-lg"
           >
             <skill.icon

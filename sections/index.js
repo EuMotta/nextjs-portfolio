@@ -16,6 +16,8 @@ import Objectives from './Objectives';
 import Projects from './Projects';
 import Languages from './Languages';
 import AboutTest from './AboutTest';
+import Cnpj from './Cnpj';
+import Cep from './Cep';
 
 export {
   Hero,
@@ -31,6 +33,8 @@ export {
   Services,
   Projects,
   Explore,
+  Cnpj,
+  Cep,
   GetStarted,
   WhatsNew,
   World,

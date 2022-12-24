@@ -5,7 +5,7 @@ import {
 import { AiOutlineHome, AiOutlineUser, AiFillHtml5 } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
-import { MdDashboardCustomize, MdMiscellaneousServices, MdWork } from 'react-icons/md';
+import { MdDashboardCustomize, MdMiscellaneousServices } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
 import { RiCodeSSlashFill } from 'react-icons/ri';
 import {
@@ -56,28 +56,28 @@ export const AboutSection = [
     title: 'Experiência de vida:',
     subtitle: ' Enfrentando desafios e me tornando mais forte',
     description: 'Já enfrentei momentos difíceis, mas consegui superá-los com determinação e força de vontade. Isso me deu confiança e me inspirou a lutar pelos meus objetivos. Acredito que essas experiências me tornaram mais forte e experiente para qualquer oportunidade de trabalho. Estou pronto para enfrentar novos desafios e continuar crescendo como pessoa e profissional.',
-    fadeIn: 'left',
+    fadeIn: 'right',
   },
   {
     id: 'about-2',
     title: 'Procurando novos desafios:',
     subtitle: 'Determinado e comprometido com a excelência',
     description: 'Acredito que, com determinação e esforço, é possível superar qualquer obstáculo. Na programação, trabalho duro para atingir meus objetivos e me sinto realizado quando os alcanço. Busco me atualizar constantemente e estou sempre pronto para enfrentar novos desafios. Sou um profissional comprometido e dedicado, que busca sempre superar seus objetivos.',
-    fadeIn: 'right',
+    fadeIn: 'left',
   },
   {
     id: 'about-3',
     title: ' Apaixonado por criar soluções:',
     subtitle: 'Pronto para evoluir e encarar novos desafios',
     description: 'Programar é minha paixão e meu hobby. Desde cedo, a informática sempre esteve presente em minha vida e, quando descobri a programação, me apaixonei ainda mais por essa área. Cada linguagem trás um desafio diferente que tenho o prazer de enfrentar. Programar é muito mais do que um simples trabalho para mim e estou sempre pronto para enfrentar novos desafios e me desenvolver na minha carreira.',
-    fadeIn: 'left',
+    fadeIn: 'up',
   },
   {
     id: 'about-4',
     title: 'Transformando ideias em código:',
     subtitle: 'Desenvolvendo soluções inovadoras com paixão',
     description: 'Transformo ideias em código com paixão. Acredito que, com determinação e esforço, é possível superar qualquer obstáculo. Desde cedo, a informática sempre esteve presente em minha vida e, quando descobri a programação, me apaixonei ainda mais por essa área. Cada linguagem trás um desafio diferente que tenho o prazer de enfrentar. Programar é muito mais do que um simples trabalho para mim e estou sempre pronto para me desenvolver e enfrentar novos desafios na minha carreira.',
-    fadeIn: 'left',
+    fadeIn: 'up',
   },
 ];
 
@@ -211,24 +211,19 @@ export const navbarItems = [
     title: 'Sobre Mim2',
   },
   {
-    icon: HiInformationCircle,
-    href: '#AboutMe',
-    title: 'Sobre Mim3',
-  },
-  {
-    icon: MdWork,
-    href: '#CursesExp',
-    title: 'Sobre Mim4',
-  },
-  {
-    icon: VscChecklist,
-    href: '#Objectives',
-    title: 'Sobre Mim5',
-  },
-  {
     icon: MdMiscellaneousServices,
     href: '#Services',
     title: 'Sobre Mim6',
+  },
+  {
+    icon: HiInformationCircle,
+    href: '#Projects',
+    title: 'Sobre Mim3',
+  },
+  {
+    icon: VscChecklist,
+    href: '#cnpj',
+    title: 'Sobre Mim5',
   },
   {
     icon: MdDashboardCustomize,
@@ -356,3 +351,85 @@ export const skills = [
   { name: 'REACT_JS', percentage: 60, icon: SiReact, color: '#6E24FF', fadeIn: 'up' },
   { name: 'NEXT_JS', percentage: 62, icon: SiNextdotjs, color: '#512121', fadeIn: 'up' },
 ];
+export const Cnpj = {
+
+  cnpj01: [
+    {
+      id: 'camp-01',
+      name: 'Razão Social',
+      type: 'razao_social',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-02',
+      name: 'Nome Fantasia',
+      type: 'nome_fantasia',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-03',
+      name: 'CNPJ',
+      type: 'cnpj',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-04',
+      name: 'Cnae Fiscal',
+      type: 'cnae_fiscal',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-05',
+      name: 'CNAE Fiscal Descrição',
+      type: 'cnae_fiscal_descricao',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-06',
+      name: 'Natureza Juridíca',
+      type: 'natureza_juridica',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-07',
+      name: 'Situação Cadastral',
+      type: 'situacao_cadastral',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-08',
+      name: 'Situação Cadastral Descrição',
+      type: 'descricao_situacao_cadastral',
+      fadeIn: 'up',
+    },
+  ],
+};
+export const Cep = {
+
+  cep01: [
+    {
+      id: 'camp-01',
+      name: 'Rua',
+      type: 'address',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-02',
+      name: 'Bairro',
+      type: 'neighborhood',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-03',
+      name: 'Cidade',
+      type: 'city',
+      fadeIn: 'up',
+    },
+    {
+      id: 'camp-04',
+      name: 'Estado',
+      type: 'state',
+      fadeIn: 'up',
+    },
+  ],
+};

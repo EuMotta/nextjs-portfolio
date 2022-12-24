@@ -31,11 +31,24 @@ const Experience = () => (
           textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-6 text-3xl"
         />
         <div className="">
-          <motion.div variants={fadeIn('right', 'tween', 0, 1)} className="flex justify-center">
+          <motion.div
+            drag
+            dragConstraints={{
+              top: -100,
+              left: -500,
+              right: 500,
+              bottom: 100,
+            }}
+            variants={fadeIn('right', 'tween', 0, 1)} className="flex justify-center"
+          >
             <div className="p-3 mb-2 bg-slate-200 rounded-full shadow-sm dark:shadow-slate-500 shadow-slate-800">
               <FaCrown className="text-6xl text-yellow-400" />
             </div>
           </motion.div>
+          <TypingText
+            title="Não arraste a coroa!"
+            textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-1 text-lg"
+          />
           <div className="col-span-1  text-white flex justify-center">
             <motion.div
               variants={fadeIn('right', 'tween', 0, 1)}
