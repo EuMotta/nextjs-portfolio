@@ -7,7 +7,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { AboutSection } from '../constants';
 
 const About = () => (
-  <section className={`${styles.paddings} z-10`}>
+  <section className={`${styles.paddings} z-10 container`}>
     <motion.div
       id="About"
       variants={staggerContainer}
@@ -17,8 +17,8 @@ const About = () => (
       className="flex flex-col gap-y-24"
     >
       <TypingText
-        title="Quem Sou eu?"
-        textStyles="text-center text-slate-600 dark:text-secondary-white font-bold p-10 mb-12 text-5xl"
+        title="Quem Sou eu2?"
+        textStyles="text-center text-slate-600 dark:text-secondary-white font-bold p-10 mb-12 text-sm md:text-5xl"
       />
       <div className="grid gap-y-20 grid-cols-1  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         {AboutSection.map((about) => (

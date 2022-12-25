@@ -231,6 +231,43 @@ export const navbarItems = [
     title: 'APIS',
   },
 ];
+export const HnavbarItems = [
+  {
+    icon: AiOutlineHome,
+    href: '#Hero',
+    title: 'Inicio',
+    drop1Title: 'Serviços',
+    drop1Href: '#Services',
+    drop2Title: 'Projetos',
+    drop2Href: '#projects',
+    drop3Title: 'Apis',
+    drop3Href: '#cnpj',
+    drop4Title: 'Apis',
+    drop4Href: '#cnpj',
+    drop5Title: 'Apis',
+    drop5Href: '#cnpj',
+  },
+  {
+    icon: FaThList,
+    href: '#About',
+    title: 'Sobre Mim',
+    drop1Title: 'Serviços',
+    drop1Href: '#Services',
+    drop2Title: 'Projetos',
+    drop2Href: '#projects',
+    drop3Title: 'Apis',
+    drop3Href: '#cnpj',
+    drop4Title: 'Apis',
+    drop4Href: '#cnpj',
+    drop5Title: 'Apis',
+    drop5Href: '#cnpj',
+  },
+  {
+    icon: AiOutlineUser,
+    href: '#Me',
+    title: 'Informações pessoais',
+  },
+];
 
 export const feedbacks = {
   messages: [

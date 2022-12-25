@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiSearch } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
 import { TypingText } from '../components';
 import { Cep } from '../constants';
 import styles from '../styles';
-import { staggerContainer, fadeIn } from '../utils/motion';
 
 const Insights = () => {
   const { handleSubmit, register, setValue } = useForm();
@@ -36,9 +36,9 @@ const Insights = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=""
+        className="max-w-screen-xl mx-auto"
       >
-        <div className="grid gap-5">
+        <div className="grid w-full h-full gap-5">
           <div className=" rounded-lg p-10">
             <span className="text-center my-2">
               <TypingText

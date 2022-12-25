@@ -31,12 +31,12 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex justify-between items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+        <motion.h1 variants={textVariant(1.1)} className={`glitch ${styles.heroHeading}`}>
           Motta
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
+          className="flex flex-row glitch justify-center items-center"
         >
           <h1 className={styles.heroHeading}>Curriculum Vitae</h1>
         </motion.div>

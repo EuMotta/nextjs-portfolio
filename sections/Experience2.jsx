@@ -14,16 +14,16 @@ const Experience = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=""
+        className="max-w-screen-xl mx-auto"
       >
         <TypingText
           title="Cursos e Experiências"
           textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
         />
-        <div className="grid lg:grid-cols-2 ">
+        <div className="grid w-full gap-x-10 h-full lg:grid-cols-2 ">
           <motion.div
             variants={fadeIn('right', 'tween', 0, 1.5)}
-            className="col-span-1 lg:ml-20   text-white flex flex-col justify-center"
+            className="col-span-1  text-white flex flex-col justify-center"
           >
             <TypingText
               title="Cursos e formações"
@@ -78,7 +78,7 @@ const Experience = () => (
           </motion.div>
           <motion.div
             variants={fadeIn('left', 'tween', 0, 1.5)}
-            className="col-span-1 lg:ml-20   text-white flex flex-col justify-center"
+            className="col-span-1  text-white flex flex-col justify-center"
           >
             <TypingText
               title="Experiências"

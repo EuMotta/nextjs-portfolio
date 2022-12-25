@@ -14,6 +14,7 @@ const Services = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
+      className="max-w-screen-xl mx-auto"
     >
       <TypingText
         title="Serviços"
@@ -23,7 +24,7 @@ const Services = () => (
         title={<span>Qual seu objetivo?</span>}
         textStyles="text-center text-slate-700 dark:text-secondary-white md:!text-3xl"
       />
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-10 gap-3">
+      <div className="grid w-full h-full lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-10 gap-3">
         {services.map((service) => (
           <motion.div
             variants={fadeIn(`${service.fadeIn}`, 'tween', 0, 1)}

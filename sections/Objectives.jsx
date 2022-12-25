@@ -13,9 +13,9 @@ const Objectives = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="lg:grid lg:grid-cols-5 "
+      className="lg:grid max-w-screen-xl mx-auto lg:grid-cols-5 "
     >
-      <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2 mb-10 lg:mb-0">
+      <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2 w-full h-full mb-10 lg:mb-0">
         <div className="flex flex-col items-center text-white">
           <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900 w-96">
             <div className=" p-5">

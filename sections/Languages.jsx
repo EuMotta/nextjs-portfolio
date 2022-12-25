@@ -13,13 +13,13 @@ const Languages = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className=" "
+      className="max-w-screen-xl mx-auto"
     >
       <TypingText
-        title="Informações complementares"
+        title="Linguagens"
         textStyles="text-center text-slate-900 dark:text-secondary-white font-bold p-10 mb-5 text-3xl"
       />
-      <div className="flex flex-wrap justify-center">
+      <div className="flex w-full h-full flex-wrap justify-center">
         {skills.map((skill) => (
           <motion.div
             key={skill.name}

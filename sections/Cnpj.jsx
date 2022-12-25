@@ -45,7 +45,7 @@ const CnpjSearch = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=""
+        className="max-w-screen-xl mx-auto"
       >
         <TitleText
           title={(
@@ -55,7 +55,7 @@ const CnpjSearch = () => {
           )}
           textStyles="text-center"
         />
-        <div className="grid gap-5">
+        <div className="grid w-full h-full gap-5">
           <div className=" rounded-lg p-10">
             <span className="text-center my-2">
               <TypingText

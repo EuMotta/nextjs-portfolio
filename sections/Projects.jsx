@@ -9,7 +9,7 @@ import { projects } from '../constants';
 
 const Projects = () => (
   <section id="Projects" className={`${styles.paddings} z-10`}>
-    <div>
+    <div className="max-w-screen-xl mx-auto">
       <TypingText
         title="Projetos Desenvolvidos"
         textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
@@ -19,7 +19,7 @@ const Projects = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1"
+        className="grid gap-5 w-full h-full lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1"
       >
         {projects.map((project) => (
           <motion.div

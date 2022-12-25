@@ -12,10 +12,13 @@ import Eu from '../public/Me.jpg';
 import { TypingText } from '../components';
 import { staggerContainer, fadeIn } from '../utils/motion';
 
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
 const Me = () => (
-  <section id="Me" className={`${styles.paddings} sm:16 sm:pl-6 `}>
-    <div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7">
+  <section id="Me" className={`${styles.paddings}  sm:16 sm:pl-6 `}>
+    <div className="max-w-screen-xl mx-auto">
+      <div className="grid w-full h-full  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -45,6 +48,13 @@ const Me = () => (
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.8 }}
                 className="cursor-pointer"
+                drag
+                dragConstraints={{
+                  top: -10,
+                  left: -20,
+                  right: 20,
+                  bottom: 10,
+                }}
               >
                 <Image
                   src={Eu}
@@ -53,6 +63,7 @@ const Me = () => (
                   height={300}
                   className="rounded-full shadow-md  shadow-slate-800"
                   unoptimized
+                  onDragStart={ImpedirArrastar}
                 />
               </motion.div>
             </motion.div>
