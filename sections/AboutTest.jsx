@@ -18,7 +18,7 @@ const About = () => (
     >
       <TypingText
         title="Quem Sou eu?"
-        textStyles="text-center text-slate-600 dark:text-secondary-white font-bold p-10 sm:mb-12 text-3xl sm:text-5xl"
+        textStyles="text-center text-white font-bold p-10 sm:mb-12 text-3xl sm:text-5xl"
       />
       <div className="grid gap-20 grid-cols-1 w-full h-full  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         {AboutSection.map((about) => (
@@ -33,7 +33,7 @@ const About = () => (
           >
             <motion.div
               variants={fadeIn(`${about.fadeIn}`, 'tween', 0, 1)}
-              className="flex flex-col text-white bg-slate-800 shadow-lg shadow-slate-900 rounded-xl p-5"
+              className="flex flex-col text-white glassmorphism shadow-lg shadow-slate-900 rounded-xl p-5"
             >
               <div className="text-center">
                 <div className="text-2xl h-20 sm:h-14">{about.title}</div>

@@ -7,11 +7,13 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 import Nav from './Nav';
 import PositionBar from './PositionBar';
+import Top from './Top';
 
 export {
   PositionBar,
   NavbarBottom,
   Nav,
+  Top,
   TitleText,
   TypingText,
   StartSteps,

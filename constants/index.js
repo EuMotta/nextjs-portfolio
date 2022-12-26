@@ -268,6 +268,8 @@ export const bottomBarItems = [
     href: '#Hero',
     title: 'Inicio',
     id: 'bottonbar1',
+    link1: 'link1',
+    href1: 'href1',
   },
   {
     icon: FaThList,
@@ -280,6 +282,28 @@ export const bottomBarItems = [
     href: '#Me',
     title: 'Informações pessoais',
     id: 'bottonbar3',
+  },
+];
+export const bottomBarDropUp = [
+  {
+    id: 'bottonbardropup1',
+    link: '#',
+    title: 'Inicio',
+  },
+  {
+    id: 'bottonbardropup2',
+    link: '#',
+    title: 'Inicio',
+  },
+  {
+    id: 'bottonbardropup3',
+    link: '#',
+    title: 'Inicio',
+  },
+  {
+    id: 'bottonbardropup4',
+    link: '#',
+    title: 'Inicio',
   },
 ];
 export const positionBar = [
