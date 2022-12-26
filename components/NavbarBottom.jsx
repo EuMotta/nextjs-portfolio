@@ -15,10 +15,10 @@ const Navbar = () => {
   };
   return (
     <motion.nav
-      className=" w-full fixed bottom-0   z-50"
+      className=" w-full fixed bottom-0 dark:bg-[#353230]  z-50"
     >
       <motion.nav
-        className="flex items-center justify-between dark:bg-[#353230] flex-wrap p-2"
+        className="flex items-center justify-between  flex-wrap p-2"
       >
         <div className="flex fixed items-center flex-shrink-0 text-white mr-6">
           <div className="font-semibold flex items-center text-xl tracking-tight">
