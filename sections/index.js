@@ -10,7 +10,7 @@ import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
-import Experience2 from './Experience2';
+import Education from './Education';
 import Services from './Services';
 import Objectives from './Objectives';
 import Projects from './Projects';
@@ -28,7 +28,7 @@ export {
   Me,
   Experience,
   Languages,
-  Experience2,
+  Education,
   Objectives,
   Services,
   Projects,

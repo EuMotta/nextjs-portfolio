@@ -2,7 +2,7 @@ import {
   IoCheckmarkCircleSharp,
   IoCheckmarkCircleOutline,
 } from 'react-icons/io5';
-import { AiOutlineHome, AiOutlineUser, AiFillHtml5 } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser, AiFillHtml5, AiOutlineApi } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
 import { MdDashboardCustomize, MdMiscellaneousServices } from 'react-icons/md';
@@ -13,6 +13,7 @@ import {
   SiJava,
   SiReact,
   SiNextdotjs,
+  SiHomebridge,
 } from 'react-icons/si';
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
 import Me from '../public/Me.jpg';
@@ -156,6 +157,36 @@ export const personalInformation = {
     { label: 'Freelancer', value: 'Yes!' },
   ],
 };
+export const educationInformation = {
+  education: [
+    {
+      id: 'education1',
+      year: '2022 - 2025',
+      title: 'Tecnologo pela FATEC Guaratinguetá',
+      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+    },
+    {
+      id: 'education2',
+      year: '2022 - 2025',
+      title: 'Tecnologo pela FATEC Guaratinguetá',
+      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+    },
+  ],
+  experience: [
+    {
+      id: 'experience1',
+      year: '2022 - 2025',
+      title: 'Ainda sem experiência profissional',
+      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+    },
+    {
+      id: 'experience2',
+      year: '2022 - 2025',
+      title: 'Ainda sem experiência profissional',
+      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+    },
+  ],
+};
 export const links = [
   {
     label: 'Aperfeiçoamento',
@@ -231,41 +262,62 @@ export const navbarItems = [
     title: 'APIS',
   },
 ];
-export const HnavbarItems = [
+export const bottomBarItems = [
   {
-    icon: AiOutlineHome,
+    icon: SiHomebridge,
     href: '#Hero',
     title: 'Inicio',
-    drop1Title: 'Serviços',
-    drop1Href: '#Services',
-    drop2Title: 'Projetos',
-    drop2Href: '#projects',
-    drop3Title: 'Apis',
-    drop3Href: '#cnpj',
-    drop4Title: 'Apis',
-    drop4Href: '#cnpj',
-    drop5Title: 'Apis',
-    drop5Href: '#cnpj',
+    id: 'bottonbar1',
   },
   {
     icon: FaThList,
     href: '#About',
     title: 'Sobre Mim',
-    drop1Title: 'Serviços',
-    drop1Href: '#Services',
-    drop2Title: 'Projetos',
-    drop2Href: '#projects',
-    drop3Title: 'Apis',
-    drop3Href: '#cnpj',
-    drop4Title: 'Apis',
-    drop4Href: '#cnpj',
-    drop5Title: 'Apis',
-    drop5Href: '#cnpj',
+    id: 'bottonbar2',
   },
   {
     icon: AiOutlineUser,
     href: '#Me',
     title: 'Informações pessoais',
+    id: 'bottonbar3',
+  },
+];
+export const positionBar = [
+  {
+    icon: AiOutlineHome,
+    href: '#Hero',
+    title: 'Começo',
+    id: 'positionbar1',
+  },
+  {
+    icon: FaThList,
+    href: '#About',
+    title: 'Sobre Mim',
+    id: 'positionbar2',
+  },
+  {
+    icon: AiOutlineUser,
+    href: '#Me',
+    title: 'Eu',
+    id: 'positionbar3',
+  },
+  {
+    icon: MdMiscellaneousServices,
+    href: '#Services',
+    title: 'Serviços',
+    id: 'positionbar4',
+  },
+  {
+    icon: HiInformationCircle,
+    href: '#Projects',
+    title: 'Projetos',
+    id: 'positionbar5',
+  },
+  {
+    icon: AiOutlineApi,
+    href: '#cnpj',
+    title: 'Projetos',
+    id: '6',
   },
 ];
 

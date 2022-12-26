@@ -14,6 +14,13 @@ const Projects = () => (
         title="Projetos Desenvolvidos"
         textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
       />
+      <div>
+        <iframe
+          title="title"
+          className=""
+          src="https://e-commerce-next-js-fullstack.vercel.app"
+        />
+      </div>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -28,7 +35,11 @@ const Projects = () => (
             className="col-span-1"
           >
             <div className="bg-slate-800 hover:-translate-y-3 transition-all flex flex-col justify-center rounded-xl shadow-lg shadow-slate-900 p-5">
-              <a href={project.link} target="blank" className="rounded-xl shadow-md  shadow-black overflow-hidden">
+              <a
+                href={project.link}
+                target="blank"
+                className="rounded-xl shadow-md  shadow-black overflow-hidden"
+              >
                 <Image
                   src={project.imgUrl}
                   width={800}
