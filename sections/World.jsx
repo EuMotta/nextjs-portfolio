@@ -23,7 +23,7 @@ const World = () => (
         title="Desenvolvimento de aplicativos para uso global"
         textStyles="text-center w-full text-white font-bold  text-3xl"
       />
-      <TitleText title={<span>Destaque-se</span>} textStyles="text-center text-white" />
+      <TitleText title={<span className="text-white">Destaque-se</span>} textStyles="text-center text-white" />
       <motion.div
         variants={fadeIn('up', 'tween', 0, 1)}
         className="relative flex w-full bg-slate-900 rounded-xl shadow-md shadow-slate-900 p-5 h-[550px]"

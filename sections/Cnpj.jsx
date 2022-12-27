@@ -49,9 +49,9 @@ const CnpjSearch = () => {
       >
         <TitleText
           title={(
-            <>
+            <span className="text-white">
               Exemplo APIS de consulta
-            </>
+            </span>
           )}
           textStyles="text-center text-white"
         />

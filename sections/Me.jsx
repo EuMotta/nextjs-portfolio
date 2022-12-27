@@ -81,7 +81,7 @@ const Me = () => (
         >
           <TypingText
             title="A caminho de me tornar um fullstack"
-            textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 text-white font-bold my-10 "
+            textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-white text-white font-bold my-10 "
           />
           <motion.div
             variants={fadeIn('left', 'tween', 0, 1)}
@@ -109,7 +109,7 @@ const Me = () => (
             <div>
               <TypingText
                 title="Confira minhas redes sociais"
-                textStyles="text-slate-700 text-white font-bold my-2 text-xl"
+                textStyles="text-white font-bold my-2 text-xl"
               />
               <div className="flex gap-x-5 justify-center lg:justify-start text-5xl">
                 <Link target="blank" href="https://github.com/EuMotta">

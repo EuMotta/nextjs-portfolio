@@ -28,7 +28,7 @@ const Experience = () => (
       >
         <TypingText
           title="Informações pessoais"
-          textStyles="text-center text-slate-700 text-white font-bold p-10 mb-6 text-3xl"
+          textStyles="text-center text-white font-bold p-10 mb-6 text-3xl"
         />
         <div className="">
           <motion.div
@@ -47,7 +47,7 @@ const Experience = () => (
           </motion.div>
           <TypingText
             title="Não arraste a coroa!"
-            textStyles="text-center text-slate-700 text-white font-bold p-1 text-lg"
+            textStyles="text-center text-white font-bold p-1 text-lg"
           />
           <div className="col-span-1  text-white sm:flex w-full justify-center">
             <motion.div

@@ -15,11 +15,11 @@ const Projects = () => (
         textStyles="text-center text-white font-bold p-10 mb-24 text-3xl"
       />
       <div>
-        <iframe
-          title="title"
-          className=""
-          src="https://e-commerce-next-js-fullstack.vercel.app"
-        />
+        {/*  <iframe
+            title="title"
+            className=""
+            src="https://e-commerce-next-js-fullstack.vercel.app"
+          /> */}
       </div>
       <motion.div
         variants={staggerContainer}

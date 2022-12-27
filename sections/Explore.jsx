@@ -24,10 +24,10 @@ const Explore = () => {
         />
         <TitleText
           title={(
-            <>
+            <span className="text-white">
               Escolha o mundo que você quer <br className="md:block  hidden" />
               Explorar
-            </>
+            </span>
           )}
           textStyles="text-center text-white"
         />

@@ -19,7 +19,7 @@ const Education = () => (
       >
         <TypingText
           title="Cursos e Experiências"
-          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-24 text-3xl"
+          textStyles="text-center text-white font-bold p-10 mb-24 text-3xl"
         />
         <div className="grid w-full gap-x-10 h-full lg:grid-cols-2 ">
           <motion.div
@@ -28,7 +28,7 @@ const Education = () => (
           >
             <TypingText
               title="Cursos e formações"
-              textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
+              textStyles="text-center text-white font-bold mb-5 text-3xl"
             />
             <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
@@ -59,7 +59,7 @@ const Education = () => (
           >
             <TypingText
               title="Experiências"
-              textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
+              textStyles="text-center text-white font-bold mb-5 text-3xl"
             />
             <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
