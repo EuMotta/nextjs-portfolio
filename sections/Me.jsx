@@ -16,7 +16,7 @@ function ImpedirArrastar(event) {
   event.preventDefault();
 }
 const Me = () => (
-  <section id="Me" className={`${styles.paddings}  sm:16 sm:pl-6 `}>
+  <section id="Me" className={`${styles.paddings}  sm:16 sm:pl-6 z-10`}>
     <div className="max-w-screen-xl mx-auto">
       <div className="grid w-full h-full  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-7">
         <motion.div
@@ -77,30 +77,30 @@ const Me = () => (
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="col-span-4 lg:mr-36"
+          className="col-span-4 glassmorphism-2 rounded-xl p-5 lg:mr-36"
         >
           <TypingText
             title="A caminho de me tornar um fullstack"
-            textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 dark:text-secondary-white font-bold my-10 "
+            textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 text-white font-bold my-10 "
           />
           <motion.div
             variants={fadeIn('left', 'tween', 0, 1)}
             className="flex flex-col sm:text-center md:text-center lg:text-start lg:justify-start gap-5"
           >
-            <div className="flex gap-3 text-center xs:flex-col sm:f lg:text-start sm:justify-center md:justify-center lg:justify-start items-center">
+            <div className="flex gap-3 text-center glassmorphism-2 p-2 rounded-xl xs:flex-col sm:f lg:text-start sm:justify-center md:justify-center lg:justify-start items-center">
               <FiCoffee className="text-indigo-400 text-3xl" />
               <p className="text-slate-900 dark:text-white font-mono text-lg">
                 O café e a música são elementos fundamentais para a minha
                 concentração
               </p>
             </div>
-            <div className="flex gap-3 text-center sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
+            <div className="flex gap-3 text-center glassmorphism-2  p-2 rounded-xl sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
               <FaGlobeAsia className="text-indigo-600 text-3xl" />
               <p className="text-slate-900 dark:text-white font-mono text-lg">
                 Brasil, São Paulo, Guaratinguetá
               </p>
             </div>
-            <div className="flex gap-3 text-center sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
+            <div className="flex gap-3 text-center glassmorphism-2  p-2 rounded-xl sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
               <IoMdSchool className="text-orange-500 text-3xl" />
               <p className="text-slate-900 dark:text-white font-mono text-lg">
                 Formação em Analise e Desenvolvimento de Sistemas pela FATEC
@@ -109,7 +109,7 @@ const Me = () => (
             <div>
               <TypingText
                 title="Confira minhas redes sociais"
-                textStyles="text-slate-700 dark:text-secondary-white font-bold my-2 text-xl"
+                textStyles="text-slate-700 text-white font-bold my-2 text-xl"
               />
               <div className="flex gap-x-5 justify-center lg:justify-start text-5xl">
                 <Link target="blank" href="https://github.com/EuMotta">

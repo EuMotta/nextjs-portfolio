@@ -17,7 +17,7 @@ const Objectives = () => (
     >
       <motion.div variants={fadeIn('up', 'tween', 0, 1)} className="col-span-2 w-full h-full mb-10 lg:mb-0">
         <div className="flex flex-col items-center text-white">
-          <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900 w-96">
+          <div className="glassmorphism-2 rounded-xl shadow-lg shadow-slate-900 w-96">
             <div className=" p-5">
               <h1>Meus Objetivos</h1>
             </div>
@@ -52,7 +52,7 @@ const Objectives = () => (
         className="col-span-3"
       >
         <div className="flex flex-col items-center text-white">
-          <div className="bg-slate-800 rounded-xl shadow-lg shadow-slate-900  w-[90%] mr-4">
+          <div className="glassmorphism-2 rounded-xl shadow-lg shadow-slate-900  w-[90%] mr-4">
             <div className=" p-5">
               <h1>Descrição</h1>
             </div>

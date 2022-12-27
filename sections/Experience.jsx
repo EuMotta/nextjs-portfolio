@@ -28,7 +28,7 @@ const Experience = () => (
       >
         <TypingText
           title="Informações pessoais"
-          textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-6 text-3xl"
+          textStyles="text-center text-slate-700 text-white font-bold p-10 mb-6 text-3xl"
         />
         <div className="">
           <motion.div
@@ -47,17 +47,17 @@ const Experience = () => (
           </motion.div>
           <TypingText
             title="Não arraste a coroa!"
-            textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-1 text-lg"
+            textStyles="text-center text-slate-700 text-white font-bold p-1 text-lg"
           />
           <div className="col-span-1  text-white sm:flex w-full justify-center">
             <motion.div
               variants={fadeIn('right', 'tween', 0, 1)}
-              className="grid gap-y-6 md:grid-cols-2 bg-slate-800 rounded-xl shadow-lg shadow-slate-900 p-10  sm:gap-x-5"
+              className="grid gap-y-6 md:grid-cols-2 glassmorphism-2 rounded-xl shadow-lg shadow-slate-900 p-10  sm:gap-x-5"
             >
               <div className="col-span-1 sm:text-lg text-xs  flex flex-col gap-y-10">
                 {personalInformation.personalInformation.map((info, index) => (
                   <li
-                    className="flex font-mono gap-2 border-b-2 border-slate-500"
+                    className="flex font-mono gap-2 border-b-2 border-slate-50"
                     key={index}
                   >
                     <strong>{info.label}:</strong> {info.value}
@@ -68,7 +68,7 @@ const Experience = () => (
               <div className="col-span-1 sm:text-lg text-xs  flex flex-col gap-y-10">
                 {personalInformation.contactInformation.map((info, index) => (
                   <li
-                    className="flex font-mono gap-2 border-b-2 border-slate-500"
+                    className="flex font-mono gap-2 border-b-2 border-slate-50"
                     key={index}
                   >
                     <strong>{info.label}:</strong> {info.value}

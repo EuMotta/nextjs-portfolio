@@ -30,7 +30,7 @@ const Education = () => (
               title="Cursos e formações"
               textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
             />
-            <div className="bg-slate-800 p-5 rounded-xl shadow-lg shadow-slate-900">
+            <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
                 {educationInformation.education.map((education) => (
                   <div key={education.id}>
@@ -41,7 +41,7 @@ const Education = () => (
                       <div className=" flex items-center gap-x-2">
                         <AiFillCalendar className="text-xl" /> {education.year}
                       </div>
-                      <div className="text-secondary-white text-xl">
+                      <div className="text-white font-bold text-xl">
                         {education.title}
                       </div>
                       <p>
@@ -61,7 +61,7 @@ const Education = () => (
               title="Experiências"
               textStyles="text-center text-slate-700 dark:text-secondary-white font-bold mb-5 text-3xl"
             />
-            <div className="bg-slate-800 p-5 rounded-xl shadow-lg shadow-slate-900">
+            <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
                 {educationInformation.experience.map((experience) => (
                   <div key={experience.id}>
@@ -72,7 +72,7 @@ const Education = () => (
                       <div className=" flex items-center gap-x-2">
                         <AiFillCalendar className="text-xl" /> {experience.year}
                       </div>
-                      <div className="text-secondary-white text-xl">
+                      <div className="text-white font-bold  text-xl">
                         {experience.title}
                       </div>
                       <p>

@@ -32,7 +32,7 @@ const Services = () => (
             key={service.id}
           >
             <Link href="/">
-              <div className="flex h-60 flex-col bg-slate-800 rounded-lg text-center p-5 justify-center border border-orange-600 shadow-lg transition-all hover:-translate-y-2 shadow-slate-900">
+              <div className="flex h-60 flex-col glassmorphism-2 rounded-lg text-center p-5 justify-center border border-orange-600 shadow-lg transition-all hover:-translate-y-2 shadow-slate-900">
                 <div className="text-6xl flex justify-center text-orange-600">
                   <service.icon />
                 </div>

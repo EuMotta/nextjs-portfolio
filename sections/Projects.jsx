@@ -34,7 +34,7 @@ const Projects = () => (
             key={project.id}
             className="col-span-1"
           >
-            <div className="bg-slate-800 hover:-translate-y-3 transition-all flex flex-col justify-center rounded-xl shadow-lg shadow-slate-900 p-5">
+            <div className="glassmorphism-2 hover:-translate-y-3 transition-all flex flex-col justify-center rounded-xl shadow-lg shadow-slate-900 p-5">
               <a
                 href={project.link}
                 target="blank"

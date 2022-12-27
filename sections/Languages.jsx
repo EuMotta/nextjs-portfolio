@@ -31,7 +31,7 @@ const Languages = () => (
               right: 200,
               bottom: 100,
             }}
-            className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 bg-slate-800 rounded-lg shadow-lg"
+            className="w-64 h-fit grid gap-y-2 m-4 p-4 shadow-slate-700 border border-slate-700 glassmorphism-2 rounded-lg shadow-lg"
           >
             <skill.icon
               className="text-5xl text-center w-full"

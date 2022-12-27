@@ -33,7 +33,7 @@ const About = () => (
           >
             <motion.div
               variants={fadeIn(`${about.fadeIn}`, 'tween', 0, 1)}
-              className="flex flex-col text-white glassmorphism shadow-lg shadow-slate-900 rounded-xl p-5"
+              className="flex flex-col text-white glassmorphism-2 shadow-lg shadow-slate-900 rounded-xl p-5"
             >
               <div className="text-center">
                 <div className="text-2xl h-20 sm:h-14">{about.title}</div>
