@@ -12,14 +12,14 @@ const Feedback = () => (
     <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className="max-w-screen-xl mx-auto">
       <TypingText
         title="Feedbacks"
-        textStyles="text-center text-slate-700 dark:text-secondary-white font-bold p-10 mb-5 text-3xl"
+        textStyles="text-center text-white font-bold p-10 mb-5 text-3xl"
       />
       <div className="grid lg:grid-cols-4 w-full h-full md:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 md:gap-y-5 gap-x-5 ">
         {feedbacks.messages.map((messages, index) => (
           <motion.ul
             variants={fadeIn(`${messages.fadeIn}`, 'tween', 0, 1.5)}
             key={index}
-            className="text-white p-5 bg-slate-800 rounded-xl shadow-lg shadow-slate-900"
+            className="text-white p-5 glassmorphism-2 rounded-xl shadow-lg shadow-slate-900"
           >
             <li>
               <div className="flex justify-center">

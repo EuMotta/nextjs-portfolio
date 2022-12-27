@@ -20,7 +20,7 @@ const Explore = () => {
       >
         <TypingText
           title="O universo da programação"
-          textStyles="text-center text-slate-700 dark:text-secondary-white text-3xl"
+          textStyles="text-center text-white text-3xl"
         />
         <TitleText
           title={(
@@ -29,7 +29,7 @@ const Explore = () => {
               Explorar
             </>
           )}
-          textStyles="text-center"
+          textStyles="text-center text-white"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (

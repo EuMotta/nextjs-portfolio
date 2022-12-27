@@ -68,7 +68,7 @@ const Me = () => (
               </motion.div>
             </motion.div>
           </motion.div>
-          <div className="dark:text-white mt-5 text-center font-mono">
+          <div className="text-white mt-5 text-center font-mono">
             Opa! clica na foto e veja o efeito!
           </div>
         </motion.div>
@@ -89,20 +89,20 @@ const Me = () => (
           >
             <div className="flex gap-3 text-center glassmorphism-2 p-2 rounded-xl xs:flex-col sm:f lg:text-start sm:justify-center md:justify-center lg:justify-start items-center">
               <FiCoffee className="text-indigo-400 text-3xl" />
-              <p className="text-slate-900 dark:text-white font-mono text-lg">
+              <p className="text-white font-mono text-lg">
                 O café e a música são elementos fundamentais para a minha
                 concentração
               </p>
             </div>
             <div className="flex gap-3 text-center glassmorphism-2  p-2 rounded-xl sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
               <FaGlobeAsia className="text-indigo-600 text-3xl" />
-              <p className="text-slate-900 dark:text-white font-mono text-lg">
+              <p className="text-white font-mono text-lg">
                 Brasil, São Paulo, Guaratinguetá
               </p>
             </div>
             <div className="flex gap-3 text-center glassmorphism-2  p-2 rounded-xl sm:text-center lg:text-start  md:justify-center lg:justify-start items-center">
               <IoMdSchool className="text-orange-500 text-3xl" />
-              <p className="text-slate-900 dark:text-white font-mono text-lg">
+              <p className="text-white font-mono text-lg">
                 Formação em Analise e Desenvolvimento de Sistemas pela FATEC
               </p>
             </div>
@@ -113,13 +113,13 @@ const Me = () => (
               />
               <div className="flex gap-x-5 justify-center lg:justify-start text-5xl">
                 <Link target="blank" href="https://github.com/EuMotta">
-                  <AiFillGithub className="text-slate-900 dark:text-white hover:text-slate-400 transition-all hover:scale-110" />
+                  <AiFillGithub className="text-white hover:text-slate-400 transition-all hover:scale-110" />
                 </Link>
                 <Link target="blank" href="https://www.instagram.com/callmotta/">
-                  <AiFillInstagram className="text-slate-900 dark:text-white hover:text-orange-600 transition-all hover:scale-110" />
+                  <AiFillInstagram className="text-white hover:text-orange-600 transition-all hover:scale-110" />
                 </Link>
                 <Link href="/">
-                  <AiFillLinkedin className="text-slate-900 dark:text-white hover:text-indigo-400 transition-all hover:scale-110" />
+                  <AiFillLinkedin className="text-white hover:text-indigo-400 transition-all hover:scale-110" />
                 </Link>
               </div>
             </div>

@@ -43,7 +43,7 @@ const Insights = () => {
             <span className="text-center my-2">
               <TypingText
                 title="Pesquisar CEP"
-                textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 dark:text-secondary-white font-bold my-10 "
+                textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-white font-bold my-10 "
               />
             </span>
             <form className=" rounded-xl flex justify-center text-xl p-5">
@@ -54,7 +54,7 @@ const Insights = () => {
                   onChange={(e) => setCampo(e.target.value.replace(/\D/g, ''))}
                   className="rounded-xl px-2"
                 />
-                <button className="dark:text-white px-1" type="button" onClick={checkCEP}>
+                <button className="text-white px-1" type="button" onClick={checkCEP}>
                   <FiSearch className="text-3xl " />
                 </button>
               </div>
@@ -62,7 +62,7 @@ const Insights = () => {
             <div>
               <form onSubmit={handleSubmit((data) => console.log(data))}>
                 <div className="mt-4 pb-5 grid gap-y-3  rounded-xl  p-2">
-                  <div className="text-center text-md mb-2 dark:text-white ">
+                  <div className="text-center text-md mb-2 text-white ">
                     Informações abaixo
                   </div>
                   <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
@@ -70,7 +70,7 @@ const Insights = () => {
                       <motion.div
                         key={cep.id}
                         variants={fadeIn(`${cep.fadeIn}`, 'tween', 0, 1)}
-                        className="text-md  grid gap-y-3 col-span-1 w-full p-5  rounded-xl text-center shadow bg-slate-900  shadow-slate-600 "
+                        className="text-md  grid gap-y-3 col-span-1 w-full p-5  rounded-xl text-center shadow glassmorphism-2  shadow-slate-600 "
                       >
                         <label
                           className="text-md text-white font-mono"

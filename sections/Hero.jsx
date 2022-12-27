@@ -18,7 +18,7 @@ const Hero = () => (
       <div
         className={`${styles.innerWidth}  flex items-center justify-center gap-8 text-center`}
       >
-        <h2 className="font-extrabold mx-auto text-slate-900 dark:text-white text-[24px] leading-[30px]">
+        <h2 className="font-extrabold mx-auto text-white text-[24px] leading-[30px]">
           Seja bem-vindo!
         </h2>
       </div>
@@ -45,7 +45,7 @@ const Hero = () => (
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="w[90%] mx-10 bg-gradient-to-r from-slate-100 to-blue-200 rounded-full dark:bg-white h-2 mb-20" />
+        <div className="w[90%] mx-10 bg-gradient-to-r from-slate-100 to-blue-200 rounded-full h-2 mb-20" />
       </motion.div>
       <motion.ul
         variants={staggerContainer}
@@ -55,7 +55,7 @@ const Hero = () => (
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div
-          className={`${styles.flexCenter} gap-x-4 mb-48 text-slate-900 dark:text-white text-4xl`}
+          className={`${styles.flexCenter} gap-x-4 mb-48 text-white text-4xl`}
         >
           <motion.li variants={textVariant(2.0)}>
             <AiFillGithub title="GitHub" />

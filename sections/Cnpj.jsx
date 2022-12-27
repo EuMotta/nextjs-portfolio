@@ -53,14 +53,14 @@ const CnpjSearch = () => {
               Exemplo APIS de consulta
             </>
           )}
-          textStyles="text-center"
+          textStyles="text-center text-white"
         />
         <div className="grid w-full h-full gap-5">
           <div className=" rounded-lg p-10">
             <span className="text-center my-2">
               <TypingText
                 title="Pesquisar CNPJ"
-                textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-slate-700 dark:text-secondary-white font-bold my-10 "
+                textStyles="sm:text-center sm:text-xl md:text-2xl md:text-center lg:text-3xl text-white font-bold my-10 "
               />
             </span>
             <form className=" rounded-xl flex justify-center text-xl p-5">
@@ -71,7 +71,7 @@ const CnpjSearch = () => {
                   onChange={(e) => setCampo(e.target.value.replace(/\D/g, ''))}
                   className="rounded-xl shadow-sm shadow-slate-700 px-2"
                 />
-                <button className="dark:text-white  px-1" type="button" onClick={checkCNPJ}>
+                <button className="text-white  px-1" type="button" onClick={checkCNPJ}>
                   <FiSearch className="text-3xl " />
                 </button>
               </div>
@@ -84,7 +84,7 @@ const CnpjSearch = () => {
                       <motion.div
                         key={cnpj.id}
                         variants={fadeIn(`${cnpj.fadeIn}`, 'tween', 0, 1)}
-                        className="text-md  grid gap-y-3 col-span-1 w-full p-5  rounded-xl text-center shadow bg-slate-900  shadow-slate-600 "
+                        className="text-md  grid gap-y-3 col-span-1 w-full p-5  rounded-xl text-center shadow glassmorphism-2  shadow-slate-600 "
                       >
                         <label
                           className="text-md text-white font-mono"
