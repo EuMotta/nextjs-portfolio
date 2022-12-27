@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <motion.nav
-      className=" w-full fixed bottom-0 dark:bg-[#353230]  z-50"
+      className=" w-full fixed bottom-0 bg-[#353230]  z-50"
     >
       <motion.nav
         className="flex items-center justify-between  flex-wrap p-2"

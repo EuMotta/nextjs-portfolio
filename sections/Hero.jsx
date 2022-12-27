@@ -38,7 +38,7 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-row glitch justify-center items-center"
         >
-          <h1 className={styles.heroHeading}>Curriculum Vitae</h1>
+          <h1 className={`glitch ${styles.heroHeading}`}>Curriculum Vitae</h1>
         </motion.div>
       </div>
       <motion.div
