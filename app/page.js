@@ -18,7 +18,7 @@ const Page = () => {
         className="w-full -z-10  fixed min-h-screen"
         src={src}
       />
-      <div className="relative ml-10 gap-x-10 flex top-10">
+      <div className="fixed z-50 ml-10 gap-x-10 flex top-10">
         <div className="flex text-xl items-center glassmorphism rounded-full font-mono p-2">
           <span className="font-bold">Mudar tema:</span>
           <div className="flex ml-2 gap-x-5">
