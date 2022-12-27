@@ -59,7 +59,7 @@ const Navbar = () => {
                         <a
                           key={dropUp.id}
                           href={dropUp.href}
-                          className="block font-mono mt-4 lg:inline-block lg:mt-0 text-orange-400 hover:text-white mr-4"
+                          className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                         >
                           {dropUp.title}
                         </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
                   id={item.id}
                   key={item.id}
                   href={item.href}
-                  className="block font-mono mt-4 lg:inline-block lg:mt-0 text-orange-400 hover:text-white mr-4"
+                  className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                   rel="noreferrer"
                 >
                   <Tooltip
@@ -84,7 +84,7 @@ const Navbar = () => {
                     onClick={toggle}
                     className="flex cursor-pointer justify-center"
                   >
-                    <item.icon className="lg:text-xl" />
+                    <item.icon className="lg:text-2xl" />
                   </div>
                 </a>
               </div>
