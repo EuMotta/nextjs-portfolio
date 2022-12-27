@@ -15,8 +15,8 @@ const Page = () => {
   return (
     <>
       <iframe
-        title="title"
-        className="w-full -z-10  fixed min-h-screen"
+        title="Background"
+        className="w-full z-10 fixed min-h-screen"
         src={src}
       />
       <div className="fixed z-50 right-2 gap-x-10 flex top-1">
@@ -33,27 +33,39 @@ const Page = () => {
         </div>
       </div>
       <div className=" overflow-hidden">
-        <Top />
-        <PositionBar />
-        <NavbarBottom />
-        <Hero />
-        <AboutTest />
-        <Me />
-        <Experience />
-        <Languages />
-        <Education />
-        <Objectives />
-        <Services />
-        <Projects />
-        <Explore />
-        <Cnpj />
-        <Cep />
-        <GetStarted />
-        <WhatsNew />
-        <World />
-        <Insights />
-        <Feedback />
-        <Footer />
+        <div className="absolute z-40">
+          <Top />
+          <PositionBar />
+          <NavbarBottom />
+        </div>
+        <div className="overflow-hidden relative max-w-screen">
+          <Hero />
+          <div className="grid bg-[rgba(0,0,0,0.8)] z-0 pointer-events-none">
+            <AboutTest />
+          </div>
+        </div>
+        <div className="relative">
+          <div className="relative z-20">
+            <Me />
+            <Experience />
+          </div>
+          <Languages />
+          <div className="relative glassmorphism-2 z-20">
+            <Education />
+            <Objectives />
+            <Services />
+            <Projects />
+            <Explore />
+          </div>
+          <div className="glassmorphism-2 relative z-20">
+            <Cnpj />
+            <Cep />
+            <World />
+            <Insights />
+            <Feedback />
+            <Footer />
+          </div>
+        </div>
       </div>
     </>
   );

@@ -17,7 +17,7 @@ import { personalInformation } from '../constants';
 console.log(languages); */
 
 const Experience = () => (
-  <section id="AboutMe" className={`${styles.paddings} z-10`}>
+  <section id="AboutMe" className={`${styles.paddings}`}>
     <div className="">
       <motion.div
         variants={staggerContainer}

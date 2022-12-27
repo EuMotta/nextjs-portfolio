@@ -8,7 +8,7 @@ import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
 
 const Education = () => (
-  <section className={`${styles.paddings} z-10`}>
+  <section className={`${styles.paddings} `}>
     <div>
       <motion.div
         variants={staggerContainer}
@@ -17,19 +17,17 @@ const Education = () => (
         viewport={{ once: true, amount: 0.25 }}
         className="max-w-screen-xl mx-auto"
       >
-        <TypingText
-          title="Cursos e Experiências"
-          textStyles="text-center text-white font-bold p-10 mb-24 text-3xl"
-        />
         <div className="grid w-full gap-x-10 h-full lg:grid-cols-2 ">
           <motion.div
             variants={fadeIn('right', 'tween', 0, 1.5)}
             className="col-span-1  text-white flex flex-col justify-center"
           >
-            <TypingText
-              title="Cursos e formações"
-              textStyles="text-center text-white font-bold mb-5 text-3xl"
-            />
+            <div className="z-50">
+              <TypingText
+                title="Cursos e formações"
+                textStyles="text-center text-white font-bold mb-5 text-3xl"
+              />
+            </div>
             <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
                 {educationInformation.education.map((education) => (
@@ -57,10 +55,12 @@ const Education = () => (
             variants={fadeIn('left', 'tween', 0, 1.5)}
             className="col-span-1  text-white flex flex-col justify-center"
           >
-            <TypingText
-              title="Experiências"
-              textStyles="text-center text-white font-bold mb-5 text-3xl"
-            />
+            <div className="z-50">
+              <TypingText
+                title="Experiências"
+                textStyles="text-center text-white font-bold mb-5 text-3xl"
+              />
+            </div>
             <div className="glassmorphism-2 p-5 rounded-xl shadow-lg shadow-slate-900">
               <div className="w-full overflow-scroll h-[450px] border-l-2 flex flex-col border-orange-600 z-10">
                 {educationInformation.experience.map((experience) => (

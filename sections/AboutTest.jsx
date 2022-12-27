@@ -18,7 +18,7 @@ const About = () => (
     >
       <TypingText
         title="Quem Sou eu?"
-        textStyles="text-center text-white font-bold p-10 sm:mb-12 text-3xl sm:text-5xl"
+        textStyles="text-center text-white font-bold p-10 sm:mb-12 text-3xl sm:text-5xl z-50"
       />
       <div className="grid gap-20 grid-cols-1 w-full h-full  sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
         {AboutSection.map((about) => (

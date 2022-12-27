@@ -165,9 +165,9 @@ ul.dropup {
 }
 .glitch {
   font-weight: bold;
-  color: rgb(224, 224, 0);
-  text-shadow: -4px -4px 0 deeppink, 4px 4px 0 cyan, 4px 4px 20px cyan,
-    -4px -4px 20px deeppink, 0px 0px 20px yellow;
+  color: rgba(239, 248, 255, 0.877);
+  text-shadow: -4px -4px 0 rgba(252, 22, 145, 0.5), 4px 4px 0 cyan, 4px 4px 20px cyan,
+    -4px -4px 20px rgba(255, 20, 145, 0.425), 0px 0px 20px yellow;
   position: relative;
 }
 @keyframes glitch {
