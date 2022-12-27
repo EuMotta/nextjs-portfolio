@@ -51,15 +51,14 @@ const Navbar = () => {
         <div className=" block  flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm gap-x-10 lg:flex-grow flex justify-center">
             {bottomBarItems.map((item) => (
-              <div>
+              <div key={item.id}>
                 {isOpen && (
-                  <div className="fixed bg-orange-300 bottom-10">
+                  <div className="fixed glassmorphism bottom-10">
                     {bottomBarDropUp.map((dropUp) => (
-                      <div className="flex flex-col">
+                      <div key={dropUp.id} className="flex my-2 text-center flex-col">
                         <a
-                          key={dropUp.id}
                           href={dropUp.href}
-                          className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
+                          className="block font-mono mt-4 cursor-pointer lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                         >
                           {dropUp.title}
                         </a>
@@ -68,8 +67,6 @@ const Navbar = () => {
                   </div>
                 )}
                 <a
-                  id={item.id}
-                  key={item.id}
                   href={item.href}
                   className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                   rel="noreferrer"
@@ -82,7 +79,7 @@ const Navbar = () => {
                   />{' '}
                   <div
                     onClick={toggle}
-                    className="flex cursor-pointer justify-center"
+                    className="flex cursor-pointer justify-center ml-4"
                   >
                     <item.icon className="lg:text-2xl" />
                   </div>

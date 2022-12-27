@@ -268,8 +268,6 @@ export const bottomBarItems = [
     href: '#Hero',
     title: 'Inicio',
     id: 'bottonbar1',
-    link1: 'link1',
-    href1: 'href1',
   },
   {
     icon: FaThList,

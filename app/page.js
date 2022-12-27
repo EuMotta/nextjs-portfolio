@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { GiUfo } from 'react-icons/gi';
 import { GrCodeSandbox } from 'react-icons/gr';
+import { HiGlobe } from 'react-icons/hi';
+import { IoPlanet } from 'react-icons/io5';
 import { Footer, NavbarBottom, PositionBar, Top } from '../components';
-import { AboutTest, Cep, Cnpj, Education, Experience, Explore, Feedback, GetStarted, Hero, Insights, Languages, Me, Objectives, Projects, Services, WhatsNew, World } from '../sections';
+import { AboutTest, Cep, Cnpj, Education, Experience, Explore, Feedback, Hero, Insights, Languages, Me, Objectives, Projects, Services, World } from '../sections';
 
 const Page = () => {
   const [src, setSrc] = useState('https://www.shadertoy.com/embed/4t3BWl?gui=true&t=10&paused=false&muted=true&autoplay=1');
@@ -26,8 +27,11 @@ const Page = () => {
             <button type="button" className="rounded-full bg-green-500 hover:bg-green-800 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/4t3BWl?gui=true&t=10&paused=false&muted=true&autoplay=1')}>
               <GrCodeSandbox />
             </button>
-            <button type="button" className="rounded-full bg-violet-500 hover:bg-violet-800 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/XsyGWV?gui=true&t=10&paused=false&muted=true&autoplay=2')}>
-              <GiUfo />
+            <button type="button" className="rounded-full bg-red-500 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/XsyGWV?gui=true&t=10&paused=false&muted=true&autoplay=2')}>
+              <HiGlobe />
+            </button>
+            <button type="button" className="rounded-full bg-green-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/4ts3z2?gui=true&t=10&paused=false&muted=true&autoplay=2')}>
+              <IoPlanet />
             </button>
           </div>
         </div>

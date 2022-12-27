@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from 'react-icons/ai';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant, navVariants } from '../utils/motion';
 

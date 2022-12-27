@@ -2,7 +2,7 @@
 
 import { contactForm } from './constants';
 
-const WhatsNew = () => (
+const contact = () => (
   <section className="text-white body-font relative">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
@@ -54,4 +54,4 @@ const WhatsNew = () => (
   </section>
 );
 
-export default WhatsNew;
+export default contact;
