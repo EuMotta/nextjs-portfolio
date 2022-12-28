@@ -11,10 +11,10 @@ import styles from '../../styles';
 
 const TabelaFipe = () => {
   const { handleSubmit, register, setValue } = useForm();
-  const [/* campo */, setCampo] = useState('');
+  const [campo, setCampo] = useState('');
 
   const checkCEP = () => {
-    fetch('https://apiprevmet3.inmet.gov.br/previsao/5300108', {
+    fetch(`https://brasilapi.com.br/api/registrobr/v1/${campo}`, {
       headers: {
         'Access-Control-Allow-Origin': '*',
       },
