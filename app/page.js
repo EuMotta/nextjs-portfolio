@@ -1,9 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { BsArrowsMove, BsSun } from 'react-icons/bs';
+import { FaGamepad } from 'react-icons/fa';
 import { GrCodeSandbox } from 'react-icons/gr';
 import { HiGlobe } from 'react-icons/hi';
 import { IoPlanet } from 'react-icons/io5';
+import { MdGames } from 'react-icons/md';
 import { Footer, NavbarBottom, PositionBar, Top } from '../components';
 import { AboutTest, Cep, Cnpj, Education, Experience, Explore, Feedback, Hero, Insights, Languages, Me, Objectives, Projects, Services, World } from '../sections';
 
@@ -33,8 +36,14 @@ const Page = () => {
             <button type="button" className="rounded-full bg-green-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/4ts3z2?gui=true&t=10&paused=false&muted=false&autoplay=2')}>
               <IoPlanet />
             </button>
-            <button type="button" className="rounded-full bg-green-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/wt3XDj?gui=true&t=10&paused=false&muted=false&autoplay=2')}>
-              <IoPlanet />
+            <button type="button" className="rounded-full bg-yellow-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/wt3XDj?gui=true&t=10&paused=false&muted=false&autoplay=2')}>
+              <BsSun />
+            </button>
+            <button type="button" className="rounded-full bg-red-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/Xs2fWD?gui=true&t=10&paused=false&muted=false')}>
+              <FaGamepad />
+            </button>
+            <button type="button" className="rounded-full bg-violet-700 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/wtS3W3?gui=true&t=10&paused=false&muted=false')}>
+              <MdGames />
             </button>
           </div>
           {src === 'https://www.shadertoy.com/embed/wt3XDj?gui=true&t=10&paused=false&muted=false&autoplay=2' && (
@@ -50,6 +59,38 @@ const Page = () => {
               </div>
               <div>
                 <span className="font-bold">Correr: </span>Shift
+              </div>
+            </div>
+          </div>
+          )}
+          {src === 'https://www.shadertoy.com/embed/wtS3W3?gui=true&t=10&paused=false&muted=false' && (
+          <div className="fixed text-white glassmorphism-2 right-1 p-2 rounded-xl top-10">
+            <div className="text-sm">Clique na tela e aprte espaço para começar</div>
+            <div className="font-mono">Atalhos:</div>
+            <div className="text-sm">
+              <div>
+                <span className="font-bold">Começar: </span> ← → ou espaço
+              </div>
+              <div>
+                <span className="font-bold">Andar: </span> ← →
+              </div>
+            </div>
+          </div>
+          )}
+          {src === 'https://www.shadertoy.com/embed/Xs2fWD?gui=true&t=10&paused=false&muted=false' && (
+          <div className="fixed text-white glassmorphism-2 right-1 p-2 rounded-xl top-10">
+            <div className="text-sm">Clique na tela e aprte espaço para começar</div>
+            <div className="font-mono">Atalhos:</div>
+            <div className="text-sm">
+              <div className="flex items-center gap-x-3">Andar: <BsArrowsMove /></div>
+              <div>
+                Ataque andando em direção aos inimigos
+              </div>
+              <div>
+                Ande até uma parede para pular a vez
+              </div>
+              <div>
+                Sincronize o movimento para atacar primeiro
               </div>
             </div>
           </div>
