@@ -4,9 +4,9 @@ import db from '../../../utils/db';
 const postHandler = async (req, res) => {
   await db.connect();
   const newFeedback = new Feedback({
-    nome: 'Anônimo',
-    avaliacao: 5,
-    comentário: 'Escreva seu comentário',
+    name: 'Anônimo',
+    rating: 5,
+    comment: 'Escreva seu comentário',
   });
   const feedbacks = await newFeedback.save();
   await db.disconnect();
@@ -19,6 +19,7 @@ const getHandler = async (req, res) => {
   await db.disconnect();
   res.send(feedbacks);
 };
+
 const handler = async (req, res) => {
   if (req.method === 'GET') {
     return getHandler(req, res);

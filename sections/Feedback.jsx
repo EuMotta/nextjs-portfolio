@@ -24,6 +24,9 @@ const Fdbs = (props) => {
 };
 const FeedbackList = () => {
   const [feedbacks, setFeedbacks] = useState([]);
+  const [name, setName] = useState('');
+  const [comment, setComment] = useState('');
+  const [rating, setRating] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,9 +36,6 @@ const FeedbackList = () => {
     };
     fetchData();
   }, []);
-  const [name, setName] = useState('');
-  const [comment, setComment] = useState('');
-  const [rating, setRating] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
