@@ -27,7 +27,7 @@ const FeedbackList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('/api/feedbackPush');
+      const result = await fetch('/api/feedback');
       const data = await result.json();
       setFeedbacks(data);
     };
@@ -39,7 +39,7 @@ const FeedbackList = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/seed', {
+    const response = await fetch(`/api/feedback/${e}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
