@@ -10,6 +10,11 @@ const link = '';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  function handleClick(title) {
+    if (title !== 'Inicio') {
+      setIsOpen(false);
+    }
+  }
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -52,7 +57,7 @@ const Navbar = () => {
           <div className="text-sm gap-x-10 lg:flex-grow flex justify-center">
             {bottomBarItems.map((item) => (
               <div key={item.id}>
-                {isOpen && (
+                {isOpen && item.title === 'Inicio' && (
                   <div className="fixed glassmorphism bottom-10">
                     {bottomBarDropUp.map((dropUp) => (
                       <div key={dropUp.id} className="flex my-2 text-center flex-col">
@@ -70,6 +75,7 @@ const Navbar = () => {
                   href={item.href}
                   className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                   rel="noreferrer"
+                  onClick={() => handleClick(item.title)}
                 >
                   <Tooltip
                     place="top"

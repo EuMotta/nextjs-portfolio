@@ -228,7 +228,6 @@ export const links = [
 export const navbarItems = [
   {
     icon: AiOutlineHome,
-    href: '#Hero',
     title: 'Inicio',
   },
   {
@@ -265,20 +264,20 @@ export const navbarItems = [
 export const bottomBarItems = [
   {
     icon: SiHomebridge,
-    href: '#Hero',
+    href: '/',
     title: 'Inicio',
     id: 'bottonbar1',
   },
   {
     icon: FaThList,
-    href: '#About',
-    title: 'Sobre Mim',
+    href: 'apiConsulta',
+    title: 'Api Consulta',
     id: 'bottonbar2',
   },
   {
     icon: AiOutlineUser,
-    href: '#Me',
-    title: 'Informações pessoais',
+    href: 'graphics',
+    title: 'Graficos',
     id: 'bottonbar3',
   },
 ];
@@ -298,11 +297,7 @@ export const bottomBarDropUp = [
     link: '#',
     title: 'Inicio',
   },
-  {
-    id: 'bottonbardropup4',
-    link: '#',
-    title: 'Inicio',
-  },
+
 ];
 export const positionBar = [
   {

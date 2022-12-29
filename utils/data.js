@@ -1,4 +1,9 @@
-/* const loginInfo = [
-  { email: 'user@example.com', senha: '123456' },
-  { email: 'admin@example.com', senha: 'abcdef' },
-]; */
+module.exports = {
+  feedbacks: [
+    {
+      rating: 5,
+      comment: 'Ótimo produto!',
+      name: 'Fulano',
+    },
+  ],
+};

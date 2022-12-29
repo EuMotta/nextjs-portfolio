@@ -7,8 +7,8 @@ import { GrCodeSandbox } from 'react-icons/gr';
 import { HiGlobe } from 'react-icons/hi';
 import { IoPlanet } from 'react-icons/io5';
 import { MdGames } from 'react-icons/md';
-import { Footer, NavbarBottom, PositionBar, Top } from '../components';
-import { AboutTest, Cep, Cnpj, Education, Experience, Explore, Feedback, Hero, Insights, Languages, Me, Objectives, Projects, Services, World } from '../sections';
+import { Footer, NavbarBottom, Top } from '../components';
+import { AboutTest, Education, Experience, Explore, Feedback, Hero, Languages, Me, Objectives, Projects, Services, World } from '../sections';
 
 const Page = () => {
   const [src, setSrc] = useState('https://www.shadertoy.com/embed/4t3BWl?gui=true&t=10&paused=false&muted=false&autoplay=1');
@@ -100,7 +100,6 @@ const Page = () => {
       <div className=" overflow-hidden">
         <div className="absolute z-40">
           <Top />
-          <PositionBar />
           <NavbarBottom />
         </div>
         <div className="overflow-hidden relative max-w-screen">
@@ -126,9 +125,6 @@ const Page = () => {
             <Explore />
           </div>
           <div className="glassmorphism-2 relative z-20">
-            <Cnpj />
-            <Cep />
-            <Insights />
             <Feedback />
             <Footer />
           </div>
