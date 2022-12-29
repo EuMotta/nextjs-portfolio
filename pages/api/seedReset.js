@@ -1,6 +1,5 @@
 import Feedback from '../../models/Feedback';
 import data from '../../utils/data';
-
 import db from '../../utils/db';
 
 const handler = async (req, res) => {
