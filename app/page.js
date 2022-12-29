@@ -11,7 +11,7 @@ import { Footer, NavbarBottom, Top } from '../components';
 import { AboutTest, Education, Experience, Explore, Feedback, Hero, Languages, Me, Objectives, Projects, Services, World } from '../sections';
 
 const Page = () => {
-  const [src, setSrc] = useState('https://www.shadertoy.com/embed/4t3BWl?gui=true&t=10&paused=false&muted=false&autoplay=1');
+  const [src, setSrc] = useState('https://www.shadertoy.com/embed/wldBRf?gui=true&t=10&paused=false&muted=false&autoplay=1');
   function alterarEnd(endereco) {
     setSrc(endereco);
   }
@@ -27,7 +27,7 @@ const Page = () => {
         <div className="flex text-md items-center rounded-full font-mono">
           <span className="font-bold text-white">Mudar tema:</span>
           <div className="flex ml-2 gap-x-5">
-            <button type="button" className="rounded-full bg-green-500 hover:bg-green-800 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/4t3BWl?gui=true&t=10&paused=false&muted=false&autoplay=1')}>
+            <button type="button" className="rounded-full bg-green-500 hover:bg-green-800 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/wldBRf?gui=true&t=10&paused=false&muted=false&autoplay=1')}>
               <GrCodeSandbox />
             </button>
             <button type="button" className="rounded-full bg-red-500 hover:text-white shadow-sm shadow-slate-900 p-2" onClick={() => alterarEnd('https://www.shadertoy.com/embed/XsyGWV?gui=true&t=10&paused=false&muted=false&autoplay=2')}>
