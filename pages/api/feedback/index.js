@@ -1,12 +1,13 @@
 import Feedback from '../../../models/Feedback';
 import db from '../../../utils/db';
 
+// Criando um novo comentário
 const postHandler = async (req, res) => {
   await db.connect();
   const newFeedback = new Feedback({
-    name: 'Anônimo',
-    rating: 5,
-    comment: 'Escreva seu comentário',
+    nome: 'Anônimo',
+    avaliacao: 5,
+    comentário: 'Escreva seu comentário',
   });
   const feedbacks = await newFeedback.save();
   await db.disconnect();

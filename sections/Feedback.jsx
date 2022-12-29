@@ -44,7 +44,7 @@ const FeedbackList = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, comment, rating }),
+      body: JSON.stringify({ name, rating, comment }),
     });
     const result = await response.json();
     console.log(result);
