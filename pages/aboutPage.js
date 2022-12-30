@@ -1,5 +1,5 @@
 import { NavbarBottom } from '../components';
-import { Languages } from '../sections/aboutPage';
+import { Languages, Librarys } from '../sections/aboutPage';
 import Hero from '../sections/aboutPage/Hero';
 
 import '../styles/globals.css';
@@ -9,8 +9,9 @@ const apis = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
     <Hero />
-    <div className="bg-slate-300">
+    <div>
       <Languages />
+      <Librarys />
     </div>
   </div>
 );

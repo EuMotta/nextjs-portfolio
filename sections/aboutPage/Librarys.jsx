@@ -1,0 +1,143 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import styles from '../../styles';
+import LibrarySvg from '../../public/aboutPage/LibrarySvg.svg';
+import LibrarySvg2 from '../../public/aboutPage/LibrarySvg2.svg';
+import LibrarySvg3 from '../../public/aboutPage/LibrarySvg3.svg';
+import { fadeIn } from '../../utils/motion';
+import { librarysList } from './constants';
+
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
+const Librarys = () => (
+  <section className={`${styles.paddings} z-10`}>
+    <div className="grid grid-cols-2">
+      <div className="col-span-1">
+        <div className="px-5">
+          <h1 className="font-bold mb-5 font-mono text-2xl">
+            Bibliotecas
+          </h1>
+          <div>
+            {librarysList.slice(0, 3).map((library) => (
+              <div className="mb-1 mt-5">
+                <h3 className="font-semibold font-mono text-xl">{library.title}</h3>
+                <p className="text-sm text-justify font-mono">{library.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="col-span-1 my-10">
+        <motion.div
+          animate={{
+            scale: [1.4, 1.4, 1.41, 1.4, 1.4],
+            rotate: [0.1, -0.1, 0.1, -0.1, 0.1],
+            borderRadius: ['50%', '48%', '50%', '48%', '50%'],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+          variants={fadeIn('left', 'tween', 0, 1)}
+          className="flex justify-center"
+          drag
+          dragConstraints={{
+            top: -0.2,
+            left: -0.2,
+            right: 0.2,
+            bottom: 0.2,
+          }}
+        >
+          <Image src={LibrarySvg} width={400} height={400} unoptimized alt="Librarys" onDragStart={ImpedirArrastar} />
+        </motion.div>
+      </div>
+    </div>
+    <div className="grid mt-10 grid-cols-2">
+      <div className="col-span-1 my-10">
+        <motion.div
+          animate={{
+            scale: [1.3, 1.3, 1.31, 1.3, 1.3],
+            rotate: [0.1, -0.1, 0.1, -0.1, 0.1],
+            borderRadius: ['50%', '48%', '50%', '48%', '50%'],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+          variants={fadeIn('left', 'tween', 0, 1)}
+          className="flex justify-center"
+          drag
+          dragConstraints={{
+            top: -0.2,
+            left: -0.2,
+            right: 0.2,
+            bottom: 0.2,
+          }}
+        >
+          <Image src={LibrarySvg2} width={400} height={400} unoptimized alt="Librarys" onDragStart={ImpedirArrastar} />
+        </motion.div>
+      </div>
+      <div className="col-span-1">
+        <div className="px-5">
+          <div>
+            {librarysList.slice(3, 6).map((library) => (
+              <div className="mb-1 mt-5">
+                <h3 className="font-semibold font-mono text-xl">{library.title}</h3>
+                <p className="text-sm text-justify font-mono">{library.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="grid mt-10 grid-cols-2">
+      <div className="col-span-1">
+        <div className="px-5">
+          <div>
+            {librarysList.slice(6, 9).map((library) => (
+              <div className="mb-1 mt-5">
+                <h3 className="font-semibold font-mono text-xl">{library.title}</h3>
+                <p className="text-sm text-justify font-mono">{library.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="col-span-1 my-10">
+        <motion.div
+          animate={{
+            scale: [1.3, 1.3, 1.31, 1.3, 1.3],
+            rotate: [0.1, -0.1, 0.1, -0.1, 0.1],
+            borderRadius: ['50%', '48%', '50%', '48%', '50%'],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+          variants={fadeIn('left', 'tween', 0, 1)}
+          className="flex justify-center"
+          drag
+          dragConstraints={{
+            top: -0.2,
+            left: -0.2,
+            right: 0.2,
+            bottom: 0.2,
+          }}
+        >
+          <Image src={LibrarySvg3} width={400} height={400} unoptimized alt="Librarys" onDragStart={ImpedirArrastar} />
+        </motion.div>
+      </div>
+    </div>
+  </section>
+);
+
+export default Librarys;
