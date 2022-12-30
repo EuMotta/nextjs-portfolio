@@ -194,3 +194,7 @@ ul.dropup {
     color: inherit;
   }
 }
+/* aboutPage */
+.sections-button{
+  @apply  shadow-slate-900 rounded-full  p-1 shadow font-mono font-semibold hover:bg-blue-600 hover:text-white;
+}
