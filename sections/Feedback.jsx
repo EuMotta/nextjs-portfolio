@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { FaUserCircle } from 'react-icons/fa';
+import Image from 'next/image';
 import styles from '../styles';
-import { staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from '../components';
+import feedbackSvg from '../public/feedback/feedbackSvg.svg';
 
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
 const Fdbs = (props) => {
   const { rating } = props;
   const filledStars = Math.floor(rating);
@@ -26,7 +32,7 @@ const FeedbackList = () => {
   const [feedbacks, setFeedbacks] = useState([]);
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
-  const [rating, setRating] = useState('');
+  const [rating, setRating] = useState('1');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,7 +55,6 @@ const FeedbackList = () => {
     const result = await response.json();
     console.log(result);
   };
-
   return (
     <section id="feedback" className={`${styles.paddings} relative z-10 `}>
       <motion.div
@@ -62,18 +67,20 @@ const FeedbackList = () => {
           title="Feedbacks"
           textStyles="text-center text-white font-bold p-10 mb-5 text-3xl"
         />
-        <ul className="grid overflow-scroll shadow-md shadow-slate-600 p-5 h-72 rounded-xl lg:grid-cols-4 w-full md:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 md:gap-y-5 gap-x-5 ">
+        <ul className="grid overflow-scroll shadow-md shadow-slate-600 p-5 h-96 rounded-xl lg:grid-cols-3 w-full md:grid-cols-2 sm:grid-cols-1 sm:gap-y-5 md:gap-y-5 gap-x-5 ">
           {feedbacks.map((feedback) => (
             <ul key={feedback._id} className="text-white p-5 glassmorphism-2 rounded-xl shadow-lg shadow-slate-900">
               <li>
                 <div className="flex justify-center">
                   <div className="grid gap-y-3">
-                    <div className="text-md">
+                    <div className="flex justify-center text-4xl"><FaUserCircle /></div>
+                    <div className="text-md text-center">
+                      <span className="text-[8px] text-red-400">{feedback.test}</span>
                       <h2>{feedback.name}</h2>
                     </div>
                   </div>
                 </div>
-                <div className="text-center border px-1 text-sm border-slate-700 rounded-md overflow-scroll h-24">
+                <div className="text-center border px-1 pt-1 text-sm border-slate-700 rounded-md overflow-scroll h-24">
                   <p className="font-mono">{feedback.comment}</p>
                 </div>
                 <div className="flex items-center pt-2">
@@ -142,6 +149,37 @@ const FeedbackList = () => {
               Enviar
             </button>
           </form>
+          <motion.div
+            animate={{
+              scale: [1.4, 1.4, 1.4, 1.4, 1.4],
+              rotate: [1, -1, 1, -1, 1],
+              borderRadius: ['50%', '46%', '50%', '46%', '50%'],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'easeInOut',
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+            variants={fadeIn('left', 'tween', 0, 1)} className="flex justify-center"
+            drag
+            dragConstraints={{
+              top: -0.2,
+              left: -0.2,
+              right: 0.2,
+              bottom: 0.2,
+            }}
+          >
+            <Image
+              src={feedbackSvg}
+              height={450}
+              width={450}
+              alt="Feedback"
+              unoptimized
+              className=""
+              onDragStart={ImpedirArrastar}
+            />
+          </motion.div>
         </div>
       </motion.div>
     </section>

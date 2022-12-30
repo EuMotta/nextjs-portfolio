@@ -264,7 +264,6 @@ export const navbarItems = [
 export const bottomBarItems = [
   {
     icon: SiHomebridge,
-    href: '/',
     title: 'Inicio',
     id: 'bottonbar1',
   },
@@ -284,17 +283,17 @@ export const bottomBarItems = [
 export const bottomBarDropUp = [
   {
     id: 'bottonbardropup1',
-    link: '#',
-    title: 'Inicio',
+    href: '#feedback',
+    title: 'Feedback',
   },
   {
     id: 'bottonbardropup2',
-    link: '#',
+    href: '#',
     title: 'Inicio',
   },
   {
     id: 'bottonbardropup3',
-    link: '#',
+    href: '#',
     title: 'Inicio',
   },
 
