@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from '../../styles';
 import { fadeIn, staggerContainer } from '../../utils/motion';
 import SearchAPI from '../../public/aboutPage/SearchAPISvg.svg';
+import SearchAPI2 from '../../public/aboutPage/SearchAPISvg2.svg';
 import { APIList } from './constants';
 
 function ImpedirArrastar(event) {
@@ -135,7 +136,7 @@ const SearchAPIs = () => (
           }}
         >
           <Image
-            src={SearchAPI}
+            src={SearchAPI2}
             width={400}
             height={400}
             unoptimized
