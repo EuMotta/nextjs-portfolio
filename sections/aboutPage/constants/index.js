@@ -58,4 +58,8 @@ export const librarysList = [
     title: 'React Tooltip',
     description: 'O React-Tooltip é uma biblioteca para o React que permite adicionar dicas de ferramentas (tooltips) a elementos HTML de maneira fácil e rápida. As dicas de ferramentas são pequenas janelas de informação que aparecem quando o usuário passa o cursor do mouse sobre um elemento ou toca nele em um dispositivo móvel.',
   },
+  {
+    title: 'React-Hook-Form',
+    description: 'O React-Hook-Form é uma biblioteca para o React que permite criar formulários de maneira rápida e fácil. Ele oferece uma série de recursos para gerenciar o estado e a validação dos campos de formulário de maneira simples, sem precisar escrever código adicional.',
+  },
 ];

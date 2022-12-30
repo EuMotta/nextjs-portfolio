@@ -1,5 +1,5 @@
 import { NavbarBottom } from '../components';
-import { Languages, Librarys } from '../sections/aboutPage';
+import { Database, Languages, Librarys } from '../sections/aboutPage';
 import Hero from '../sections/aboutPage/Hero';
 
 import '../styles/globals.css';
@@ -12,6 +12,7 @@ const apis = () => (
     <div>
       <Languages />
       <Librarys />
+      <Database />
     </div>
   </div>
 );
