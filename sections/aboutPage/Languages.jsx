@@ -6,6 +6,9 @@ import styles from '../../styles';
 import Nextjs from '../../public/aboutPage/NextJs.svg';
 import { fadeIn } from '../../utils/motion';
 
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
 const Languages = () => (
   <section className={`${styles.paddings} bg-slate-300 z-10`}>
     <div className="grid grid-cols-2">
@@ -39,7 +42,7 @@ const Languages = () => (
             bottom: 0.2,
           }}
         >
-          <Image src={Nextjs} width={400} height={400} unoptimized alt="NEXTjs" />
+          <Image src={Nextjs} width={400} height={400} unoptimized alt="NEXTjs" onDragStart={ImpedirArrastar} />
         </motion.div>
       </div>
     </div>

@@ -6,6 +6,9 @@ import styles from '../../styles';
 import MongoDB from '../../public/aboutPage/MongoDB.svg';
 import { fadeIn } from '../../utils/motion';
 
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
 const Database = () => (
   <section className={`${styles.paddings} bg-slate-300 z-10`}>
     <div className="grid grid-cols-2">
@@ -61,7 +64,8 @@ const Database = () => (
             width={400}
             height={400}
             unoptimized
-            alt="NEXTjs"
+            alt="MongoDB"
+            onDragStart={ImpedirArrastar}
           />
         </motion.div>
       </div>
