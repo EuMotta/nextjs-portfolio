@@ -4,21 +4,27 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../../styles';
 import Nextjs from '../../public/aboutPage/NextJs.svg';
-import { fadeIn } from '../../utils/motion';
+import { fadeIn, staggerContainer } from '../../utils/motion';
 
 function ImpedirArrastar(event) {
   event.preventDefault();
 }
 const Languages = () => (
   <section className={`${styles.paddings} bg-slate-300 z-10`}>
-    <div className="grid grid-cols-2">
-      <div className="col-span-1">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="grid grid-cols-2"
+    >
+      <motion.div variants={fadeIn('right', 'tween', 0, 1)} className="col-span-1">
         <div className="px-5">
           <h1 className="font-bold mb-5 font-mono text-2xl">Base de desenvolvimento</h1>
           <h3 className="font-semibold mb-5 font-mono text-xl">NEXTjs</h3>
           <p className="text-sm text-justify font-mono">&nbsp;No desenvolvimento deste projeto, utilizei o NEXTjs como plataforma principal. Trata-se de uma extensão do React que auxilia no desenvolvimento de projetos web, permitindo uma rápida criação de aplicações de alta performance. Além disso, o NEXTjs é baseado em JavaScript, o que me permitiu aproveitar ao máximo meus conhecimentos atuais na linguagem tanto para o frontend quanto para o backend. <br />&nbsp;Durante o processo de desenvolvimento, busquei criar uma interface atrativa e intuitiva para o usuário. Utilizei as minhas habilidades em JavaScript para garantir uma experiência de usuário otimizada e fluida. Além disso, me esforcei para maximizar a eficiência e a funcionalidade do projeto, a fim de oferecer uma solução de qualidade aos usuários.</p>
         </div>
-      </div>
+      </motion.div>
       <div className="col-span-1 my-10">
         <motion.div
           animate={{
@@ -45,7 +51,7 @@ const Languages = () => (
           <Image src={Nextjs} width={400} height={400} unoptimized alt="NEXTjs" onDragStart={ImpedirArrastar} />
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   </section>
 );
 
