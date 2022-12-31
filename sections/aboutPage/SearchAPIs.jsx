@@ -106,7 +106,7 @@ const SearchAPIs = () => (
                 className="mb-1 mt-5"
               >
                 <h3 className="font-semibold font-mono text-xl">{API.title}</h3>
-                <p className="text-sm text-justify font-mono">{API.description}</p>
+                <p className="text-sm text-justify font-mono">&nbsp;{API.description}</p>
               </div>
             ))}
           </div>

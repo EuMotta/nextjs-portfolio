@@ -1,5 +1,5 @@
 import { NavbarBottom } from '../components';
-import { Database, Languages, Librarys, SearchAPIs } from '../sections/aboutPage';
+import { Database, Iframe, Images, Languages, Librarys, SearchAPIs } from '../sections/aboutPage';
 import Hero from '../sections/aboutPage/Hero';
 
 import '../styles/globals.css';
@@ -14,6 +14,8 @@ const apis = () => (
       <Librarys />
       <Database />
       <SearchAPIs />
+      <Iframe />
+      <Images />
     </div>
   </div>
 );

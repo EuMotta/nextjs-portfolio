@@ -3,6 +3,8 @@ import Languages from './Languages';
 import Librarys from './Librarys';
 import Database from './Database';
 import SearchAPIs from './SearchAPIs';
+import Iframe from './Iframe';
+import Images from './Images';
 
 export {
   Hero,
@@ -10,4 +12,6 @@ export {
   Librarys,
   Database,
   SearchAPIs,
+  Iframe,
+  Images,
 };

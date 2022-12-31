@@ -34,7 +34,7 @@ const Librarys = () => (
                   className="mb-1 mt-5"
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all z-50 font-mono text-xl">{library.title}</Link>
-                  <p className="text-sm text-justify font-mono">{library.description}</p>
+                  <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -103,7 +103,7 @@ const Librarys = () => (
                   className="mb-1 mt-5"
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all font-mono text-xl">{library.title}</Link>
-                  <p className="text-sm text-justify font-mono">{library.description}</p>
+                  <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -120,7 +120,7 @@ const Librarys = () => (
                   className="mb-1 mt-5"
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all z-50 font-mono text-xl">{library.title}</Link>
-                  <p className="text-sm text-justify font-mono">{library.description}</p>
+                  <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>
                 </motion.div>
               ))}
             </div>

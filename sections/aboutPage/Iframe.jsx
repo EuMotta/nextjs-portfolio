@@ -3,13 +3,13 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../../styles';
-import MongoDB from '../../public/aboutPage/MongoDB.svg';
+import iframe from '../../public/aboutPage/iframeSvg.svg';
 import { fadeIn, staggerContainer } from '../../utils/motion';
 
 function ImpedirArrastar(event) {
   event.preventDefault();
 }
-const Database = () => (
+const Iframe = () => (
   <section className={`${styles.paddings} bg-slate-300 z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -22,25 +22,22 @@ const Database = () => (
         className="col-span-1"
       >
         <div className="px-5">
-          <h1 className="font-bold mb-5 font-mono text-2xl">
-            Banco de Dados
-          </h1>
-          <h3 className="font-semibold mb-5 font-mono text-xl">MongoDB</h3>
+          <h1 className="font-bold mb-5 font-mono text-2xl">iframe</h1>
+          <h3 className="font-semibold mb-5 font-mono text-xl">Entenda como essa ferramenta pode ser usada em páginas web</h3>
           <p className="text-sm text-justify font-mono">
-            &nbsp;O MongoDB é um sistema de gerenciamento de banco de dados
-            orientado a documentos. Isso significa que, em vez de armazenar
-            dados em tabelas como em um banco de dados relacional, o MongoDB
-            armazena os dados em documentos semelhantes a registros JSON
-            (JavaScript Object Notation). Esses documentos podem conter campos
-            aninhados, o que permite uma maior flexibilidade e escalabilidade em
-            comparação com os sistemas de banco de dados relacionais
-            tradicionais. <br />
-            &nbsp;Ele é compatível com a maioria dos sistemas operacionais
-            e pode ser executado em uma variedade de plataformas, incluindo
-            Windows, macOS e Linux. Ele é amplamente utilizado em aplicações da
-            web, como sites de comércio eletrônico, plataformas de gerenciamento
-            de conteúdo e sistemas de gerenciamento de relacionamento com
-            clientes.
+            &nbsp;Um iframe (inline frame) é um elemento HTML que permite a
+            inserção de um documento HTML dentro de outro documento HTML. Ele é
+            usado para exibir o conteúdo de um documento em outro lugar, como em
+            uma página da web ou em um e-mail. <br />
+            &nbsp;É possível interagir com um iframe de várias maneiras,
+            dependendo do contexto em que ele é utilizado. Por exemplo, é
+            possível usar JavaScript para manipular o conteúdo do iframe,
+            alterar o endereço que ele está exibindo ou até mesmo comunicar-se
+            com o documento do iframe usando APIs como o window.postMessage. No
+            entanto, é importante lembrar que os iframes são geralmente
+            considerados como "caixas-pretas" pelos navegadores, o que significa
+            que eles têm algumas restrições de segurança que impedem que você
+            acesse ou modifique o conteúdo de um iframe de forma arbitrária.
           </p>
         </div>
       </motion.div>
@@ -68,7 +65,7 @@ const Database = () => (
           }}
         >
           <Image
-            src={MongoDB}
+            src={iframe}
             width={400}
             height={400}
             unoptimized
@@ -81,4 +78,4 @@ const Database = () => (
   </section>
 );
 
-export default Database;
+export default Iframe;
