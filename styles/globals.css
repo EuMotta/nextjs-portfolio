@@ -9,6 +9,11 @@
   font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: wars;
+  src: url('../assets/VampireWars.ttf');
+  font-weight: 600;
+}
 
 .dropup {
   position: relative;

@@ -10,7 +10,7 @@ function ImpedirArrastar(event) {
   event.preventDefault();
 }
 const Languages = () => (
-  <section className={`${styles.paddings} bg-slate-300 z-10`}>
+  <section id="languages" className={`${styles.paddings} bg-slate-300 z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

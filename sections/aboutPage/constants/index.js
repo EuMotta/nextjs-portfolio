@@ -24,6 +24,11 @@ export const sectionButtons = [
     href: '#iframes',
     colorStyle: 'bg-slate-100 text-slate-900',
   },
+  {
+    title: 'Images',
+    href: '#Images',
+    colorStyle: 'bg-slate-100 text-slate-900',
+  },
 ];
 export const librarysList = [
   {

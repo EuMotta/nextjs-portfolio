@@ -1,0 +1,56 @@
+
+.textured-bgHome {
+  background-image: url('../../public/cover.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textEditHome{
+  mask-image: url(../../public/home1/mask1.png);
+  opacity: 90%;
+  -webkit-mask-image: url(../../public/home1/mask1.png);
+  color: #fff;
+}
+.textEditAbout{
+  background: url(../../public/cover.png) no-repeat center center;
+  background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	padding: 2em;
+  font-family: wars;
+	/* -webkit-background-clip clips the background of the element to the text */
+	-webkit-text-fill-color: transparent; /* overrides the white text color in webkit browsers */
+	-webkit-background-clip: text;
+  text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.205);
+}
+
+.textured-bgAbout {
+  background-image: url('../../public/planet-07.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bordered-text {
+  text-shadow: 0 0 10px red;
+}
+#maskText h1 {
+  font-size: 200px;
+  font-family: 'Lilita One', sans-serif;
+  color: #ffe400;
+  text-shadow: 7px 7px 0px #34495e;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: block;
+  -webkit-mask-image: url('../../public/home1/mask1.png');
+  -webkit-transition:all 2s ease;
+  -moz-transition:all 2s ease;
+  -o-transition:all 2s ease;
+  transition:all 2s ease;
+}
+  #maskText h1:hover{
+    -webkit-mask-image: url('../../public/home1/mask2.png');
+  cursor: pointer;
+  color: #ffe400;
+}
