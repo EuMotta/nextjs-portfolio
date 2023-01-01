@@ -4,6 +4,7 @@ import Bars from './Bars';
 import WorldPopulation from './WorldPopulation';
 import RH from './RH';
 import Areas from './Areas';
+import Composed from './Composed';
 
 export {
   Hero,
@@ -12,4 +13,5 @@ export {
   Bars,
   WorldPopulation,
   RH,
+  Composed,
 };

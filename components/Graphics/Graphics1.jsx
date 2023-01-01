@@ -19,6 +19,8 @@ import {
   Radar,
   AreaChart,
   Area,
+  Scatter,
+  ComposedChart,
 } from 'recharts';
 
 const dataCoin = [
@@ -106,6 +108,50 @@ const clothingSales = [
   { name: 'Acessórios', masculino: 45, feminino: 50, infantil: 25 },
   { name: 'Jaquetas', masculino: 70, feminino: 90, infantil: 45 },
   { name: 'Bolsas', masculino: 60, feminino: 64, infantil: 30 },
+];
+const dadosFinanceiros = [
+  {
+    ano: 2010,
+    rendaFamiliar: 35000,
+    despesaHabitacao: 12000,
+    despesaAlimentacao: 7000,
+    despesaTotal: 19000,
+  },
+  {
+    ano: 2011,
+    rendaFamiliar: 32000,
+    despesaHabitacao: 14000,
+    despesaAlimentacao: 8000,
+    despesaTotal: 22000,
+  },
+  {
+    ano: 2012,
+    rendaFamiliar: 22000,
+    despesaHabitacao: 15000,
+    despesaAlimentacao: 8500,
+    despesaTotal: 23500,
+  },
+  {
+    ano: 2013,
+    rendaFamiliar: 35000,
+    despesaHabitacao: 16000,
+    despesaAlimentacao: 9000,
+    despesaTotal: 25000,
+  },
+  {
+    ano: 2014,
+    rendaFamiliar: 40000,
+    despesaHabitacao: 17000,
+    despesaAlimentacao: 10000,
+    despesaTotal: 27000,
+  },
+  {
+    ano: 2015,
+    rendaFamiliar: 18000,
+    despesaHabitacao: 18000,
+    despesaAlimentacao: 10000,
+    despesaTotal: 28000,
+  },
 ];
 
 const Graphics1 = () => (
@@ -288,6 +334,38 @@ const Graphics7 = () => (
     </ResponsiveContainer>
   </ResponsiveContainer>
 );
+const Graphics8 = () => (
+  <ResponsiveContainer width="100%" height={300} className="text-[#4144e0]">
+    <ComposedChart
+      width={500}
+      height={400}
+      data={dadosFinanceiros}
+      margin={{
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
+      }}
+    >
+      <CartesianGrid stroke="#f5f5f5" />
+      <XAxis dataKey="ano" scale="band" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Area
+        type="monotone"
+        dataKey="despesaTotal"
+        stackId="1"
+        stroke="#82ca9d"
+        fill="#82ca9d"
+      />
+      <Bar dataKey="rendaFamiliar" barSize={20} fill="#413ea0" />
+      <Line type="monotone" dataKey="despesaHabitacao" stroke="#ff7300" />
+      <Scatter dataKey="despesaAlimentacao" fill="red" />
+      
+    </ComposedChart>
+  </ResponsiveContainer>
+);
 
 export {
   Graphics1,
@@ -297,4 +375,5 @@ export {
   Graphics5,
   Graphics6,
   Graphics7,
+  Graphics8,
 };

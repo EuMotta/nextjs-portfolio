@@ -1,6 +1,6 @@
 import { NavbarBottom } from '../components';
 import { } from '../sections/apiConsulta';
-import { Areas, Bars, Hero, RH, WorldPopulation } from '../sections/graphics';
+import { Areas, Bars, Composed, Hero, RH, WorldPopulation } from '../sections/graphics';
 import '../styles/globals.css';
 import '../tailwind.config';
 import Lines from '../sections/graphics/Lines';
@@ -18,6 +18,7 @@ const apis = () => (
       <WorldPopulation />
     </div>
     <RH />
+    <Composed />
   </div>
 );
 

@@ -1,4 +1,4 @@
-import { Graphics1, Graphics2, Graphics5, Graphics6, Graphics7 } from '../../../components/Graphics/Graphics1';
+import { Graphics1, Graphics2, Graphics5, Graphics6, Graphics7, Graphics8 } from '../../../components/Graphics/Graphics1';
 
 export const LinesGraphs = [
   {
@@ -20,6 +20,14 @@ export const AreasGraphs = [
     subtitle: 'Comparação de vendas',
     description: 'O gráfico de área seria útil neste caso, pois permite comparar facilmente as vendas do produto ao longo do tempo. Ele também permite destacar o tamanho relativo das vendas em cada mês, permitindo ver a tendência geral das vendas ao longo do tempo. Além disso, o gráfico de área também pode ser usado para comparar as vendas de dois produtos diferentes, como no exemplo acima, onde o valor e o valor2 representam as vendas de dois produtos diferentes. Isso pode ser útil para identificar quais produtos estão tendo mais sucesso e onde é preciso focar mais esforços de marketing.',
     graph: <Graphics6 />,
+  },
+];
+export const ComposedGraphs = [
+  {
+    title: 'Area simples',
+    subtitle: 'Comparação de vendas',
+    description: 'O gráfico de área seria útil neste caso, pois permite comparar facilmente as vendas do produto ao longo do tempo. Ele também permite destacar o tamanho relativo das vendas em cada mês, permitindo ver a tendência geral das vendas ao longo do tempo. Além disso, o gráfico de área também pode ser usado para comparar as vendas de dois produtos diferentes, como no exemplo acima, onde o valor e o valor2 representam as vendas de dois produtos diferentes. Isso pode ser útil para identificar quais produtos estão tendo mais sucesso e onde é preciso focar mais esforços de marketing.',
+    graph: <Graphics8 />,
   },
 ];
 export const BarsGraphs = [
