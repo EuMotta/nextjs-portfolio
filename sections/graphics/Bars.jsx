@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 import styles from '../../styles';
 import { fadeIn, staggerContainer } from '../../utils/motion';
-import { LinesGraphs } from './constants';
+import { BarsGraphs } from './constants';
 
-const Lines = () => (
+const BirthTax = () => (
   <section className={`${styles.paddings}  z-10 container`}>
-    {LinesGraphs.slice(0, 1).map((line) => (
+    {BarsGraphs.slice(0, 1).map((line) => (
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -40,14 +40,13 @@ const Lines = () => (
         </div>
       </motion.div>
     ))}
-    {LinesGraphs.slice(1, 2).map((line) => (
+    {BarsGraphs.slice(1, 2).map((line) => (
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         className="grid grid-cols-2"
         key={line.title}
-
       >
         <div className="col-span-1 my-10">
           <motion.div
@@ -77,4 +76,4 @@ const Lines = () => (
   </section>
 );
 
-export default Lines;
+export default BirthTax;

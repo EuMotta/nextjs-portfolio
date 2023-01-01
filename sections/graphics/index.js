@@ -1,13 +1,15 @@
 import Hero from './Hero';
 import Lines from './Lines';
-import BirthTax from './BirthTax';
+import Bars from './Bars';
 import WorldPopulation from './WorldPopulation';
 import RH from './RH';
+import Areas from './Areas';
 
 export {
   Hero,
   Lines,
-  BirthTax,
+  Areas,
+  Bars,
   WorldPopulation,
   RH,
 };

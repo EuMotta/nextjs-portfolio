@@ -1,6 +1,6 @@
 import { NavbarBottom } from '../components';
 import { } from '../sections/apiConsulta';
-import { BirthTax, Hero, RH, WorldPopulation } from '../sections/graphics';
+import { Areas, Bars, Hero, RH, WorldPopulation } from '../sections/graphics';
 import '../styles/globals.css';
 import '../tailwind.config';
 import Lines from '../sections/graphics/Lines';
@@ -12,7 +12,8 @@ const apis = () => (
     <div className="bg-slate-300">
       <Lines />
     </div>
-    <BirthTax />
+    <Areas />
+    <Bars />
     <div className="bg-slate-300">
       <WorldPopulation />
     </div>

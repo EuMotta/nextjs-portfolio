@@ -17,6 +17,8 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   Radar,
+  AreaChart,
+  Area,
 } from 'recharts';
 
 const dataCoin = [
@@ -82,12 +84,28 @@ const performanceEvaluation = [
   { name: 'Liderança', value: 2.0, value2: 2.8 },
 ];
 const dataAnalysis = [
-  { name: 'Dados', value: 75, value2: 65 },
-  { name: 'Interesse', value: 60, value2: 80 },
-  { name: 'conversão', value: 90, value2: 75 },
-  { name: 'Tempo médio', value: 45, value2: 50 },
-  { name: 'visualizações', value: 70, value2: 90 },
-  { name: 'rejeição', value: 60, value2: 64 },
+  { name: 'Dados', site1: 75, site2: 65 },
+  { name: 'Interesse', site1: 60, site2: 80 },
+  { name: 'conversão', site1: 90, site2: 75 },
+  { name: 'Tempo médio', site1: 45, site2: 50 },
+  { name: 'visualizações', site1: 70, site2: 90 },
+  { name: 'rejeição', site1: 60, site2: 64 },
+];
+const salesData = [
+  { name: 'Janeiro', produto: 75, produto2: 65 },
+  { name: 'Fevereiro', produto: 60, produto2: 80 },
+  { name: 'Março', produto: 90, produto2: 75 },
+  { name: 'Abril', produto: 45, produto2: 50 },
+  { name: 'Maio', produto: 70, produto2: 90 },
+  { name: 'Junho', produto: 60, produto2: 64 },
+];
+const clothingSales = [
+  { name: 'Camisetas', masculino: 75, feminino: 65, infantil: 35 },
+  { name: 'Calças', masculino: 60, feminino: 80, infantil: 50 },
+  { name: 'Sapatos', masculino: 90, feminino: 75, infantil: 55 },
+  { name: 'Acessórios', masculino: 45, feminino: 50, infantil: 25 },
+  { name: 'Jaquetas', masculino: 70, feminino: 90, infantil: 45 },
+  { name: 'Bolsas', masculino: 60, feminino: 64, infantil: 30 },
 ];
 
 const Graphics1 = () => (
@@ -203,11 +221,80 @@ const Graphics5 = () => (
         <YAxis dataKey="name" type="category" />
         <Tooltip />
         <Legend />
-        <Line dataKey="value" stroke="#8884d8" />
-        <Line dataKey="value2" stroke="#82ca9d" />
+        <Line dataKey="site1" stroke="#8884d8" />
+        <Line dataKey="site2" stroke="#82ca9d" />
       </LineChart>
     </ResponsiveContainer>
   </ResponsiveContainer>
 );
+const Graphics6 = () => (
+  <ResponsiveContainer width="100%" height={300} className="text-[#4144e0]">
+    <ResponsiveContainer width="100%" height="100%">
+      <AreaChart
+        width={500}
+        height={400}
+        data={salesData}
+        margin={{
+          top: 10,
+          right: 30,
+          left: 0,
+          bottom: 0,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis domain={[25, 90]} />
+        <Tooltip />
+        <Area
+          type="monotone"
+          dataKey="produto"
+          stroke="#8884d8"
+          fill="#8884d8"
+        />
+        <Area
+          type="monotone"
+          dataKey="produto2"
+          stackId="1"
+          stroke="#82ca9d"
+          fill="#82ca9d"
+        />
+      </AreaChart>
+    </ResponsiveContainer>
+  </ResponsiveContainer>
+);
+const Graphics7 = () => (
+  <ResponsiveContainer width="100%" height={300} className="text-[#4144e0]">
+    <ResponsiveContainer width="100%" height="100%">
+      <BarChart
+        width={500}
+        height={300}
+        data={clothingSales}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="masculino" fill="#8884d8" />
+        <Bar dataKey="feminino" fill="#f5a244" />
+        <Bar dataKey="infantil" fill="#5cd338" />
+      </BarChart>
+    </ResponsiveContainer>
+  </ResponsiveContainer>
+);
 
-export { Graphics1, Graphics2, Graphics3, Graphics4, Graphics5 };
+export {
+  Graphics1,
+  Graphics2,
+  Graphics3,
+  Graphics4,
+  Graphics5,
+  Graphics6,
+  Graphics7,
+};
