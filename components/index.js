@@ -8,7 +8,7 @@ import Footer from './Footer';
 import Nav from './Nav';
 import PositionBar from './PositionBar';
 import Top from './Top';
-import Graphics1 from './Graphics/Graphics1';
+import { Graphics1, Graphics2, Graphics3, Graphics4 } from './Graphics/Graphics1';
 
 export {
   PositionBar,
@@ -22,5 +22,8 @@ export {
   ExploreCard,
   InsightCard,
   Graphics1,
+  Graphics2,
+  Graphics3,
+  Graphics4,
   Footer,
 };
