@@ -362,7 +362,6 @@ const Graphics8 = () => (
       <Bar dataKey="rendaFamiliar" barSize={20} fill="#413ea0" />
       <Line type="monotone" dataKey="despesaHabitacao" stroke="#ff7300" />
       <Scatter dataKey="despesaAlimentacao" fill="red" />
-      
     </ComposedChart>
   </ResponsiveContainer>
 );
