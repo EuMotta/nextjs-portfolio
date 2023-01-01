@@ -8,7 +8,7 @@ import styles from '../../styles';
 import img from '../../public/heroApiConsulta.svg';
 import { TitleText, TypingText } from '../../components';
 
-const Insights = () => (
+const Hero = () => (
   <section id="cep" className={`${styles.paddings} z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -52,4 +52,4 @@ const Insights = () => (
   </section>
 );
 
-export default Insights;
+export default Hero;

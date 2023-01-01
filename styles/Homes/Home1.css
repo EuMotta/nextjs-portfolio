@@ -11,6 +11,11 @@
   -webkit-mask-image: url(../../public/home1/mask1.png);
   color: #fff;
 }
+.textEditHome2 {
+  mask-image:  url(../../public/home1/mask2.png);
+  -webkit-mask-image:  url(../../public/home1/mask1.png);
+  color: #fff;
+}
 .textEditAbout{
   background: url(../../public/cover.png) no-repeat center center;
   background-attachment: fixed;
