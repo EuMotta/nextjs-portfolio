@@ -5,6 +5,7 @@ import WorldPopulation from './WorldPopulation';
 import RH from './RH';
 import Areas from './Areas';
 import Composed from './Composed';
+import GraphResum from './GraphResum';
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   WorldPopulation,
   RH,
   Composed,
+  GraphResum,
 };

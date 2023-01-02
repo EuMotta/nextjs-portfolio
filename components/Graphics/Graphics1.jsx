@@ -21,6 +21,7 @@ import {
   Area,
   Scatter,
   ComposedChart,
+  Brush,
 } from 'recharts';
 
 const dataCoin = [
@@ -152,6 +153,159 @@ const dadosFinanceiros = [
     despesaAlimentacao: 10000,
     despesaTotal: 28000,
   },
+];
+const temperatureData = [
+  {
+    date: '2022-01-01',
+    Guaratingueta: 20,
+    GuaratinguetaHumidity: 50,
+    GuaratinguetaWindSpeed: 15,
+    Taubate: 22,
+    TaubateHumidity: 40,
+    TaubateWindSpeed: 10,
+    SJC: 24,
+    SJCHumidity: 45,
+    SJCWindSpeed: 20,
+  },
+  {
+    date: '2022-01-02',
+    Guaratingueta: 22,
+    GuaratinguetaHumidity: 55,
+    GuaratinguetaWindSpeed: 12,
+    Taubate: 23,
+    TaubateHumidity: 45,
+    TaubateWindSpeed: 15,
+    SJC: 23,
+    SJCHumidity: 50,
+    SJCWindSpeed: 25,
+  },
+  {
+    date: '2022-01-03',
+    Guaratingueta: 21,
+    GuaratinguetaHumidity: 60,
+    GuaratinguetaWindSpeed: 17,
+    Taubate: 21,
+    TaubateHumidity: 50,
+    TaubateWindSpeed: 14,
+    SJC: 14,
+    SJCHumidity: 40,
+    SJCWindSpeed: 21,
+  },
+  {
+    date: '2022-01-04',
+    Guaratingueta: 19,
+    GuaratinguetaHumidity: 65,
+    GuaratinguetaWindSpeed: 11,
+    Taubate: 22,
+    TaubateHumidity: 55,
+    TaubateWindSpeed: 14,
+    SJC: 19,
+    SJCHumidity: 45,
+    SJCWindSpeed: 18,
+  },
+  {
+    date: '2022-01-05',
+    Guaratingueta: 16,
+    GuaratinguetaHumidity: 70,
+    GuaratinguetaWindSpeed: 10,
+    Taubate: 20,
+    TaubateHumidity: 60,
+    TaubateWindSpeed: 11,
+    SJC: 25,
+    SJCHumidity: 50,
+    SJCWindSpeed: 16,
+  },
+  {
+    date: '2022-01-06',
+    Guaratingueta: 20,
+    GuaratinguetaHumidity: 65,
+    GuaratinguetaWindSpeed: 14,
+    Taubate: 23,
+    TaubateHumidity: 55,
+    TaubateWindSpeed: 13,
+    SJC: 23,
+    SJCHumidity: 45,
+    SJCWindSpeed: 19,
+  },
+  {
+    date: '2022-01-07',
+    Guaratingueta: 24,
+    GuaratinguetaHumidity: 60,
+    GuaratinguetaWindSpeed: 15,
+    Taubate: 17,
+    TaubateHumidity: 50,
+    TaubateWindSpeed: 14,
+    SJC: 29,
+    SJCHumidity: 40,
+    SJCWindSpeed: 14,
+  },
+  {
+    date: '2022-01-08',
+    Guaratingueta: 15,
+    GuaratinguetaHumidity: 55,
+    GuaratinguetaWindSpeed: 17,
+    Taubate: 25,
+    TaubateHumidity: 45,
+    TaubateWindSpeed: 15,
+    SJC: 30,
+    SJCHumidity: 50,
+    SJCWindSpeed: 13,
+  },
+  {
+    date: '2022-01-09',
+    Guaratingueta: 16,
+    GuaratinguetaHumidity: 50,
+    GuaratinguetaWindSpeed: 11,
+    Taubate: 20,
+    TaubateHumidity: 40,
+    TaubateWindSpeed: 21,
+    SJC: 27,
+    SJCHumidity: 45,
+    SJCWindSpeed: 22,
+  },
+  {
+    date: '2022-01-10',
+    Guaratingueta: 21,
+    GuaratinguetaHumidity: 45,
+    GuaratinguetaWindSpeed: 20,
+    Taubate: 17,
+    TaubateHumidity: 50,
+    TaubateWindSpeed: 18,
+    SJC: 25,
+    SJCHumidity: 40,
+    SJCWindSpeed: 15,
+  },
+];
+const products = [
+  { produto: '1', vendas: 300, lucro: 456 },
+  { produto: '2', vendas: -145, lucro: -230 },
+  { produto: '3', vendas: -100, lucro: -345 },
+  { produto: '4', vendas: -8, lucro: -450 },
+  { produto: '5', vendas: 100, lucro: 321 },
+  { produto: '6', vendas: 9, lucro: 235 },
+  { produto: '7', vendas: 53, lucro: 267 },
+  { produto: '8', vendas: 252, lucro: 378 },
+  { produto: '9', vendas: 79, lucro: -210 },
+  { produto: '10', vendas: 294, lucro: 230 },
+  { produto: '11', vendas: 320, lucro: 456 },
+  { produto: '12', vendas: -135, lucro: -230 },
+  { produto: '13', vendas: -160, lucro: -345 },
+  { produto: '14', vendas: 26, lucro: 450 },
+  { produto: '15', vendas: 120, lucro: 321 },
+  { produto: '16', vendas: 15, lucro: 235 },
+  { produto: '17', vendas: 88, lucro: 267 },
+  { produto: '18', vendas: -60, lucro: -378 },
+  { produto: '19', vendas: -7, lucro: -210 },
+  { produto: '20', vendas: 294, lucro: 230 },
+  { produto: '21', vendas: 300, lucro: 456 },
+  { produto: '22', vendas: 145, lucro: 230 },
+  { produto: '23', vendas: 100, lucro: 345 },
+  { produto: '24', vendas: 8, lucro: 450 },
+  { produto: '25', vendas: 100, lucro: 321 },
+  { produto: '26', vendas: 9, lucro: 235 },
+  { produto: '27', vendas: 53, lucro: 267 },
+  { produto: '28', vendas: -252, lucro: 378 },
+  { produto: '29', vendas: -79, lucro: -210 },
 ];
 
 const Graphics1 = () => (
@@ -365,6 +519,152 @@ const Graphics8 = () => (
     </ComposedChart>
   </ResponsiveContainer>
 );
+const Graphics9 = () => (
+  <div style={{ width: '100%' }}>
+    <h4>Temperatura</h4>
+
+    <ResponsiveContainer width="100%" height={200}>
+      <LineChart
+        width={500}
+        height={200}
+        data={temperatureData}
+        syncId="anyId"
+        margin={{
+          top: 10,
+          right: 30,
+          left: 0,
+          bottom: 0,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="date" />
+        <YAxis />
+        <Tooltip />
+        <Line
+          type="monotone"
+          dataKey="Guaratingueta"
+          stroke="#8884d8"
+          fill="#8884d8"
+        />
+        <Line
+          type="monotone"
+          dataKey="Taubate"
+          stroke="#e99903"
+          fill="#e99903"
+        />
+        <Line type="monotone" dataKey="SJC" stroke="#03e916" fill="#03e916" />
+      </LineChart>
+    </ResponsiveContainer>
+    <p>Umidade</p>
+
+    <ResponsiveContainer width="100%" height={200}>
+      <LineChart
+        width={500}
+        height={200}
+        data={temperatureData}
+        syncId="anyId"
+        margin={{
+          top: 10,
+          right: 30,
+          left: 0,
+          bottom: 0,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="date" />
+        <YAxis />
+        <Tooltip />
+        <Line
+          type="monotone"
+          dataKey="GuaratinguetaHumidity"
+          stroke="#8884d8"
+          fill="#8884d8"
+        />
+        <Line
+          type="monotone"
+          dataKey="TaubateHumidity"
+          stroke="#e99903"
+          fill="#e99903"
+        />
+        <Line
+          type="monotone"
+          dataKey="SJCHumidity"
+          stroke="#03e916"
+          fill="#03e916"
+        />
+        <Brush />
+      </LineChart>
+    </ResponsiveContainer>
+    <p>Utilize a barra para ajustar o zoom do gráfico</p>
+    <p>Velocidade do vento</p>
+    <ResponsiveContainer width="100%" height={200}>
+      <AreaChart
+        width={500}
+        height={200}
+        data={temperatureData}
+        syncId="anyId"
+        margin={{
+          top: 10,
+          right: 30,
+          left: 0,
+          bottom: 0,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="date" />
+        <YAxis />
+        <Tooltip />
+        <Area
+          type="monotone"
+          dataKey="SJCWindSpeed"
+          stroke="#03e916"
+          fill="#03e916"
+        />
+        <Area
+          type="monotone"
+          dataKey="GuaratinguetaWindSpeed"
+          stroke="#8884d8"
+          fill="#8884d8"
+        />
+        <Area
+          type="monotone"
+          dataKey="TaubateWindSpeed"
+          stroke="#e99903"
+          fill="#e99903"
+        />
+      </AreaChart>
+    </ResponsiveContainer>
+  </div>
+);
+const Graphics10 = () => (
+  <div style={{ width: '100%' }}>
+    <h4>Produtos</h4>
+
+    <ResponsiveContainer width="100%" height={400}>
+      <BarChart
+        width={500}
+        height={300}
+        data={products}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="produto" />
+        <YAxis />
+        <Tooltip />
+        <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />
+        <ReferenceLine y={0} stroke="#000" />
+        <Brush dataKey="produto" height={30} stroke="#8884d8" />
+        <Bar dataKey="vendas" fill="#8884d8" />
+        <Bar dataKey="lucro" fill="#82ca9d" />
+      </BarChart>
+    </ResponsiveContainer>
+  </div>
+);
 
 export {
   Graphics1,
@@ -375,4 +675,6 @@ export {
   Graphics6,
   Graphics7,
   Graphics8,
+  Graphics9,
+  Graphics10,
 };

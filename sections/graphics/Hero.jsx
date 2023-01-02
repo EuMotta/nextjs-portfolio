@@ -63,7 +63,6 @@ const Hero = () => (
           <div className="text-4xl font-bold mb-2 leading-tight">
             Veja como os dados podem ser transformados em gráficos atraentes e informativos
             <div className="text-blue-600 flex my-5 text-3xl">
-              <span className="text-slate-900">Graficos de:</span>
               <Typewriter
                 options={{
                   strings: [
