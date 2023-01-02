@@ -31,9 +31,9 @@ export const AreasGraphs = [
 ];
 export const ComposedGraphs = [
   {
-    title: 'Area simples',
-    subtitle: 'Comparação de vendas',
-    description: 'O gráfico de área seria útil neste caso, pois permite comparar facilmente as vendas do produto ao longo do tempo. Ele também permite destacar o tamanho relativo das vendas em cada mês, permitindo ver a tendência geral das vendas ao longo do tempo. Além disso, o gráfico de área também pode ser usado para comparar as vendas de dois produtos diferentes, como no exemplo acima, onde o valor e o valor2 representam as vendas de dois produtos diferentes. Isso pode ser útil para identificar quais produtos estão tendo mais sucesso e onde é preciso focar mais esforços de marketing.',
+    title: 'Grafico composto',
+    subtitle: 'Renda familiar anual',
+    description: 'Este gráfico composto mostra a renda familiar, despesa total, despesa habitação e despesa alimentação de 2010 a 2015. O objetivo de um gráfico composto é fornecer uma visão geral de vários conjuntos de dados ao mesmo tempo, permitindo a comparação de diferentes variáveis e identificação de padrões e tendências. Isso pode ser útil em análises de dados em que é importante visualizar como os valores mudam ao longo do tempo ou comparar valores em diferentes categorias. Gráficos compostos também são úteis para tornar os dados mais fáceis de entender e interpretar para o público em geral.',
     graph: <Graphics8 />,
   },
 ];

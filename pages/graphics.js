@@ -14,11 +14,13 @@ const apis = () => (
       <Lines />
     </div>
     <Areas />
-    <Bars />
     <div className="bg-slate-300">
-      <WorldPopulation />
+      <Bars />
     </div>
-    <RH />
+    <WorldPopulation />
+    <div className="bg-slate-300">
+      <RH />
+    </div>
     <Composed />
   </div>
 );
