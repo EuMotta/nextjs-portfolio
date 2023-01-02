@@ -5,7 +5,7 @@ import '../styles/globals.css';
 import '../tailwind.config';
 import Lines from '../sections/graphics/Lines';
 
-const apis = () => (
+const graphics = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
     <Hero />
@@ -25,4 +25,4 @@ const apis = () => (
   </div>
 );
 
-export default apis;
+export default graphics;
