@@ -8,8 +8,10 @@ import '../tailwind.config';
 const apis = () => (
   <div title="about" className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
-    <div className="container mx-auto">
-      <Hero />
+    <div className="">
+      <div className="bg-pages">
+        <Hero />
+      </div>
       <div>
         <Languages />
         <Librarys />

@@ -10,7 +10,7 @@ function ImpedirArrastar(event) {
   event.preventDefault();
 }
 const Images = () => (
-  <section className={`${styles.paddings}  z-10`}>
+  <section className={`${styles.paddings}  z-10 container mx-auto`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

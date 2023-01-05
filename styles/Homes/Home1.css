@@ -1,4 +1,8 @@
-
+@font-face {
+  font-family: Merri;
+  src: url('../../assets/Oswald-SemiBold.ttf');
+  font-weight: 600;
+}
 .textured-bgHome {
   background-image: url('../../public/cover.png');
   background-attachment: fixed;
@@ -58,4 +62,87 @@
     -webkit-mask-image: url('../../public/home1/mask2.png');
   cursor: pointer;
   color: #ffe400;
+}
+.bg-home{
+  background-image: url(../../public/home1/Herobg.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  @apply font-bold text-3xl md:text-4xl lg:text-6xl;
+  font-family: Merri;
+}
+
+h2 {
+  @apply font-bold text-xl md:text-3xl lg:text-4xl;
+  font-family: Merri;
+}
+
+h3 {
+  @apply font-bold text-lg md:text-xl lg:text-2xl;
+}
+
+h4 {
+  @apply font-bold text-base md:text-lg lg:text-xl;
+}
+
+h5 {
+  @apply font-bold text-sm md:text-base lg:text-lg;
+}
+
+p {
+  @apply text-base font-mono md:text-lg;
+}
+/* Hero */
+.hero-content {
+  @apply grid grid-cols-2 gap-x-10;
+}
+
+
+/* Start */
+.bg-start {
+  background-image: url(../../public/home1/bg-start.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-start2 {
+  background-image: url(../../public/home1/bg-start2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.transition{
+  transition: all;
+  transition: 3s;
+}
+
+.start-button{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 31px;
+border: solid #0066cc 3px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.start-button:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #ffffff00;
+color: #ffffff;
+border: solid 3px #ffffff;
 }

@@ -12,7 +12,7 @@ import styles from '../../styles';
 import { staggerContainer } from '../../utils/motion';
 
 const RH = () => (
-  <section className={`${styles.paddings}  z-10 container`}>
+  <section className={`${styles.paddings}  z-10 container mx-auto`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
