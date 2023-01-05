@@ -32,6 +32,7 @@ const Librarys = () => (
                 <motion.div
                   variants={textVariant(`${library.time}`)}
                   className="mb-1 mt-5"
+                  key={library.title}
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all z-50 font-mono text-xl">{library.title}</Link>
                   <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>
@@ -101,6 +102,7 @@ const Librarys = () => (
                 <motion.div
                   variants={textVariant(`${library.time}`)}
                   className="mb-1 mt-5"
+                  key={library.title}
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all font-mono text-xl">{library.title}</Link>
                   <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>
@@ -118,6 +120,7 @@ const Librarys = () => (
                 <motion.div
                   variants={textVariant(`${library.time}`)}
                   className="mb-1 mt-5"
+                  key={library.title}
                 >
                   <Link href={library.href} className="font-semibold underline hover:text-blue-600 transition-all z-50 font-mono text-xl">{library.title}</Link>
                   <p className="text-sm text-justify font-mono">&nbsp;{library.description}</p>

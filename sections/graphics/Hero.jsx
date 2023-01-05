@@ -49,6 +49,7 @@ const Hero = () => (
             height={400}
             unoptimized
             onDragStart={ImpedirArrastar}
+            alt="Graphics"
           />
         </motion.div>
       </div>

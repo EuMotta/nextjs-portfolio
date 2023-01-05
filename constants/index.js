@@ -2,7 +2,7 @@ import {
   IoCheckmarkCircleSharp,
   IoCheckmarkCircleOutline,
 } from 'react-icons/io5';
-import { AiOutlineHome, AiOutlineUser, AiFillHtml5, AiOutlineApi } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser, AiFillHtml5, AiOutlineApi, AiOutlineAreaChart } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
 import { MdDashboardCustomize, MdMiscellaneousServices } from 'react-icons/md';
@@ -14,8 +14,10 @@ import {
   SiReact,
   SiNextdotjs,
   SiHomebridge,
+  SiAboutdotme,
 } from 'react-icons/si';
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
+import { BsClipboardData } from 'react-icons/bs';
 import Me from '../public/Me.jpg';
 import project01 from '../public/nfTrade.png';
 import project02 from '../public/project02.jpg';
@@ -265,26 +267,39 @@ export const bottomBarItems = [
   {
     icon: SiHomebridge,
     title: 'Inicio',
+    href: '/',
     id: 'bottonbar1',
   },
   {
-    icon: FaThList,
-    href: 'apiConsulta',
-    title: 'Api Consulta',
+    icon: SiAboutdotme,
+    href: 'aboutPage',
+    title: 'Sobre Mim',
     id: 'bottonbar2',
   },
   {
-    icon: AiOutlineUser,
+    icon: AiOutlineAreaChart,
     href: 'graphics',
     title: 'Graficos',
     id: 'bottonbar3',
   },
+  {
+    icon: BsClipboardData,
+    href: 'apiConsulta',
+    title: 'Apis',
+    id: 'bottonbar4',
+  },
+  {
+    icon: AiOutlineAreaChart,
+    href: 'graphics',
+    title: 'Graficos',
+    id: 'bottonbar5',
+  },
 ];
-export const bottomBarDropUp = [
+/* export const bottomBarDropUp = [
   {
     id: 'bottonbardropup1',
-    href: '#feedback',
-    title: 'Feedback',
+    href: 'aboutPage',
+    title: 'About',
   },
   {
     id: 'bottonbardropup2',
@@ -297,7 +312,7 @@ export const bottomBarDropUp = [
     title: 'Inicio',
   },
 
-];
+]; */
 export const positionBar = [
   {
     icon: AiOutlineHome,

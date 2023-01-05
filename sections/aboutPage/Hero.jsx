@@ -24,7 +24,7 @@ const Hero = () => (
       <div className="col-span-1">
         <motion.div
           animate={{
-            scale: [1.1, 1.1, 1.14, 1.2, 1.1],
+            scale: [1.1, 1.1, 1.11, 1.1, 1.1],
             rotate: [0.1, -0.1, 0.1, -0.1, 0.1],
             borderRadius: ['50%', '46%', '50%', '46%', '50%'],
           }}
@@ -50,6 +50,7 @@ const Hero = () => (
             height={400}
             unoptimized
             onDragStart={ImpedirArrastar}
+            alt="Hero"
           />
         </motion.div>
       </div>

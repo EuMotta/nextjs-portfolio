@@ -8,20 +8,22 @@ import Lines from '../sections/graphics/Lines';
 const graphics = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
-    <Hero />
-    <GraphResum />
-    <div className="bg-slate-300">
-      <Lines />
+    <div className="container mx-auto">
+      <Hero />
+      <GraphResum />
+      <div className="bg-slate-300">
+        <Lines />
+      </div>
+      <Areas />
+      <div className="bg-slate-300">
+        <Bars />
+      </div>
+      <WorldPopulation />
+      <div className="bg-slate-300">
+        <RH />
+      </div>
+      <Composed />
     </div>
-    <Areas />
-    <div className="bg-slate-300">
-      <Bars />
-    </div>
-    <WorldPopulation />
-    <div className="bg-slate-300">
-      <RH />
-    </div>
-    <Composed />
   </div>
 );
 

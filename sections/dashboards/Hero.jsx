@@ -23,7 +23,7 @@ const Hero = () => (
       <div className="col-span-1 flex items-center justify-center">
         <motion.div
           animate={{
-            scale: [1.3, 1.3, 1.33, 1.3, 1.3],
+            scale: [1.2, 1.2, 1.23, 1.2, 1.2],
             rotate: [0.1, -0.1, 0.1, -0.1, 0.1],
             borderRadius: ['50%', '46%', '50%', '46%', '50%'],
           }}

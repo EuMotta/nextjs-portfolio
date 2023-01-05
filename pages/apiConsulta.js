@@ -6,11 +6,13 @@ import '../tailwind.config';
 const apis = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
-    <Hero />
-    <div className="bg-slate-300">
-      <Cnpj />
-      <Cep />
-      <Time />
+    <div className="container mx-auto">
+      <Hero />
+      <div className="bg-slate-300">
+        <Cnpj />
+        <Cep />
+        <Time />
+      </div>
     </div>
   </div>
 );

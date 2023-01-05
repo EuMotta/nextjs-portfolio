@@ -5,9 +5,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { staggerContainer } from '../../utils/motion';
 import styles from '../../styles';
-import img from '../../public/heroApiConsulta.svg';
+import img from '../../public/apiConsulta/heroApiConsulta.svg';
 import { TitleText, TypingText } from '../../components';
 
+function ImpedirArrastar(event) {
+  event.preventDefault();
+}
 const Hero = () => (
   <section id="cep" className={`${styles.paddings} z-10`}>
     <motion.div
@@ -19,7 +22,7 @@ const Hero = () => (
     >
       <div className="grid grid-cols-2">
         <div className="col-span-1">
-          <Image alt="img" width={500} height={500} unoptimized src={img} />
+          <Image alt="img" width={500} height={500} unoptimized src={img} onDragStart={ImpedirArrastar} />
         </div>
         <div className="col-span-1">
           <div className="text-black">

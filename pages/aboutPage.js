@@ -6,16 +6,18 @@ import '../styles/globals.css';
 import '../tailwind.config';
 
 const apis = () => (
-  <div className="bg-slate-200 overflow-hidden">
+  <div title="about" className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
-    <Hero />
-    <div>
-      <Languages />
-      <Librarys />
-      <Database />
-      <SearchAPIs />
-      <Iframe />
-      <Images />
+    <div className="container mx-auto">
+      <Hero />
+      <div>
+        <Languages />
+        <Librarys />
+        <Database />
+        <SearchAPIs />
+        <Iframe />
+        <Images />
+      </div>
     </div>
   </div>
 );

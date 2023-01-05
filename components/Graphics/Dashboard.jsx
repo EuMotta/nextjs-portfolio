@@ -10,7 +10,38 @@ import {
   Brush,
   Line,
   ComposedChart,
+  Area,
+  PieChart,
+  Pie,
 } from 'recharts';
+
+const funcionariosRH = [
+  {
+    nome: 'Desenvolvimento de software',
+    funcionarios: 19,
+    fill: '#000080',
+  },
+  {
+    nome: 'Suporte técnico',
+    funcionarios: 11,
+    fill: '#006400',
+  },
+  {
+    nome: 'Segurança da informação',
+    funcionarios: 14,
+    fill: '#663399',
+  },
+  {
+    nome: 'Desenvolvimento FrontEnd',
+    funcionarios: 15,
+    fill: '#8B4513',
+  },
+  {
+    nome: 'Desenvolvimento BackEnd',
+    funcionarios: 11,
+    fill: '#A9A9A9',
+  },
+];
 
 const rhData = [
   {
@@ -176,7 +207,6 @@ const Dashboard2 = () => (
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="massa_salarial" barSize={20} fill="#38cf51" />
       <Bar
         dataKey="despesa_mensal"
         barSize={20}
@@ -190,6 +220,7 @@ const Dashboard2 = () => (
 const Dashboard3 = () => (
   <ResponsiveContainer width="100%" height={300}>
     <ComposedChart
+      layout="vertical"
       width={500}
       height={400}
       data={rhData}
@@ -201,14 +232,58 @@ const Dashboard3 = () => (
       }}
     >
       <CartesianGrid stroke="#f5f5f5" />
-      <XAxis dataKey="mes" scale="band" />
-      <YAxis />
+      <XAxis type="number" />
+      <YAxis dataKey="mes" type="category" scale="band" />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="treinamentos" stroke="#3835e0" />
-      <Bar dataKey="absenteismo" barSize={20} fill="#e23434" />
+      <Area dataKey="media" fill="#8884d8" stroke="#8884d8" />
+      <Bar dataKey="absenteismo" barSize={20} fill="#413ea0" />
+      <Line dataKey="treinamentos" stroke="#ff7300" />
     </ComposedChart>
   </ResponsiveContainer>
 );
-
-export { Dashboard1, Dashboard2, Dashboard3 };
+const Dashboard4 = () => (
+  <ResponsiveContainer width="100%" height={300}>
+    <BarChart
+      width={500}
+      height={300}
+      data={rhData}
+      margin={{
+        top: 5,
+        right: 30,
+        left: 20,
+        bottom: 5,
+      }}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="mes" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Bar dataKey="massa_salarial" fill="#4e3edf" />
+      <Brush />
+    </BarChart>
+  </ResponsiveContainer>
+);
+const Dashboard5 = () => (
+  <ResponsiveContainer width="100%" height={300}>
+    <PieChart width={400} height={400}>
+      {funcionariosRH.map((item) => (
+        <Pie
+          key={item.nome}
+          dataKey="funcionarios"
+          nameKey="nome"
+          isAnimationActive={false}
+          data={funcionariosRH}
+          cx="50%"
+          cy="50%"
+          outerRadius={80}
+          fill="#8884d8"
+          label
+        />
+      ))}
+      <Tooltip />
+    </PieChart>
+  </ResponsiveContainer>
+);
+export { Dashboard1, Dashboard2, Dashboard3, Dashboard4, Dashboard5 };

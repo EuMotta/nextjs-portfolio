@@ -1,10 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Tooltip } from 'react-tooltip';
 import { useState } from 'react';
-import { bottomBarDropUp, bottomBarItems } from '../constants';
+import { bottomBarItems } from '../constants';
 import 'react-tooltip/dist/react-tooltip.css';
+import Mlogo from '../public/Mlogo.svg';
 
 const link = '';
 
@@ -19,12 +20,8 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <motion.nav
-      className=" w-full fixed bottom-0 bg-[#000000]  z-50"
-    >
-      <motion.nav
-        className="flex items-center justify-between  flex-wrap p-2"
-      >
+    <motion.nav className=" w-full fixed bottom-0 bg-[#000000]  z-50">
+      <motion.nav className="flex items-center justify-between  flex-wrap p-2">
         <div className="flex fixed items-center flex-shrink-0 text-white mr-6">
           <div className="font-semibold flex items-center text-xl tracking-tight">
             <motion.div
@@ -33,22 +30,9 @@ const Navbar = () => {
                 rotate: [-10, -10, -10, -10, -10],
                 borderRadius: ['50%', '40%', '50%', '40%', '50%'],
               }}
-              transition={{
-                duration: 2,
-                ease: 'easeInOut',
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-              drag
-              dragConstraints={{
-                top: -5,
-                left: -5,
-                right: 200,
-                bottom: 100,
-              }}
               className="font-bold text-2xl text-orange-500"
             >
-              M
+              <Image src={Mlogo} widtth={30} height={30} unoptimized alt="Logo" className="text-white" />
             </motion.div>
             OTTA
           </div>
@@ -57,7 +41,7 @@ const Navbar = () => {
           <div className="text-sm gap-x-10 lg:flex-grow flex justify-center">
             {bottomBarItems.map((item) => (
               <div key={item.id}>
-                {isOpen && item.title === 'Inicio' && (
+                {/* {isOpen && item.title === 'Inicio' && (
                   <div className="fixed glassmorphism bottom-10">
                     {bottomBarDropUp.map((dropUp) => (
                       <div key={dropUp.id} className="flex my-2 text-center flex-col">
@@ -70,19 +54,14 @@ const Navbar = () => {
                       </div>
                     ))}
                   </div>
-                )}
+                )} */}
                 <a
                   href={item.href}
                   className="block font-mono mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                   rel="noreferrer"
                   onClick={() => handleClick(item.title)}
+                  title="test"
                 >
-                  <Tooltip
-                    place="top"
-                    anchorId={item.id}
-                    content={item.title}
-                    className="!bg-orange-400"
-                  />{' '}
                   <div
                     onClick={toggle}
                     className="flex cursor-pointer justify-center ml-4"
