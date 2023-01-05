@@ -8,12 +8,12 @@ import Eu from '../../../../public/Me.jpg';
 function ImpedirArrastar(event) {
   event.preventDefault();
 }
-const HeroStart1 = () => (
+const HeroPortfolio = () => (
   <section className="">
     <div className={`${styles.centerXYContent}  h-[70vh] mx-24`}>
       <div className="hero-content">
-        <div className="col-span-1 text-white flex flex-col justify-center items-center ">
-          <div className="">
+        <div className="col-span-1 flex flex-col justify-center items-center ">
+          <div className="text-white">
             <h2>Eu sou,</h2>
             <h1 className="!text-7xl">José Antonio</h1>
             <br />
@@ -36,15 +36,7 @@ const HeroStart1 = () => (
               bottom: 1,
             }}
           >
-            <Image
-              src={Eu}
-              alt="Eu"
-              width={400}
-              height={400}
-              className="rounded-full shadow-md  shadow-slate-800"
-              unoptimized
-              onDragStart={ImpedirArrastar}
-            />
+            
           </motion.div>
         </div>
       </div>
@@ -52,4 +44,4 @@ const HeroStart1 = () => (
   </section>
 );
 
-export default HeroStart1;
+export default HeroPortfolio;

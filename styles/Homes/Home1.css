@@ -146,3 +146,11 @@ background-color: #ffffff00;
 color: #ffffff;
 border: solid 3px #ffffff;
 }
+
+/* portfolio */
+.bg-portfolio {
+  background-image: url(../../public/home1/bg-portfolio.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
