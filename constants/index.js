@@ -5,7 +5,7 @@ import {
 import { AiOutlineHome, AiOutlineUser, AiFillHtml5, AiOutlineApi, AiOutlineAreaChart } from 'react-icons/ai';
 import { FaThList } from 'react-icons/fa';
 import { HiInformationCircle } from 'react-icons/hi';
-import { MdDashboardCustomize, MdMiscellaneousServices } from 'react-icons/md';
+import { MdDashboard, MdDashboardCustomize, MdMiscellaneousServices } from 'react-icons/md';
 import { VscChecklist } from 'react-icons/vsc';
 import { RiCodeSSlashFill } from 'react-icons/ri';
 import {
@@ -289,9 +289,9 @@ export const bottomBarItems = [
     id: 'bottonbar4',
   },
   {
-    icon: AiOutlineAreaChart,
-    href: 'graphics',
-    title: 'Graficos',
+    icon: MdDashboard,
+    href: 'dashboard',
+    title: 'Dashboard',
     id: 'bottonbar5',
   },
 ];

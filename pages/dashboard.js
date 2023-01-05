@@ -7,9 +7,13 @@ import '../tailwind.config';
 const Dashboard = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
-    <Hero />
-    <div className="bg-slate-300">
-      <Dashboard1 />
+    <div className="">
+      <div className="container mx-auto">
+        <Hero />
+        <div className="bg-slate-300">
+          <Dashboard1 />
+        </div>
+      </div>
     </div>
   </div>
 );
