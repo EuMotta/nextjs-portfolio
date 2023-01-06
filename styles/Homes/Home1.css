@@ -99,6 +99,34 @@ p {
 .hero-content {
   @apply grid grid-cols-2 gap-x-10;
 }
+.hero-content .hero-image {
+@apply cursor-pointer flex justify-center items-center;
+}
+.hero-image-Image {
+  @apply rounded-full shadow-md  shadow-slate-800;
+}
+.hero-text {
+  @apply col-span-1 text-white flex flex-col justify-center items-center ;
+}
+.hero-text h1 {
+  @apply text-7xl;
+}
+/* AboutHome1 */
+.about-section {
+  @apply my-20 container mx-auto;
+}
+.about-section .about-container {
+  @apply container !bg-[#f1f1fffa] rounded-xl;
+}
+.about-section .about-container .about-content {
+  @apply grid grid-cols-2 gap-x-10 p-5;
+}
+.about-section .about-container .about-content .about-icon {
+  @apply bg-slate-50 p-2 text-5xl shadow-xl shadow-slate-300 rounded-full;
+}
+.about-section .about-container .about-content .about-text {
+  @apply flex flex-col gap-y-5;
+}
 
 
 /* Start */
@@ -153,4 +181,15 @@ border: solid 3px #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.bg-city{
+  background-image: url(../../public/home1/City-night.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rotate{
+  position: relative;
+  bottom: 3rem;
 }
