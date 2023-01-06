@@ -176,11 +176,21 @@ border: solid 3px #ffffff;
 }
 
 /* portfolio */
+/* HeroPortfolio */
 .bg-portfolio {
   background-image: url(../../public/home1/bg-portfolio.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.heroportfolio-content {
+  @apply grid grid-cols-2 gap-x-10;
+}
+.heroportfolio-content .heroportfolio-text {
+  @apply col-span-1 flex flex-col justify-center items-center relative;
+}
+.heroportfolio-content .heroportfolio-image {
+  @apply cursor-pointer flex justify-center items-center;
 }
 .bg-city{
   background-image: url(../../public/home1/City-night.svg);
@@ -193,3 +203,15 @@ border: solid 3px #ffffff;
   position: relative;
   bottom: 3rem;
 }
+
+.aboutportfolio-card {
+  @apply rounded-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg {
+  background-image: url(../../public/home1/CardBg1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+

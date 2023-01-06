@@ -13,8 +13,8 @@ function ImpedirArrastar(event) {
 const HeroPortfolio = () => (
   <section className="">
     <div className={`${styles.centerXYContent}  h-[70vh] mx-24`}>
-      <div className="hero-content">
-        <div className="col-span-1 flex flex-col justify-center items-center relative">
+      <div className="heroportfolio-content">
+        <div className="heroportfolio-text">
           <div className="text-white z-10">
             <Image
               src={Rocket1}
@@ -34,11 +34,11 @@ const HeroPortfolio = () => (
             </p>
           </div>
         </div>
-        <div className="col-span-1 relative">
+        <div>
           <motion.div
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.8 }}
-            className="cursor-pointer flex justify-center items-center"
+            className="heroportfolio-image"
             drag
             dragConstraints={{
               top: -1,
