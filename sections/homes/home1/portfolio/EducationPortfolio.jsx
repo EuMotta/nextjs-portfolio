@@ -10,20 +10,20 @@ function ImpedirArrastar(event) {
 }
 const EducationPortfolio = () => (
   <section className={`${styles.paddings}`}>
-    <div className="grid grid-cols-6 gap-10">
+    <div className="education-content">
       <div className="col-span-1">
-        <div className="flex mt-14 justify-center items-center">
+        <div className="education-line">
           <Image src={Line1} />
         </div>
       </div>
-      <div className="col-span-5 flex flex-col gap-y-[6rem]">
+      <div className="education-cards">
         {EducationPortfolioList.map((education) => (
           <div
             key={education.title}
-            className=" grid grid-cols-5 ring-1 glassmorphism-3  ring-violet-400 hover:shadow-lg hover:shadow-violet-400 transition-all rounded-lg"
+            className="education-card glassmorphism-3"
           >
             <div className="col-span-1 p-2">
-              <div className="shadow-sm rounded-lg pr-10 ">
+              <div className="shadow-sm flex justify-center items-center rounded-lg px-10 ">
                 <Image
                   src={education.image}
                   width={200}

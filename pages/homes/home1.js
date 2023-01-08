@@ -7,7 +7,7 @@ import '../../styles/globals.css';
 import '../../tailwind.config';
 import '../../styles/Homes/Home1.css';
 import styles from '../../styles';
-import { HeroPortfolio, AboutPortfolio, EducationPortfolio } from '../../sections/homes/home1/portfolio';
+import { HeroPortfolio, AboutPortfolio, EducationPortfolio, WorksCourses, Languages } from '../../sections/homes/home1/portfolio';
 
 const Home1 = () => {
   const [bgClass, setBgClass] = useState('bg-start');
@@ -61,6 +61,8 @@ const Home1 = () => {
           <div className="container mx-auto">
             <AboutPortfolio />
             <EducationPortfolio />
+            <WorksCourses />
+            <Languages />
           </div>
         </div>
         <div className="mt-5">

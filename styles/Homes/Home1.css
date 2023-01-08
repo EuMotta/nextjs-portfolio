@@ -203,7 +203,7 @@ border: solid 3px #ffffff;
   position: relative;
   bottom: 3rem;
 }
-
+/* About */
 .aboutportfolio-card {
   @apply rounded-lg;
 }
@@ -249,4 +249,16 @@ border: solid 3px #ffffff;
   background-position: center;
   @apply rounded-t-lg;
 }
-
+/* Languages */
+.education-content {
+  @apply grid grid-cols-6 gap-10;
+}
+.education-line {
+  @apply flex mt-14 justify-center items-center;
+}
+.education-content .education-cards {
+  @apply col-span-5 flex flex-col gap-y-[6rem];
+}
+.education-card {
+  @apply grid grid-cols-5 ring-1  ring-violet-400 hover:shadow-lg hover:shadow-violet-400 transition-all rounded-lg;
+}

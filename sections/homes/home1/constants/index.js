@@ -1,10 +1,21 @@
-import { BiCodeBlock } from 'react-icons/bi';
+import { BiCodeBlock, BiTimer } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
+import {
+  SiCsharp,
+  SiJava,
+  SiReact,
+  SiNextdotjs,
+} from 'react-icons/si';
+import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
+import { AiFillHtml5, AiOutlineFundProjectionScreen, AiOutlineSolution } from 'react-icons/ai';
+import { FaBusinessTime, FaTeamspeak } from 'react-icons/fa';
+import { RiAdminLine, RiTeamLine } from 'react-icons/ri';
+import { MdOutlineLeaderboard, MdOutlineLibraryBooks } from 'react-icons/md';
 import rocket1 from '../../../../public/home1/rocketCard1.svg';
 import planet1 from '../../../../public/home1/planetCard1.svg';
 import planet2 from '../../../../public/home1/planetCard2.svg';
 import planet3 from '../../../../public/home1/planetCard3.svg';
-import Eu from '../../../../public/home1/manTest.png';
+import Eu from '../../../../public/home1/manTest.svg';
 
 export const aboutHome1 = [
   {
@@ -87,3 +98,39 @@ export const EducationPortfolioList = [
     description: 'Formando-se em Técnologo em Análise e Desenvolvimento de Sistemas pela Fatec Guaratinguetá. Iniciou estudos em 2022, término previsto para 2024. Empolgado em aplicar conhecimentos adquiridos em projetos futuros e continuar aprendendo no mundo da tecnologia.',
   },
 ];
+export const skillsPortfolio = {
+  frontEnd: [
+    { name: 'HTML_5', percentage: 62, icon: AiFillHtml5, color: '#F7567C', fadeIn: 'right' },
+    { name: 'CSS_3', percentage: 65, icon: IoLogoCss3, color: '#11B5E4', fadeIn: 'down' },
+    {
+      name: 'JAVASCRIPT',
+      percentage: 46,
+      icon: IoLogoJavascript,
+      color: '#FFFF00',
+      fadeIn: 'down',
+    },
+    { name: 'REACT_JS', percentage: 60, icon: SiReact, color: '#00D8FF', fadeIn: 'up' },
+    { name: 'NEXT_JS', percentage: 62, icon: SiNextdotjs, color: '#000', fadeIn: 'up' },
+  ],
+  backEnd: [
+    { name: 'C#', percentage: 35, icon: SiCsharp, color: '#178600', fadeIn: 'left' },
+    { name: 'JAVA', percentage: 35, icon: SiJava, color: '#ED8B00', fadeIn: 'up' },
+    { name: 'REACT_JS', percentage: 30, icon: SiReact, color: '#00D8FF', fadeIn: 'up' },
+    { name: 'NEXT_JS', percentage: 42, icon: SiNextdotjs, color: '#000', fadeIn: 'up' },
+  ],
+};
+export const lifeSkillsPortfolio = {
+  personalSkills: [
+    { name: 'Comunicação', percentage: 62, icon: FaTeamspeak, color: '#005A9C', fadeIn: 'right' },
+    { name: 'Res. de problemas', percentage: 62, icon: AiOutlineSolution, color: '#F7941D', fadeIn: 'right' },
+    { name: 'Ger. de tempo', percentage: 62, icon: BiTimer, color: '#92D400', fadeIn: 'right' },
+    { name: 'Aprendizado', percentage: 62, icon: MdOutlineLibraryBooks, color: '#92D400', fadeIn: 'right' },
+    { name: 'Liderança', percentage: 62, icon: RiAdminLine, color: '#9C1F00', fadeIn: 'right' },
+  ],
+  workSkills: [
+    { name: 'Trabalho em equipe', percentage: 35, icon: RiTeamLine, color: '#F7941D', fadeIn: 'left' },
+    { name: 'Ger. de projeto', percentage: 35, icon: AiOutlineFundProjectionScreen, color: '#005A9C', fadeIn: 'left' },
+    { name: 'Negociação', percentage: 35, icon: FaBusinessTime, color: '#9C1F00', fadeIn: 'left' },
+    { name: 'Liderança', percentage: 35, icon: MdOutlineLeaderboard, color: '#92D400', fadeIn: 'left' },
+  ],
+};
