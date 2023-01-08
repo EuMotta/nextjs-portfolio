@@ -207,8 +207,43 @@ border: solid 3px #ffffff;
 .aboutportfolio-card {
   @apply rounded-lg;
 }
-.aboutportfolio-card .aboutportfolio-card-bg {
+.aboutportfolio-card .aboutportfolio-card-bg1 {
   background-image: url(../../public/home1/CardBg1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg2 {
+  background-image: url(../../public/home1/CardBg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg3 {
+  background-image: url(../../public/home1/CardBg3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg4 {
+  background-image: url(../../public/home1/CardBg4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg5 {
+  background-image: url(../../public/home1/CardBg5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @apply rounded-t-lg;
+}
+.aboutportfolio-card .aboutportfolio-card-bg6 {
+  background-image: url(../../public/home1/CardBg6.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

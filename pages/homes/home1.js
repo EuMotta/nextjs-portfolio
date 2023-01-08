@@ -7,7 +7,7 @@ import '../../styles/globals.css';
 import '../../tailwind.config';
 import '../../styles/Homes/Home1.css';
 import styles from '../../styles';
-import { HeroPortfolio, AboutPortfolio } from '../../sections/homes/home1/portfolio';
+import { HeroPortfolio, AboutPortfolio, EducationPortfolio } from '../../sections/homes/home1/portfolio';
 
 const Home1 = () => {
   const [bgClass, setBgClass] = useState('bg-start');
@@ -52,14 +52,19 @@ const Home1 = () => {
         </div>
       </div>
       <div className={`${remove ? 'hidden' : ''}`}>
+
         <div className="bg-portfolio h-screen">
           <HeroPortfolio />
 
         </div>
-        <div className=" bg-city h-screen">
+        <div className=" bg-city pb-14 h-auto">
           <div className="container mx-auto">
             <AboutPortfolio />
+            <EducationPortfolio />
           </div>
+        </div>
+        <div className="mt-5">
+          <NavbarBottom />
         </div>
       </div>
     </div>

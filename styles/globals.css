@@ -83,6 +83,12 @@ ul.dropup {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.glassmorphism-3{
+  @apply bg-violet-800;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 .gradient-03 {
   position: absolute;
@@ -132,7 +138,7 @@ ul.dropup {
   filter: blur(150px);
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-slate-400 to-slate-600;
+  @apply bg-gradient-to-b from-blue-400 to-violet-600;
   border-radius: 40px;
 }
 

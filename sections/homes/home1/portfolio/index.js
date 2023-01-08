@@ -1,4 +1,5 @@
 import HeroPortfolio from './HeroPortfolio';
 import AboutPortfolio from './AboutPortfolio';
+import EducationPortfolio from './EducationPortfolio';
 
-export { HeroPortfolio, AboutPortfolio };
+export { HeroPortfolio, AboutPortfolio, EducationPortfolio };

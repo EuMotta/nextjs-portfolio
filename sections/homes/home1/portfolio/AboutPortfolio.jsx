@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { TypingText } from '../../../../components';
 import styles from '../../../../styles';
 import { aboutPortfolio } from '../constants';
 
@@ -9,12 +10,16 @@ import { aboutPortfolio } from '../constants';
 } */
 const AboutPortfolio = () => (
   <section className={`${styles.xPaddings}`}>
+    <TypingText
+      title="Sobre Mim"
+      textStyles="text-center text-white font-bold p-10 mb-6 text-5xl"
+    />
     <div className="grid grid-cols-3 gap-10">
       {aboutPortfolio.map((port) => (
         <div key={port.title} className="col-span-1">
           <div className="glassmorphism !bg-slate-100 aboutportfolio-card">
             <div
-              className={`${styles.centerXYContent} p-2 text-white h-44 aboutportfolio-card-bg`}
+              className={`${styles.centerXYContent} p-2 text-white text-center h-44 ${port.cardBg}`}
             >
               {' '}
               <h2>{port.title}</h2>{' '}
@@ -30,8 +35,10 @@ const AboutPortfolio = () => (
                 />
               </div>
               <div>
-                <h5>{port.subtitle}</h5>
-                <div className="overflow-scroll">
+                <div className="h-20 overflow-scroll flex  items-center">
+                  <h5 className="">{port.subtitle}</h5>
+                </div>
+                <div className="overflow-scroll h-48">
                   <p className="text-sm ">{port.description}</p>
                 </div>
               </div>
