@@ -9,7 +9,7 @@ function ImpedirArrastar(event) {
   event.preventDefault();
 }
 const HeroStart1 = () => (
-  <section className="">
+  <section className="bg-home">
     <div className={`${styles.centerXYContent}  h-[70vh] mx-24`}>
       <div className="hero-content">
         <div className="hero-text">
@@ -39,8 +39,9 @@ const HeroStart1 = () => (
             <Image
               src={Eu}
               alt="Eu"
-              width={400}
-              height={400}
+              priority
+              width={200}
+              height={200}
               className="hero-image-Image"
               unoptimized
               onDragStart={ImpedirArrastar}

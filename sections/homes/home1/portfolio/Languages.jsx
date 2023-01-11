@@ -42,7 +42,7 @@ const Languages = () => (
                     >
                       <div
                         className="h-full absolute inset-0 rounded-full transition-all duration-300 ease-in-out"
-                        style={{ backgroundColor: `${skill.color}` }}
+                        style={{ backgroundColor: '#3058ff' }}
                       />
                     </div>
                   </div>

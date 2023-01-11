@@ -31,6 +31,7 @@ const AboutPortfolio = () => (
                   width={50}
                   height={50}
                   unoptimized
+                  alt="icon"
                   className="bg-purple-900 p-1  absolute top-[9.5rem] shadow-sm shadow-slate-700 rounded-full"
                 />
               </div>

@@ -5,17 +5,27 @@ import {
   SiJava,
   SiReact,
   SiNextdotjs,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiBootstrap,
 } from 'react-icons/si';
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
-import { AiFillHtml5, AiOutlineFundProjectionScreen, AiOutlineSolution } from 'react-icons/ai';
-import { FaBusinessTime, FaTeamspeak } from 'react-icons/fa';
+import { AiFillHtml5, AiOutlineBarChart, AiOutlineFileSearch, AiOutlineFundProjectionScreen, AiOutlineLineChart, AiOutlinePieChart, AiOutlineSolution } from 'react-icons/ai';
+import { FaBusinessTime, FaRegAddressCard, FaTeamspeak } from 'react-icons/fa';
 import { RiAdminLine, RiTeamLine } from 'react-icons/ri';
 import { MdOutlineLeaderboard, MdOutlineLibraryBooks } from 'react-icons/md';
+import { IoBusinessOutline } from 'react-icons/io5';
 import rocket1 from '../../../../public/home1/rocketCard1.svg';
 import planet1 from '../../../../public/home1/planetCard1.svg';
 import planet2 from '../../../../public/home1/planetCard2.svg';
 import planet3 from '../../../../public/home1/planetCard3.svg';
 import Eu from '../../../../public/home1/manTest.svg';
+import frontend from '../../../../public/home1/frontend.jpg';
+import backend from '../../../../public/home1/backend.webp';
+import customization from '../../../../public/home1/customization.webp';
+import graphics from '../../../../public/home1/graphics.webp';
+import api from '../../../../public/home1/api.jpg';
 
 export const aboutHome1 = [
   {
@@ -84,17 +94,20 @@ export const aboutPortfolio = [
 export const EducationPortfolioList = [
   {
     image: Eu,
+    number: '01',
     title: 'Técnologo pela Fatec Guaratinguetá',
     description: 'Formando-se em Técnologo em Análise e Desenvolvimento de Sistemas pela Fatec Guaratinguetá. Iniciou estudos em 2022, término previsto para 2024. Empolgado em aplicar conhecimentos adquiridos em projetos futuros e continuar aprendendo no mundo da tecnologia.',
   },
   {
     image: Eu,
-    title: 'Técnologo pela Fatec Guaratinguetá',
+    number: '02',
+    title: 'Técnologo pela Fatec Guaratinguetá2',
     description: 'Formando-se em Técnologo em Análise e Desenvolvimento de Sistemas pela Fatec Guaratinguetá. Iniciou estudos em 2022, término previsto para 2024. Empolgado em aplicar conhecimentos adquiridos em projetos futuros e continuar aprendendo no mundo da tecnologia.',
   },
   {
     image: Eu,
-    title: 'Técnologo pela Fatec Guaratinguetá',
+    number: '03',
+    title: 'Técnologo pela Fatec Guaratinguetá3',
     description: 'Formando-se em Técnologo em Análise e Desenvolvimento de Sistemas pela Fatec Guaratinguetá. Iniciou estudos em 2022, término previsto para 2024. Empolgado em aplicar conhecimentos adquiridos em projetos futuros e continuar aprendendo no mundo da tecnologia.',
   },
 ];
@@ -134,3 +147,45 @@ export const lifeSkillsPortfolio = {
     { name: 'Liderança', percentage: 35, icon: MdOutlineLeaderboard, color: '#92D400', fadeIn: 'left' },
   ],
 };
+export const services = [
+  {
+    id: 'world-1',
+    imgUrl: frontend,
+    title: <div>FrontEnd <span className="flex gap-2"><SiReact /> <SiNextdotjs /> <SiHtml5 /></span> </div>,
+    description: 'Como desenvolvedor Front-End, eu trabalho com React, Nextjs e HTML5 para criar páginas web dinâmicas e interativas que oferecem uma ótima experiência para o usuário, utilizando técnicas de responsividade para garantir a visualização em todas as telas. ',
+    percentage: 57,
+    color: '#2c7dff',
+  },
+  {
+    id: 'world-2',
+    imgUrl: backend,
+    title: <div>BackEnd <span className="flex gap-2"><SiReact /> <SiNextdotjs /> <SiJava /></span> </div>,
+    description: 'Como desenvolvedor Back-End, trabalho com React, Nextjs e Java para construir aplicações robustas e escaláveis, garantindo a segurança e eficiência dos dados. Utilizo React e Next para criar interfaces amigáveis e intuitivas, e Java para aplicar lógica de negócio e processamento de dados.',
+    percentage: 23,
+    color: '#F56C4E',
+  },
+  {
+    id: 'world-3',
+    imgUrl: customization,
+    title: <div>Customização <span className="flex gap-2"><SiBootstrap /> <SiTailwindcss /> <SiCss3 /></span> </div>,
+    description: 'Como customizador, eu trabalho com TailwindCSS, Bootstrap e CSS3 para criar designs personalizados e atraentes para websites e aplicações. Utilizo TailwindCSS e Bootstrap para construir layouts modernos e reutilizáveis, e CSS3 para adicionar efeitos visuais avançados e animações.',
+    percentage: 41,
+    color: '#7cb342',
+  },
+  {
+    id: 'world-4',
+    imgUrl: graphics,
+    title: <div>Graficos <span className="flex gap-2"><AiOutlinePieChart /> <AiOutlineBarChart /> <AiOutlineLineChart /></span> </div>,
+    description: 'Como especialista em gráficos, trabalho com a biblioteca Recharts para criar visualizações de dados atraentes e informativas para aplicações web e mobile. Utilizo as funcionalidades avançadas do Recharts para criar gráficos interativos e personalizáveis, como linhas, barras, áreas, e pastel.',
+    percentage: 34,
+    color: '#5c3dc4',
+  },
+  {
+    id: 'world-5',
+    imgUrl: api,
+    title: <div>API's <span className="flex gap-2"><FaRegAddressCard /> <IoBusinessOutline /> <AiOutlineFileSearch /></span> </div>,
+    description: 'No mundo de APIs, trabalho com tecnologias avançadas para desenvolver soluções de busca eficientes e personalizadas para aplicações web e mobile. Utilizo ferramentas como Elasticsearch, Solr e Algolia para criar índices de busca avançados e garantir a relevância dos resultados.',
+    percentage: 31,
+    color: '#667eea',
+  },
+];

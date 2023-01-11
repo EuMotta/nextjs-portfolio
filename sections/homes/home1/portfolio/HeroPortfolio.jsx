@@ -19,6 +19,7 @@ const HeroPortfolio = () => (
             <Image
               src={Rocket1}
               alt="Eu"
+              priority
               width={100}
               height={100}
               className="rounded-full absolute top-0 left-36 z-0  shadow-slate-800"
@@ -60,6 +61,7 @@ const HeroPortfolio = () => (
             <Image
               src={Eu}
               alt="Eu"
+              priority
               width={200}
               height={200}
               className="rounded-full shadow-md  shadow-slate-800"
