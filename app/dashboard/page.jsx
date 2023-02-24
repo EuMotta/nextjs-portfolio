@@ -1,8 +1,10 @@
-import { NavbarBottom } from '../components';
-import { } from '../sections/apiConsulta';
-import { Dashboard1, Hero } from '../sections/dashboards';
-import '../styles/globals.css';
-import '../tailwind.config';
+'use client';
+
+import { NavbarBottom } from '../../components';
+import { } from '../../sections/apiConsulta';
+import { Dashboard1, Hero } from '../../sections/dashboards';
+import '../../styles/globals.css';
+import '../../tailwind.config';
 
 const Dashboard = () => (
   <div className="bg-slate-200 overflow-hidden">

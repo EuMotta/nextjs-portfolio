@@ -1,9 +1,11 @@
-import { NavbarBottom } from '../components';
-import { } from '../sections/apiConsulta';
-import { Areas, Bars, Composed, GraphResum, Hero, RH, WorldPopulation } from '../sections/graphics';
-import '../styles/globals.css';
-import '../tailwind.config';
-import Lines from '../sections/graphics/Lines';
+'use client';
+
+import { NavbarBottom } from '../../components';
+import { } from '../../sections/apiConsulta';
+import { Areas, Bars, Composed, GraphResum, Hero, RH, WorldPopulation } from '../../sections/graphics';
+import '../../styles/globals.css';
+import '../../tailwind.config';
+import Lines from '../../sections/graphics/Lines';
 
 const graphics = () => (
   <div className="bg-slate-200 overflow-hidden">

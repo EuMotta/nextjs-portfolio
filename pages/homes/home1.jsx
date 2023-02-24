@@ -35,7 +35,7 @@ const Home1 = () => {
         <Hero />
         <Head />
         <AboutHome1 />
-        <div className=" glassmorphism">
+        <div className="">
           <section className={`${bgClass} transition`}>
             <div className="container mx-auto">
               <div className={`${styles.centerXYContent} h-[80vh] justify-center items-center flex flex-col gap-y-5`}>
