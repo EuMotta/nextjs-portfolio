@@ -1,13 +1,13 @@
 
 import { useState } from 'react';
-import Head from '../app/head';
-import { NavbarBottom } from '../components';
-import { AboutHome1, Hero } from '../sections/homes/home1/start';
-import '../styles/globals.css';
-import '../tailwind.config';
-import '../styles/Homes/Home1.css';
-import styles from '../styles';
-import { HeroPortfolio, AboutPortfolio, EducationPortfolio, WorksCourses, Languages, ServicesPortfolio } from '../sections/homes/home1/portfolio';
+import Head from '../../app/head';
+import { NavbarBottom } from '../../components';
+import { AboutHome1, Hero } from '../../sections/homes/home1/start';
+import '../../styles/globals.css';
+import '../../tailwind.config';
+import '../../styles/Homes/Home1.css';
+import styles from '../../styles';
+import { HeroPortfolio, AboutPortfolio, EducationPortfolio, WorksCourses, Languages, ServicesPortfolio } from '../../sections/homes/home1/portfolio';
 
 const Home1 = () => {
   const [bgClass, setBgClass] = useState('bg-start');
