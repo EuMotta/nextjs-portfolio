@@ -165,13 +165,13 @@ export const educationInformation = {
       id: 'education1',
       year: '2022 - 2025',
       title: 'Tecnologo pela FATEC Guaratinguetá',
-      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+      description: 'Estou me formando em  em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
     },
     {
       id: 'education2',
       year: '2022 - 2025',
       title: 'Tecnologo pela FATEC Guaratinguetá',
-      description: 'Formei-me em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+      description: 'Estou me formando em  em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
     },
   ],
   experience: [
