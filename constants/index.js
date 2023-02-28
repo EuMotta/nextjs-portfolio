@@ -169,9 +169,9 @@ export const educationInformation = {
     },
     {
       id: 'education2',
-      year: '2022 - 2025',
-      title: 'Tecnologo pela FATEC Guaratinguetá',
-      description: 'Estou me formando em  em Análise e Desenvolvimento de Sistemas pela FATEC Guaratinguetá, o que marcou o início de minha carreira como programador. Durante o curso, consegui unir minhas paixões pela tecnologia e pelo desenvolvimento de software com a possibilidade de fazer desta atividade meu trabalho.',
+      year: '0000 - 0000',
+      title: 'Ainda sem formação',
+      description: 'Ainda sem formação',
     },
   ],
   experience: [
