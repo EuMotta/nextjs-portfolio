@@ -5,7 +5,7 @@ import { Cep, Cnpj, Hero, Time } from '../../sections/apiConsulta';
 import '../../styles/globals.css';
 import '../../tailwind.config';
 
-const apis = () => (
+const apiConsulta = () => (
   <div className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
     <div className="container mx-auto">
@@ -19,4 +19,4 @@ const apis = () => (
   </div>
 );
 
-export default apis;
+export default apiConsulta;

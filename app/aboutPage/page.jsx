@@ -7,7 +7,7 @@ import Hero from '../../sections/aboutPage/Hero';
 import '../../styles/globals.css';
 import '../../tailwind.config';
 
-const apis = () => (
+const aboutPage = () => (
   <div title="about" className="bg-slate-200 overflow-hidden">
     <NavbarBottom />
     <div className="">
@@ -26,4 +26,4 @@ const apis = () => (
   </div>
 );
 
-export default apis;
+export default aboutPage;
