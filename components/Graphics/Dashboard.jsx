@@ -217,31 +217,31 @@ const Dashboard2 = () => (
     </ComposedChart>
   </ResponsiveContainer>
 );
-const Dashboard3 = () => (
-  <ResponsiveContainer width="100%" height={300}>
-    <ComposedChart
-      layout="vertical"
-      width={500}
-      height={400}
-      data={rhData}
-      margin={{
-        top: 20,
-        right: 20,
-        bottom: 20,
-        left: 20,
-      }}
-    >
-      <CartesianGrid stroke="#f5f5f5" />
-      <XAxis type="number" />
-      <YAxis dataKey="mes" type="category" scale="band" />
-      <Tooltip />
-      <Legend />
-      <Area dataKey="media" fill="#8884d8" stroke="#8884d8" />
-      <Bar dataKey="absenteismo" barSize={20} fill="#413ea0" />
-      <Line dataKey="treinamentos" stroke="#ff7300" />
-    </ComposedChart>
-  </ResponsiveContainer>
-);
+// const Dashboard3 = () => (
+//   <ResponsiveContainer width="100%" height={300}>
+//     <ComposedChart
+//       layout="vertical"
+//       width={500}
+//       height={400}
+//       data={rhData}
+//       margin={{
+//         top: 20,
+//         right: 20,
+//         bottom: 20,
+//         left: 20,
+//       }}
+//     >
+//       <CartesianGrid stroke="#f5f5f5" />
+//       <XAxis type="number" />
+//       <YAxis dataKey="mes" type="category" scale="band" />
+//       <Tooltip />
+//       <Legend />
+//       <Area dataKey="media" fill="#8884d8" stroke="#8884d8" />
+//       <Bar dataKey="absenteismo" barSize={20} fill="#413ea0" />
+//       <Line dataKey="treinamentos" stroke="#ff7300" />
+//     </ComposedChart>
+//   </ResponsiveContainer>
+// );
 const Dashboard4 = () => (
   <ResponsiveContainer width="100%" height={300}>
     <BarChart
